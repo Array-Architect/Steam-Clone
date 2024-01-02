@@ -16,8 +16,8 @@ function App() {
         <div className="responsive_fixonscroll_ctn nonresponsive_hidden"></div>
         <div className="responsive_page_content"></div>
       </div>
-      <div className="miniprofile_hover" style="display:none"></div>
-      <div className="FullModalOverlay" style="display:none"></div>
+      <div className="miniprofile_hover" style={{display: "none"}}></div>
+      <div className="FullModalOverlay" style={{display: "none"}}></div>
       <div id="review_histogram_tooltip"></div>
     </>
   );
