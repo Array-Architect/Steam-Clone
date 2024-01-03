@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import Review from "./Components/Review";
+import Header from "./Components/Header";
+import About from "./Components/About";
+import Summary from ".Summary,jsx";
 
 function App() {
   return (
@@ -16,7 +19,10 @@ function App() {
         <div className="responsive_page_content_overlay"></div>
         <div className="responsive_fixonscroll_ctn nonresponsive_hidden"></div>
         <div className="responsive_page_content">
-          <Review/>
+          <Header />
+          <Summary />
+          <About /> 
+          <Review />
         </div>
       </div>
       <div className="miniprofile_hover" style={{display: "none"}}></div>
