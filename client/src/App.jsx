@@ -3,7 +3,7 @@ import "./App.css";
 import Review from "./Components/Review";
 import Header from "./Components/Header";
 import About from "./Components/About";
-import Summary from ".Summary,jsx";
+import Summary from "./Components/Summary";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <div className="responsive_page_content">
           <Header />
           <Summary />
-          <About /> 
+          <About />
           <Review />
         </div>
       </div>
