@@ -1,11 +1,6 @@
 const Review = () => {
 
   return (
-    <div
-    role="main"
-    className="responsive_page_template_content"
-    id="responsive_page_template_content"
-    data-panel="{&quot;autoFocus&quot;:true}">
         <div className="review_ctn">
           <div className="page_content">
             <div id="app_reviews_hash" className="app_reviews_area">
@@ -53,7 +48,6 @@ const Review = () => {
             </div>
           </div>
         </div>
-    </div>
   )
 }
 
