@@ -52,6 +52,19 @@ body.v6 > div#global_header {
 	border-bottom-color: #171a21;
 }
 
+body.v6 .pulldown {
+	margin-right: 5px;
+}
+
+.pulldown {
+	padding-left: 5px;
+	padding-right: 18px;
+	background-image: url(https://store.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
 div#global_header {
 	background: #171d25;
 	background-position: center top;
@@ -121,6 +134,11 @@ div#global_actions #global_action_menu {
 	display: inline-block;
 }
 
+div#global_actions a.global_action_link {
+	color: #b8b6b4;
+	padding: 0 4px;
+}
+
 #global_action_menu > * {
 	vertical-align: top;
 }
@@ -149,7 +167,34 @@ div#global_actions #global_action_menu {
 	font-weight: normal;
 }
 
+.popup_block_new {
+	z-index: 200;
+	position: absolute;
+	box-shadow: 0 0 12px #000000;
+}
 
+.popup_block_new .popup_body {
+	border: 1px solid #3D4450;
+	position: relative;
+	background-color: #3D4450;
+}
+
+.popup_menu a.popup_menu_item {
+	text-decoration: none;
+	display: block;
+}
+
+.popup_menu .popup_menu_item {
+	padding: 5px 12 px;
+	color: #dcdedf;
+	text-transform: none;
+	font-family: Motiva Sans, Arial, Helvectica, Verdana, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: normal;
+	text-align: left;
+	cursor: pointer;
+}
 
 .v6_bg {
 	/* background: url( '/public/images/v6/tag_browse_header_bg.png' ) no-repeat center top; */
@@ -166,6 +211,10 @@ body.blue .v6_bg {
 
 body.v6 div#store_header {
 	background-color: transparent;
+}
+
+body.v6 .popup_block_new .popup_body.popup_menu {
+	padding: 0px 0px;
 }
 
 .page_background {
