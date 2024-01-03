@@ -43,7 +43,39 @@ const Review = () => {
                     </div>
                   </div>
                 </div>
-                <div id="review_histogram_recent_section" className="review_histogram_section recent"></div>
+                <div id="review_histogram_recent_section" className="review_histogram_section recent">
+
+                  <div className="user_reviews_summary_bar">
+                    <div className="summary_section">
+                      <div className="title">Recent Reviews:</div>
+                      <span className="game_review_summary positive" data-tooltip-html="91% of the 4,448 user reviews in the last 30 days are positive.">Very Positive</span>
+                      <span>(4,448 reviews)</span>
+                      <a className="tooltip" data-tooltip-text="This summary uses only reviews written by customers that purchased the game directly from Steam.">
+                        <img src="https://store.cloudflare.steamstatic.com/public/shared/images/ico/icon_questionmark.png"></img>
+                      </a>
+                    </div>
+                    <div className="review_histogram">
+                      <div id="review_histogram_recent" style={{padding: "0px", position: "relative"}}>
+                      <canvas className="flot-base" width="472" height="375" style={{direction: "ltr", position: "absolute", left: "0px", top: "0px", width: "315px", height: "250px"}}></canvas>
+                      <div className="flot-text" style={{position: "absolute", inset: "0px", fontSize: "smaller", color: "rgb(84, 84, 84)"}}>
+                        <div className="flot-x-axis flot-x1-axis xAxis x1Axis" style={{position: "absolute", inset: "0px", display: "block"}}>
+                          <div className="flot-tick-label tickLabel" style={{position: "absolute", maxWidth: "52px", top: "239px", left: "34px", textAlign: "center"}}>Dec 08</div>
+                          <div className="flot-tick-label tickLabel" style={{position: "absolute", maxWidth: "52px", top: "239px", left: "261px", textAlign: "center"}}>Jan 01</div>
+                          <div className="flot-tick-label tickLabel" style={{position: "absolute", maxWidth: "52px", top: "239px", left: "109px", textAlign: "center"}}>Dec 16</div>
+                          <div className="flot-tick-label tickLabel" style={{position: "absolute", maxWidth: "52px", top: "239px", left: "184px", textAlign: "center"}}>Dec 24</div>
+                        </div>
+                        <div className="flot-y-axis flot-y1-axis yAxis y1Axis" style={{position: "absolute", inset: "0px", display: "block"}}>
+                          <div className="flot-tick-label tickLabel" style={{position: "absolute", top: "205px", left: "11px", textAlign: "right"}}>0</div>
+                          <div className="flot-tick-label tickLabel" style={{position: "absolute", top: "151px", left: "6px", textAlign: "right"}}>50</div>
+                          <div className="flot-tick-label tickLabel" style={{position: "absolute", top: "97px", left: "0px", textAlign: "right"}}>100</div>
+                          <div className="flot-tick-label tickLabel" style={{position: "absolute", top: "43px", left: "0px", textAlign: "right"}}>150</div>
+                        </div>
+                      </div>
+                      <canvas className="flot-overlay" width="472" height="375" style={{direction: "ltr", position: "absolute", left: "0px", top: "0px", width: "315px", height: "250px"}}></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
