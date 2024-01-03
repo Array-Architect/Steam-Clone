@@ -21,8 +21,8 @@ function App() {
           <About />
         </div>
       </div>
-      <div className="miniprofile_hover"></div>
-      <div className="FullModalOverlay"></div>
+      <div className="miniprofile_hover" style={{ display: "none" }}></div>
+      <div className="FullModalOverlay" style={{ display: "none" }}></div>
       <div id="review_histogram_tooltip"></div>
     </>
   );
