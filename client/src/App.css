@@ -209,8 +209,10 @@ body.v6 > .perf_timing_area .perf_timing_link {
 }
 
 body.v6 h2 {
-	font-family: "Motiva Sans", Sans-serif;
-	font-size: 14px;
+			font-family: "Motiva Sans", Sans-serif;
+		font-weight: 300; /* light */
+
+			font-size: 14px;
 	text-transform: uppercase;
 	color: #fff;
 	margin: 0 0 10px;
@@ -274,8 +276,14 @@ body.v6 h2.pageheader {
 	margin-top: -4px;
 }
 
+body.v6 h3 {
+	color: #ffffff;
+	font-size: 22px;
+			font-family: "Motiva Sans", Sans-serif;
+		font-weight: normal; /* normal */
 
-
+			font-weight: normal;
+}
 
 body.v6 .page_content {
 	width: 940px;
