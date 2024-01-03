@@ -23,6 +23,7 @@ function App() {
       </div>
       <div className="miniprofile_hover" style={{ display: "none" }}></div>
       <div className="FullModalOverlay" style={{ display: "none" }}></div>
+    </>
   );
 }
 
