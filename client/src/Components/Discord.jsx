@@ -3,7 +3,7 @@ const Discord = () => {
     <div className="game_page_autocollapse_ctn">
       <div className="game_page_autocollapse" style={{ maxHeight: "none" }}>
         <div className="game_area_description">
-          <h2>Join our Discord</h2>
+          <h2 className="underline">Join our Discord</h2>
           <p>
             <a
               href="https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fdiscord.gg%2Fvalheim"

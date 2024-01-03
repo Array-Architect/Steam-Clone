@@ -8,7 +8,7 @@ const AboutGame = () => {
         style={{ maxHeight: "none" }}
       >
         <div id="game_area_description" className="game_area_description">
-          <h2>About This Game</h2>
+          <h2 className="underline">About This Game</h2>
           <p>
             <strong>Valheim </strong>is a brutal exploration and survival game
             for 1-10 players set in a procedurally-generated world inspired by
@@ -19,7 +19,9 @@ const AboutGame = () => {
             src="https://cdn.akamai.steamstatic.com/steam/apps/892970/extras/VALHEIM_EXPLORE.gif?t=1701931405"
             alt="Valheim Explore"
           />
-          <h3 style={{ fontSize: "14px", color: "#acb2b8"  }}>EXPLORE THE TENTH WORLD</h3>
+          <h3 style={{ fontSize: "14px", color: "#acb2b8" }}>
+            EXPLORE THE TENTH WORLD
+          </h3>
           <p>
             Explore a world shrouded in mystery. Discover distinct environments
             with unique enemies to battle, resources to gather and secrets to
@@ -30,7 +32,9 @@ const AboutGame = () => {
             src="https://cdn.akamai.steamstatic.com/steam/apps/892970/extras/VALHEIM_BUILD.gif?t=1701931405"
             alt="Valheim Build"
           />
-          <h3 style={{ fontSize: "14px", color: "#acb2b8"  }}>BUILD MIGHTY HALLS</h3>
+          <h3 style={{ fontSize: "14px", color: "#acb2b8" }}>
+            BUILD MIGHTY HALLS
+          </h3>
           <p>
             Raise viking longhouses and build bases that offer reprieve from the
             dangers ahead. Customise buildings, both inside and out, with a
@@ -41,7 +45,9 @@ const AboutGame = () => {
             src="https://cdn.akamai.steamstatic.com/steam/apps/892970/extras/VALHEIM_CRAFT_SURVIVE.gif?t=1701931405"
             alt="Valheim Craft and Survive"
           />
-          <h3 style={{ fontSize: "14px", color: "#acb2b8"  }}>GATHER, CRAFT AND SURVIVE</h3>
+          <h3 style={{ fontSize: "14px", color: "#acb2b8" }}>
+            GATHER, CRAFT AND SURVIVE
+          </h3>
           <p>
             Struggle to survive as you gather materials and craft weapons,
             armor, tools, ships, and defenses. Decorate your hearths and sharpen
@@ -49,7 +55,7 @@ const AboutGame = () => {
             potions, and progress as you defeat more difficult bosses and
             discover new recipes and blueprints.
           </p>
-          <h3 style={{ fontSize: "14px", color: "#acb2b8"  }}>KEY FEATURES:</h3>
+          <h3 style={{ fontSize: "14px", color: "#acb2b8" }}>KEY FEATURES:</h3>
           <ul className="bb_ul">
             <li>
               Massive procedurally-generated world where every biome is
@@ -62,7 +68,7 @@ const AboutGame = () => {
               scale in difficulty.
             </li>
             <li>
-              Staminabased combat that rewards preparation and skill. Utilize
+              Stamina based combat that rewards preparation and skill. Utilize
               weapon types with unique attacks, different blocking styles,
               ranged combat, dodges and parries to fight your enemies.
             </li>
