@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import Review from "./Components/Review";
 import Header from "./Components/Header";
 import About from "./Components/About";
 import Summary from "./Summary.jsx";
@@ -20,7 +21,8 @@ function App() {
         <div className="responsive_page_content">
           <Header />
           <Summary />
-          <About />
+          <About /> 
+          <Review />
         </div>
       </div>
       <div className="miniprofile_hover" style={{ display: "none" }}></div>
