@@ -16,14 +16,7 @@ function App() {
         <div className="responsive_page_content_overlay"></div>
         <div className="responsive_fixonscroll_ctn nonresponsive_hidden"></div>
         <div className="responsive_page_content">
-          <div
-            role="main"
-            className="responsive_page_template_content"
-            id="responsive_page_template_content"
-            data-panel='{"autoFocus":true}'
-          >
-            <About />
-          </div>
+          <About />
         </div>
       </div>
       <div className="miniprofile_hover"></div>
