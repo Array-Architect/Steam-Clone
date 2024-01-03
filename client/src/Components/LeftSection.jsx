@@ -1,4 +1,5 @@
 import AboutGame from "./AboutGame";
+import Discord from "./Discord";
 
 const LeftSection = () => {
   return (
@@ -12,6 +13,7 @@ const LeftSection = () => {
           className="leftcol game_description_column"
           data-panel='{"flow-children":"column"}'
         >
+          <Discord />
           <AboutGame />
         </div>
       </div>

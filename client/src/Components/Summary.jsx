@@ -1,5 +1,3 @@
-import './App.css'
-
 export default function Summary(){
     return(
         <>

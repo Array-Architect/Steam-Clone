@@ -3,7 +3,7 @@ import "./App.css";
 import Review from "./Components/Review";
 import Header from "./Components/Header";
 import About from "./Components/About";
-import Summary from ".Summary,jsx";
+import Summary from "./Components/Summary.jsx";
 
 function App() {
   return (
@@ -25,8 +25,8 @@ function App() {
           <Review />
         </div>
       </div>
-      <div className="miniprofile_hover" style={{display: "none"}}></div>
-      <div className="FullModalOverlay" style={{display: "none"}}></div>
+      <div className="miniprofile_hover" style={{ display: "none" }}></div>
+      <div className="FullModalOverlay" style={{ display: "none" }}></div>
       <div id="review_histogram_tooltip"></div>
     </>
   );
