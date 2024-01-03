@@ -52,6 +52,105 @@ body.v6 > div#global_header {
 	border-bottom-color: #171a21;
 }
 
+div#global_header {
+	background: #171d25;
+	background-position: center top;
+	min-width: 940px;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+div#global_header .content {
+	background: #171d25;
+	position: relative;
+	width: 940px;
+	height: 104px;
+	margin: 0px auto;
+	z-index: 402;
+}
+
+div#global_header div.logo {
+	float: left;
+	padding-top: 30px;
+	margin-right: 40px;
+	width: 176px;
+	height: 44px;
+}
+
+#global_header .supernav_container {
+	position: absolute;
+	left: 200px;
+}
+
+div#global_header .menuitem.supernav_active {
+	color: #1a9fff;
+}
+
+div#global_header .menuitem {
+	display: block;
+	position: relative;
+	padding-top: 45px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	line-height: 16px;
+	float: left;
+	font-size: 16px;
+	font-family: "Motiva Sans", "Twemoji", "Noto Sans", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+div#global_actions {
+	position: absolute;
+	right: 0px;
+	top: 6px;
+	height: 21px;
+	line-height: 21px;
+	color: #b8b6b4;
+	font-size: 11px;
+	z-index: 401;
+}
+
+div#global_actions #global_action_menu {
+	line-height: 24px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+#global_action_menu > * {
+	vertical-align: top;
+}
+
+.header_installsteam_btn {
+	display: inline-block;
+	position: relative;
+	height: 21px;
+	line-height: 24px;
+	margin-right: 3px;
+}
+
+.header_installsteam_btn_green .header_installsteam_btn_content {
+	background-color: #5c7e10;
+}
+
+.header_installsteam_btn_content {
+	display: inline-block;
+	padding-left: 35px;
+	padding-right: 9px;
+	background-position: 10px 5px;
+	background-image: url(https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1);
+	background-repeat: no-repeat;
+	text-decoration: none;
+	color: #e5e4dc;
+	font-weight: normal;
+}
+
+
+
 .v6_bg {
 	/* background: url( '/public/images/v6/tag_browse_header_bg.png' ) no-repeat center top; */
 }
