@@ -1,9 +1,9 @@
 export default function Summary(){
     return(
         <>
-        {/* Title Area */}
+{/* Title Area */}
                     <div className='page_title_area game_title_area page_content'>
-        {/* BreadCrumbs */}
+{/* BreadCrumbs */}
                 <div className='breadcrumbs'>
                     <div className='blockbg'>
                         <a href="https://store.steampowered.com/search/?term=&snr=1_5_9__205">All Games</a>
@@ -45,21 +45,47 @@ export default function Summary(){
                             <div className="game_description_snippet">
                                 {'A brutal exploration and survival game for 1-10 players, set in a procedurally-generated purgatory inspired by viking culture. Battle, build, and conquer your way to a saga worthy of Odin\’s patronage!'}
                             </div>
-{/* summary hyperlinks */}
                             <div className="glance_ctn_responsive_left">
 {/* review summary */}
                                 <div className="user_reviews" id="userReviews">
 {/* recent review summary */}
-                                    <div className="user_reviews_summary_row" style={{cursor:'pointer'}}>
+                                    <div className="user_reviews_summary_row" style={{cursor:'pointer'}} data-tool>
                                         <div className="div.subtitle.column">Recent Reviews:</div>
                                         <div className="div.summary.column">
                                             <span className="game_review_summary positive">Very Positive</span>
-                                            <span className="responsive_hidden">4505</span>
                                             <span className="nonresponsive_hidden responsive_reviewdesc">{'- 91% of the 4,505 user reviews in the last 30 days are positive.'}</span>
                                         </div>
                                     </div>
+{/* all reviews summary */}
+                                    <div className="user_reviews_summary_row" style={{cursor: 'pointer'}}>
+                                        <div className="subtitle column all">All Reviews:</div>
+                                        <div className="summary column">
+                                            <span className="game_review_summary positive">Overwhelmingly Positive</span>
+                                            <span className="nonresponsive_hidden responsive_reviewdesc">{'- 95% of the 371,189 user reviews for this game are positive.'}</span>
+                                        </div>
+                                    </div>
+                                </div>
+{/* release date */}
+                                <div className="release_date">
+                                    <div className="subtitle column">Release Date:</div>
+                                    <div className="date">Feb 2, 2021</div>
+                                </div>
+{/* dev name */}
+                                <div className="dev_row">
+                                    <div className="subtitle column">Developer:</div>
+                                    <div className="summary column" id="developers_list">
+                                        <a href="https://store.steampowered.com/developer/coffeestain?snr=1_5_9__2000">Iron Gate AB</a>
+                                    </div>
+                                </div>
+{/* publisher name */}
+                                <div className="dev_row">
+                                    <div className="subtitle column">Publisher:</div>
+                                    <div className="summary column">
+                                        <a href="https://store.steampowered.com/publisher/coffeestain?snr=1_5_9__2000">Coffee Stain Publishing</a>
+                                    </div>
                                 </div>
                             </div>
+                            <div className="glanceCtnResponsiveRight"></div>
                         </div>
                     </div>
                 </div>

@@ -6738,4 +6738,31 @@ div.early_access_announcements {
 }
 
 
+.apphub_HomeHeaderContent .apphub_AppName {
+	font-family: "Motiva Sans", Sans-serif;
+font-weight: normal; /* normal */
 
+	padding-left: 0px;
+}
+
+
+.apphub_AppName
+{
+	color: white;
+    font-family: Motiva Sans, Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	line-height: 32px;
+	text-overflow: ellipsis;
+}
+
+@media screen and ( max-width: 450px ) {
+	.apphub_AppName {
+		font-size: 20px;
+	}
+}
+
+.apphub_OtherSiteInfo
+{
+	position: relative;
+	float: right;
+}
