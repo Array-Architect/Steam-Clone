@@ -6650,3 +6650,96 @@ margin: 8px;
     font-family: "Motiva Sans", Sans-serif;
     font-weight: bold;
 }
+
+h2.underline {
+    position: relative;
+    color: #FFFFFF;
+    padding-bottom: 2px; 
+}
+
+h2.underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #54a5d4, rgba(84,165,212,0));
+}
+
+div.early_access_banner {
+	height: 49px;
+	position: relative;
+	background: rgb(68,75,84);
+	background: -moz-linear-gradient(-60deg,  rgba(68,75,84,1) 0%, rgba(91,98,108,1) 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(68,75,84,1)), color-stop(100%,rgba(91,98,108,1)));
+	background: -webkit-linear-gradient(-60deg,  rgba(68,75,84,1) 0%,rgba(91,98,108,1) 100%);
+	background: -o-linear-gradient(-60deg,  rgba(68,75,84,1) 0%,rgba(91,98,108,1) 100%);
+	background: -ms-linear-gradient(-60deg,  rgba(68,75,84,1) 0%,rgba(91,98,108,1) 100%);
+	background: linear-gradient(135deg,  rgba(68,75,84,1) 0%,rgba(91,98,108,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444b54', endColorstr='#5b626c',GradientType=1 );
+	padding: 12px 15px 0 55px;
+	margin: 15px 0 40px 0;
+	border-radius: 2px;
+}
+
+div.early_access_banner > .img {
+    position: absolute;
+    background-image: url(https://store.akamai.steamstatic.com/public/images/v5/earlyaccess_bug.png);
+    width: 63px;
+    height: 61px;
+    left: 0px;
+    top: 0px;
+}
+
+div.early_access_banner > .btn_medium {
+    float: right;
+    display: block;
+    background-color: #174661;
+    border: 2px solid #000000;
+}
+
+.btn_medium > span, input.btn_medium {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+}
+.btn_border_2px {
+    border-radius: 3px;
+    border: 2px solid #172030;
+}
+.btnv6_blue_hoverfade > span {
+    border-radius: 2px;
+    display: block;
+    background: transparent;
+}
+
+.btnv6_blue_hoverfade {
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #67c1f5 !important;
+    background: rgba( 103, 193, 245, 0.2 );
+}
+
+div.early_access_banner p {
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 350px;
+}
+
+div.early_access_announcements {
+    margin: 30px 0 0px 0;
+}
+
+
+
