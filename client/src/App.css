@@ -52,6 +52,150 @@ body.v6 > div#global_header {
 	border-bottom-color: #171a21;
 }
 
+body.v6 .pulldown {
+	margin-right: 5px;
+}
+
+.pulldown {
+	padding-left: 5px;
+	padding-right: 18px;
+	background-image: url(https://store.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+div#global_header {
+	background: #171d25;
+	background-position: center top;
+	min-width: 940px;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+div#global_header .content {
+	background: #171d25;
+	position: relative;
+	width: 940px;
+	height: 104px;
+	margin: 0px auto;
+	z-index: 402;
+}
+
+div#global_header div.logo {
+	float: left;
+	padding-top: 30px;
+	margin-right: 40px;
+	width: 176px;
+	height: 44px;
+}
+
+#global_header .supernav_container {
+	position: absolute;
+	left: 200px;
+}
+
+div#global_header .menuitem.supernav_active {
+	color: #1a9fff;
+}
+
+div#global_header .menuitem {
+	display: block;
+	position: relative;
+	padding-top: 45px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	line-height: 16px;
+	float: left;
+	font-size: 16px;
+	font-family: "Motiva Sans", "Twemoji", "Noto Sans", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+div#global_actions {
+	position: absolute;
+	right: 0px;
+	top: 6px;
+	height: 21px;
+	line-height: 21px;
+	color: #b8b6b4;
+	font-size: 11px;
+	z-index: 401;
+}
+
+div#global_actions #global_action_menu {
+	line-height: 24px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+div#global_actions a.global_action_link {
+	color: #b8b6b4;
+	padding: 0 4px;
+}
+
+#global_action_menu > * {
+	vertical-align: top;
+}
+
+.header_installsteam_btn {
+	display: inline-block;
+	position: relative;
+	height: 21px;
+	line-height: 24px;
+	margin-right: 3px;
+}
+
+.header_installsteam_btn_green .header_installsteam_btn_content {
+	background-color: #5c7e10;
+}
+
+.header_installsteam_btn_content {
+	display: inline-block;
+	padding-left: 35px;
+	padding-right: 9px;
+	background-position: 10px 5px;
+	background-image: url(https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1);
+	background-repeat: no-repeat;
+	text-decoration: none;
+	color: #e5e4dc;
+	font-weight: normal;
+}
+
+.popup_block_new {
+	z-index: 200;
+	position: absolute;
+	box-shadow: 0 0 12px #000000;
+}
+
+.popup_block_new .popup_body {
+	border: 1px solid #3D4450;
+	position: relative;
+	background-color: #3D4450;
+}
+
+.popup_menu a.popup_menu_item {
+	text-decoration: none;
+	display: block;
+}
+
+.popup_menu .popup_menu_item {
+	padding: 5px 12 px;
+	color: #dcdedf;
+	text-transform: none;
+	font-family: Motiva Sans, Arial, Helvectica, Verdana, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: normal;
+	text-align: left;
+	cursor: pointer;
+}
+
 .v6_bg {
 	/* background: url( '/public/images/v6/tag_browse_header_bg.png' ) no-repeat center top; */
 }
@@ -67,6 +211,10 @@ body.blue .v6_bg {
 
 body.v6 div#store_header {
 	background-color: transparent;
+}
+
+body.v6 .popup_block_new .popup_body.popup_menu {
+	padding: 0px 0px;
 }
 
 .page_background {
@@ -6262,7 +6410,7 @@ background: -webkit-linear-gradient( 297deg, rgba( 255, 255, 255, 0.2) 5%,rgba( 
 }
 
 .range_input {
-	-webkit-appearance: none;
+	webkit-appearance: none;
 	width: 100%;
 	margin: 4.45px 0;
 	background-color: rgba(0, 0, 0, 0);
@@ -6498,3 +6646,96 @@ margin: 8px;
     font-family: "Motiva Sans", Sans-serif;
     font-weight: bold;
 }
+
+h2.underline {
+    position: relative;
+    color: #FFFFFF;
+    padding-bottom: 2px; 
+}
+
+h2.underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #54a5d4, rgba(84,165,212,0));
+}
+
+div.early_access_banner {
+	height: 49px;
+	position: relative;
+	background: rgb(68,75,84);
+	background: -moz-linear-gradient(-60deg,  rgba(68,75,84,1) 0%, rgba(91,98,108,1) 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(68,75,84,1)), color-stop(100%,rgba(91,98,108,1)));
+	background: -webkit-linear-gradient(-60deg,  rgba(68,75,84,1) 0%,rgba(91,98,108,1) 100%);
+	background: -o-linear-gradient(-60deg,  rgba(68,75,84,1) 0%,rgba(91,98,108,1) 100%);
+	background: -ms-linear-gradient(-60deg,  rgba(68,75,84,1) 0%,rgba(91,98,108,1) 100%);
+	background: linear-gradient(135deg,  rgba(68,75,84,1) 0%,rgba(91,98,108,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444b54', endColorstr='#5b626c',GradientType=1 );
+	padding: 12px 15px 0 55px;
+	margin: 15px 0 40px 0;
+	border-radius: 2px;
+}
+
+div.early_access_banner > .img {
+    position: absolute;
+    background-image: url(https://store.akamai.steamstatic.com/public/images/v5/earlyaccess_bug.png);
+    width: 63px;
+    height: 61px;
+    left: 0px;
+    top: 0px;
+}
+
+div.early_access_banner > .btn_medium {
+    float: right;
+    display: block;
+    background-color: #174661;
+    border: 2px solid #000000;
+}
+
+.btn_medium > span, input.btn_medium {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+}
+.btn_border_2px {
+    border-radius: 3px;
+    border: 2px solid #172030;
+}
+.btnv6_blue_hoverfade > span {
+    border-radius: 2px;
+    display: block;
+    background: transparent;
+}
+
+.btnv6_blue_hoverfade {
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #67c1f5 !important;
+    background: rgba( 103, 193, 245, 0.2 );
+}
+
+div.early_access_banner p {
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 350px;
+}
+
+div.early_access_announcements {
+    margin: 30px 0 0px 0;
+}
+
+
+

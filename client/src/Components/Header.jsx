@@ -90,67 +90,38 @@ function Header({}) {
                             <a className="submenuitem" href="https://steamcommunity.com/market/">Market</a>
                             <a className="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">Broadcasts</a>
                         </div> */}
-          </div>
-        </div>
-        {<></>}
-        <div id="global_actions">
-          <div
-            role="navigation"
-            id="global_action_menu"
-            aria-label="Account Menu"
-          >
-            <a
-              className="header_installsteam_btn header_installsteam_btn_green"
-              href="https://store.steampowered.com/about/?snr=1_5_9__global-header"
-            >
-              <div className="header_installsteam_btn_content">
-                {" "}
-                Install Steam{" "}
-              </div>
-            </a>
-            <a
-              className="global_action_link"
-              href="https://store.steampowered.com/login/?redir=app%2F892970%2FValheim%2F&redir_ssl=1&snr=1_5_9__global-header"
-            >
-              login
-            </a>
-            <span
-              className="pulldown global_action_link"
-              id="language_pulldown"
-              onClick={() => ShowMenu(this, "language_dropdown", "right")}
-            >
-              language
-            </span>
-            <div
-              className="popup_block_new"
-              id="language_dropdown"
-              style={{ display: "none" }}
-            >
-              <div className="popup_body popup_menu">
-                <a
-                  className="popup_menu_item tight"
-                  href="?l=schinese"
-                  onClick={(e) => {
-                    ChangeLanguage("schinese");
-                    e.preventDefault;
-                  }}
-                >
-                  简体中文 (Simplified Chinese)
-                </a>
-                {/* TODO: insert the remaining languages here */}
-                <a
-                  className="popup_menu_item tight"
-                  href="https://www.valvesoftware.com/en/contact?contact-person=Translation%20Team%20Feedback"
-                  target="_blank"
-                >
-                  Report a translation problem
-                </a>
-              </div>
+                    </div>
+                </div>
+                {<></>}
+                <div id="global_actions">
+                    <div role="navigation" id="global_action_menu" aria-label="Account Menu">
+                        <a className="header_installsteam_btn header_installsteam_btn_green" href="https://store.steampowered.com/about/?snr=1_5_9__global-header">
+                            <div className="header_installsteam_btn_content"> Install Steam </div>
+                        </a>
+                        <a className="global_action_link" href="https://store.steampowered.com/login/?redir=app%2F892970%2FValheim%2F&redir_ssl=1&snr=1_5_9__global-header">login</a>
+                        &nbsp;|&nbsp;
+                        <span className="pulldown global_action_link" id="language_pulldown" onClick={() => ShowMenu( this, 'language_dropdown', 'right')}>language</span>
+                        <div className="popup_block_new" id="language_dropdown" style={{visibility: "visible", top: "19px", left: "-71.2969px", display: "block", opacity: 1}}>
+                            <div className="popup_body popup_menu">
+                               {/*  <a className="popup_menu_item tight" href="?l=schinese" onClick={(e) => {ChangeLanguage( 'schinese' ); e.preventDefault}}>简体中文 (Simplified Chinese)</a>
+                                <a className="popup_menu_item tight" href="?l=tchinese" onClick={(e) => {ChangeLanguage( 'tchinese' ); e.preventDefault}}>繁體中文 (Traditional Chinese)</a>
+                                <a class="popup_menu_item tight" href="?l=japanese" onClick={(e) => {ChangeLanguage( 'japanese' ); e.preventDefault}}>日本語 (Japanese)</a>
+                                <a class="popup_menu_item tight" href="?l=koreana" onClick={(e) => {ChangeLanguage( 'koreana' ); e.preventDefault}}>한국어 (Korean)</a>
+                                <a class="popup_menu_item tight" href="?l=thai" onClick={(e) => {ChangeLanguage( 'thai' ); e.preventDefault}}>ไทย (Thai)</a>
+                                <a class="popup_menu_item tight" href="?l=bulgarian" onClick={(e) => {ChangeLanguage( 'bulgarian' ); e.preventDefault}}>Български (Bulgarian)</a>
+                                <a class="popup_menu_item tight" href="?l=czech" onClick={(e) => {ChangeLanguage( 'czech' ); e.preventDefault}}>Čeština (Czech)</a>
+                                <a class="popup_menu_item tight" href="?l=danish" onClick={(e) => {ChangeLanguage( 'danish' ); e.preventDefault}}>Dansk (Danish)</a>
+                                <a class="popup_menu_item tight" href="?l=german" onClick={(e) => {ChangeLanguage( 'german' ); e.preventDefault}}>Deutsch (German)</a>
+                                <a class="popup_menu_item tight" href="?l=spanish" onClick={(e) => {ChangeLanguage( 'spanish' ); e.preventDefault}}>Español - España (Spanish - Spain)</a>
+                                <a class="popup_menu_item tight" href="?l=latam" onClick={(e) => {ChangeLanguage( 'latam' ); e.preventDefault}}>Español - Latinoamérica (Spanish - Latin America)</a>
+                                TODO: insert the remaining languages here
+                                <a className="popup_menu_item tight" href="https://www.valvesoftware.com/en/contact?contact-person=Translation%20Team%20Feedback" target="_blank">Report a translation problem</a> */}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
   );
 }
 

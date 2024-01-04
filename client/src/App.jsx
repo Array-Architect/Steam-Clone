@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./Components/Header";
 import MainPage from "./Components/MainPage";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <div className="responsive_page_content">
           <Header />
           <MainPage />
+          <Footer />
         </div>
       </div>
       <div className="miniprofile_hover" style={{ display: "none" }}></div>
