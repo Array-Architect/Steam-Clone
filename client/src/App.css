@@ -6414,7 +6414,7 @@ background: -webkit-linear-gradient( 297deg, rgba( 255, 255, 255, 0.2) 5%,rgba( 
 }
 
 .range_input {
-	-webkit-appearance: none;
+	webkit-appearance: none;
 	width: 100%;
 	margin: 4.45px 0;
 	background-color: rgba(0, 0, 0, 0);
