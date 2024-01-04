@@ -1,6 +1,8 @@
 import LeftSection from "./LeftSection";
+import Review from "./Review";
+import Summary from "./Summary";
 
-const About = () => {
+const MainPage = () => {
   return (
     <div
       role="main"
@@ -17,11 +19,18 @@ const About = () => {
         data-miniprofile-appid="892970"
       >
         <div id="tabletGrid" className="tablet_grid">
-          <LeftSection />
+          <div
+            className="page_content_ctn"
+            itemScope
+            itemType="http://schema.org/Product"
+          >
+            <Summary />
+            <LeftSection />
+            <Review />
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
-export default About;
+export default MainPage;
