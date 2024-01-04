@@ -1,9 +1,9 @@
 export default function Summary(){
     return(
         <>
-{/* Title Area */}
-            <div className='page_title_area game_title_area page_content'>
-{/* BreadCrumbs */}
+        {/* Title Area */}
+                    <div className='page_title_area game_title_area page_content'>
+        {/* BreadCrumbs */}
                 <div className='breadcrumbs'>
                     <div className='blockbg'>
                         <a href="https://store.steampowered.com/search/?term=&snr=1_5_9__205">All Games</a>
