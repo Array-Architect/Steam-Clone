@@ -1,3 +1,4 @@
+import SecondHeader from "./SecondHeader";
 import LeftSection from "./LeftSection";
 import Review from "./Review";
 import Summary from "./Summary";
@@ -18,6 +19,7 @@ const MainPage = () => {
         }}
         data-miniprofile-appid="892970"
       >
+        <SecondHeader />
         <div id="tabletGrid" className="tablet_grid">
           <div
             className="page_content_ctn"
