@@ -3,6 +3,7 @@ import Discord from "./Discord";
 import Bug from "./Bug";
 import Event from "./Event";
 import Purchase from "./Purchase";
+import EarlyAccess from "./EarlyAccess";
 
 const LeftSection = () => {
   return (
@@ -11,6 +12,7 @@ const LeftSection = () => {
         className="leftcol game_description_column"
         data-panel='{"flow-children":"column"}'
       >
+        <EarlyAccess />
         <Purchase />
         <Event />
         <Bug />

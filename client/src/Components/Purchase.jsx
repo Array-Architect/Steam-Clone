@@ -107,7 +107,7 @@ const Purchase = () => {
         </div>
       </div>
       <div id="gameAreaDLCSection" className="game_area_dlc_section">
-        <h2 className="gradientbg">
+        <h2 className="gradientbg underline">
           Content For This Game
           <span className="note">
             <a href="https://store.steampowered.com/dlc/892970/Valheim/?snr=1_5_9__1061">
