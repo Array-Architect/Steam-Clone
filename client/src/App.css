@@ -6721,6 +6721,15 @@ div.early_access_banner > .btn_medium {
     background: rgba( 103, 193, 245, 0.2 );
 }
 
+.btnv6_blue_hoverfade:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover {
+	text-decoration: none !important;
+	color: #fff !important;
+
+				background: #417a9b;
+			background: -webkit-linear-gradient( 150deg, #417a9b 5%,#67c1f5 95%);
+	background: linear-gradient( -60deg, #417a9b 5%,#67c1f5 95%);
+	}
+
 div.early_access_banner p {
     display: block;
     color: #fff;
@@ -6765,4 +6774,170 @@ font-weight: normal; /* normal */
 {
 	position: relative;
 	float: right;
+}
+
+#game_highlights {
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=1 ); /* IE6-9 */
+
+	padding-bottom: 12px;
+}
+.queue_ctn {
+    width: 940px;
+    background: rgba( 0, 0, 0, 0.2 );
+
+	margin: 0px auto;
+	margin-bottom: 16px;
+}
+
+#game_highlights .rightcol {
+    width: 324px;
+    margin-left: 0px;
+}
+
+img.game_header_image_full {
+	width: 324px;
+	height: 151px;
+}
+
+.game_header_image_ctn {
+	margin-bottom: 7px;
+}
+
+.game_description_snippet {
+	max-height: 111px;
+	overflow: hidden;
+    font-size: 13px;
+    line-height: 18px;
+    padding-right: 16px;
+        display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.glance_ctn .user_reviews {
+	font-size: 12px;
+	color: #556772;
+	margin-top: 10px;
+}
+
+.glance_ctn .user_reviews_summary_row,
+.glance_ctn .dev_row,
+.glance_ctn .release_date {
+	display: flex;
+	line-height: 16px;
+
+}
+
+.glance_ctn .user_reviews .subtitle,
+.glance_ctn .subtitle {
+	text-transform: uppercase;
+	font-size: 10px;
+	padding-right: 10px;
+	min-width: 94px;
+}
+
+.glance_ctn .release_date  {
+	padding-top: 9px;
+	padding-bottom: 13px;
+}
+
+.glance_ctn .dev_row .subtitle,
+.glance_ctn .release_date .subtitle,
+.glance_ctn .user_reviews .title {
+	color: #556772;
+}
+
+.glance_ctn .release_date .date,
+.glance_ctn .responsive_reviewdesc {
+	color: #8f98a0;
+}
+
+#game_highlights a {
+	color: #67c1f5;
+}
+
+#game_highlights a:hover {
+	color: #ffffff;
+}
+
+.glance_tags_ctn {
+	margin: 10px 0px 0px 0px;
+	font-size: 11px;
+}
+
+.glance_tags_label {
+	line-height: 19px;
+    font-size: 12px;
+    color: #556772;
+}
+
+.glance_tags {
+	display:flex;
+	height: 22px;
+}
+
+.nonresponsive_hidden {
+	display: none;
+}
+
+.apphub_HeaderStandardTop
+{
+	position: relative;
+	margin: 0px auto;
+	text-align: left;
+	padding-top: 7px;
+	min-height: 46px;
+}
+
+/* Luke's custom classes */
+.real_tags {
+	flex-flow: row wrap;
+	overflow: hidden;
+	width:282px;
+}
+
+.app_tag2 {
+	display: inline-block;
+	line-height: 19px;
+	padding: 0 7px;
+	color: #67c1f5;
+	background-color: rgba( 103, 193, 245, 0.2 );
+	box-shadow: none;
+	margin-right: 2px;
+	border-radius: 2px;
+	cursor: pointer;
+	margin-bottom: 3px;
+	max-width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.app_tag2:hover {
+	text-decoration: none;
+	color: #ffffff;
+    background: #67c1f5; /* Old browsers */
+    background: -moz-linear-gradient(-60deg,  #67c1f5 0%, #417a9b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#67c1f5), color-stop(100%,#417a9b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-60deg,  #67c1f5 0%,#417a9b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-60deg,  #67c1f5 0%,#417a9b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-60deg,  #67c1f5 0%,#417a9b 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #67c1f5 0%,#417a9b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c1f5', endColorstr='#417a9b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.user_reviews_summary_row:hover .nonresponsive_hidden {
+	display:flex;
+	position: absolute;
+	z-index: 1500;
+	opacity: 1;
+	margin-top: -60px;
+	margin-left: -103px;
+	pointer-events: auto;
 }
