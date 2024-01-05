@@ -2,7 +2,7 @@ import AboutGame from "./AboutGame";
 import Discord from "./Discord";
 import Bug from "./Bug";
 import Event from "./Event";
-import Purchase from "./Purchase";
+import Purchase from "../Purchase";
 import EarlyAccess from "./EarlyAccess";
 
 const LeftSection = () => {
