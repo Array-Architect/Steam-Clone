@@ -5160,7 +5160,7 @@ a#store_search_link img {
 	position: absolute;
 	top: 1px;
 	right: -1px;
-	background-image: url('/public/images/v6/search_icon_btn.png');
+	background-image: url('https://store.akamai.steamstatic.com/public/images/v6/search_icon_btn.png');
 }
 a#store_search_link img:hover {
 	background-image: url('/public/images/v6/search_icon_btn_over.png');
@@ -7374,6 +7374,7 @@ img.game_header_image_full {
     background: -ms-linear-gradient(-60deg,  #67c1f5 0%,#417a9b 100%); /* IE10+ */
     background: linear-gradient(135deg,  #67c1f5 0%,#417a9b 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c1f5', endColorstr='#417a9b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 
 .eventrow_EventSummaryContainer_3PdWg {
     position: absolute;
