@@ -7339,7 +7339,7 @@ img.game_header_image_full {
 	min-height: 46px;
 }
 
-/* Luke's custom classes */
+/* Luke's custom classes start */
 .real_tags {
 	flex-flow: row wrap;
 	overflow: hidden;
@@ -7374,6 +7374,30 @@ img.game_header_image_full {
     background: -ms-linear-gradient(-60deg,  #67c1f5 0%,#417a9b 100%); /* IE10+ */
     background: linear-gradient(135deg,  #67c1f5 0%,#417a9b 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c1f5', endColorstr='#417a9b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.user_reviews_summary_row:hover .nonresponsive_hidden {
+	display:flex;
+	position: absolute;
+	z-index: 1500;
+	opacity: 1;
+	margin-top: -60px;
+	margin-left: -103px;
+	pointer-events: auto;
+}
+
+.testModal {
+	display:flex;
+	position: fixed;
+	z-index: 1000;
+	opacity: 1;
+	top: 60px;
+	left: 103px;
+	width:500px;
+	height: 500px;
+	background-color: black;
+}
+/* Luke's custom classes end */
 
 .eventrow_EventSummaryContainer_3PdWg {
     position: absolute;
@@ -7438,12 +7462,3 @@ img.game_header_image_full {
 
 }
 
-.user_reviews_summary_row:hover .nonresponsive_hidden {
-	display:flex;
-	position: absolute;
-	z-index: 1500;
-	opacity: 1;
-	margin-top: -60px;
-	margin-left: -103px;
-	pointer-events: auto;
-}

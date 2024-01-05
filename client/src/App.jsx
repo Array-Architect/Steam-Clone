@@ -3,15 +3,13 @@ import "./App.css";
 import Header from "./Components/Header";
 import MainPage from "./Components/MainPage";
 import Footer from "./Components/Footer";
-import { ContextProvider } from "./Context.jsx";
 import TagsModal from "./Components/TagsModal.jsx";
+import { setContexts } from "./Context.jsx";
 
 function App() {
-  // const {displayTags} = setContexts()
-
+  const {displayTags} = setContexts()
   return (
     <>
-    <ContextProvider>
         <div className="responsive_page_frame with_header">
           <div
             role="navigation"
@@ -31,8 +29,7 @@ function App() {
         <div className="miniprofile_hover" style={{ display: "none" }}></div>
         <div className="FullModalOverlay" style={{ display: "none" }}></div>
         <div id="review_histogram_tooltip"></div>
-        {/* {displayTags&&<TagsModal/>} */}
-      </ContextProvider>
+        {displayTags&&<TagsModal/>}
     </>
   );
 }
