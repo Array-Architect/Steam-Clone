@@ -7716,7 +7716,6 @@ img.game_header_image_full {
     background: -ms-linear-gradient(-60deg,  #67c1f5 0%,#417a9b 100%); /* IE10+ */
     background: linear-gradient(135deg,  #67c1f5 0%,#417a9b 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c1f5', endColorstr='#417a9b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-<<<<<<< HEAD
 	}
 .eventrow_EventSummaryContainer_3PdWg {
     position: absolute;
@@ -7728,8 +7727,6 @@ img.game_header_image_full {
     pointer-events: none;
     z-index: 1;
     transition: background-color .24s ease-in-out;
-=======
->>>>>>> 508ac87740acce6b36c7099a7158d40f90afec7e
 }
 
 
