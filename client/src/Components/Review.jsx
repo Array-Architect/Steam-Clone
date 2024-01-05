@@ -19,6 +19,36 @@ const Review = () => {
               >
                 Customer reviews
               </h2>
+              <input
+                type="hidden"
+                id="review_appid"
+                value="892970">
+              </input>
+              <input
+                type="hidden"
+                id="review_default_day_range"
+                value="30">
+              </input>
+              <input
+                type="hidden"
+                id="review_start_date"
+                value="-1">
+              </input>
+              <input
+                type="hidden"
+                id="review_end_date"
+                value="-1">
+              </input>
+              <input
+                type="hidden"
+                id="review_summary_num_positive_reviews"
+                value="352889">
+              </input>
+              <input
+                type="hidden"
+                id="review_summary_num_reviews"
+                value="371250">
+              </input>
               <div
                 id="review_recent_events_container"
                 className="review_recent_events"

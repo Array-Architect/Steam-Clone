@@ -1,13 +1,18 @@
 const InfoContainer = () => {
 
+  const panelData = {
+    focusable: true,
+    clickOnActivate: true
+  }
+
   return (
     <div className="reviews_info_ctn">
 
     {/* onclick={ShowReviewSettingsModal()} this line of code should be added to the div below once the function has been declared*/}
-    <div id="reviews_active_filters" data-panel={{focusable: "true", clickOnActivate: "true"}} className="user_reviews_active_filters" >
+    <div id="reviews_active_filters" data-panel={JSON.stringify(panelData)} className="user_reviews_active_filters" >
 
-    <div id="reviews_filter_title" className="title" style={{display: "block"}}>Filters</div>
-      <div id="reviews_filter_title_responsive" style={{display: "none"}} className="title">
+    <div id="reviews_filter_title" className="title">Filters</div>
+      <div id="reviews_filter_title_responsive" style={{display:"none"}} className="title">
       <img src="https://store.cloudflare.steamstatic.com/public/images/bigpicture/icon_settings.png"></img>
       "Filters "
       </div>

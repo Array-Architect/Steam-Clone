@@ -1,13 +1,13 @@
 const Histogram = () => {
 
   return (
-    <div id="review_histograms_container" className="has_data">
+  <div id="review_histograms_container" className="has_data">
     <canvas id="review_graph_canvas" width="940" height="350"></canvas>
     <div id="review_histogram_rollup_section" className="review_histogram_section">
       <div className="user_reviews_summary_bar">
         <div className="summary_section">
           <div className="title">Overall Reviews:</div>
-          <span className="game_review_summary.positive" data-tooltip-html="95% of the 370,872 user reviews for this game are positive.">Overwhelmingly Positive</span>
+          <span className="game_review_summary positive" data-tooltip-html="95% of the 370,872 user reviews for this game are positive.">Overwhelmingly Positive</span>
           <span>(370,872 reviews)</span>
           <a className="tooltip" data-tooltip-text="This summary uses only reviews written by customers that purchased the game directly from Steam.">
             <img src="https://store.cloudflare.steamstatic.com/public/shared/images/ico/icon_questionmark.png"></img>
@@ -49,9 +49,10 @@ const Histogram = () => {
             <img src="https://store.cloudflare.steamstatic.com/public/shared/images/ico/icon_questionmark.png"></img>
           </a>
         </div>
-        <div className="review_histogram">
-          <div id="review_histogram_recent" style={{padding: "0px", position: "relative"}}>
-          <canvas className="flot-base" width="472" height="375" style={{direction: "ltr", position: "absolute", left: "0px", top: "0px", width: "315px", height: "250px"}}></canvas>
+      </div>
+      <div className="review_histogram">
+        <div id="review_histogram_recent" style={{padding: "0px", position: "relative"}}>
+          <canvas className="flot-base" width="472" height="375" style={{direction: "ltr", position: "absolute", left: "0px",   top: "0px", width: "315px", height: "250px"}}></canvas>
           <div className="flot-text" style={{position: "absolute", inset: "0px", fontSize: "smaller", color: "rgb(84, 84, 84)"}}>
             <div className="flot-x-axis flot-x1-axis xAxis x1Axis" style={{position: "absolute", inset: "0px", display: "block"}}>
               <div className="flot-tick-label tickLabel" style={{position: "absolute", maxWidth: "52px", top: "239px", left: "34px", textAlign: "center"}}>Dec 08</div>
@@ -67,7 +68,6 @@ const Histogram = () => {
             </div>
           </div>
           <canvas className="flot-overlay" width="472" height="375" style={{direction: "ltr", position: "absolute", left: "0px", top: "0px", width: "315px", height: "250px"}}></canvas>
-          </div>
         </div>
       </div>
     </div>

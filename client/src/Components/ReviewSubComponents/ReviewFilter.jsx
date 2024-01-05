@@ -80,7 +80,7 @@ const ReviewFilter = () => {
           </label>
           <br></br>
 
-          <input type="radio" name="review_language" id="review_language_mine" value="english"></input>
+          <input type="radio" name="review_language" id="review_language_mine" value="english"/>
           <label htmlFor="review_language_mine">
             "Your Languages&nbsp;"
             <span className="user_reviews_count">(256,582)</span>
@@ -114,7 +114,7 @@ const ReviewFilter = () => {
             </span>
           </div>
 
-          <input type="radio" name="review_date_range" id="review_date_range_all" value="all"></input>
+          <input type="radio" name="review_date_range" id="review_date_range_all" value="all" disabled/>
           <label htmlFor="review_date_range_all">Lifetime</label>
           <br></br>
 
@@ -191,10 +191,10 @@ const ReviewFilter = () => {
     <div className="user_reviews_filter_display_as">
       <span className="title">Display As: </span>
       <select id="review_context" >
-        <option value="summary">Summary</option>slot
-        <option value="all">Most Helpful</option>slot
-        <option value="recent">Recent</option>slot
-        <option value="funny">Funny</option>slot
+        <option value="summary">Summary</option>
+        <option value="all">Most Helpful</option>
+        <option value="recent">Recent</option>
+        <option value="funny">Funny</option>
       </select>
     </div>
 
