@@ -509,8 +509,6 @@ div.rightcol.large {
 	width: 466px;
 }
 
-
-
 .store_tooltip {
 	background: #c2c2c2;
 	color: #3d3d3f;
@@ -7339,6 +7337,106 @@ img.game_header_image_full {
 	min-height: 46px;
 }
 
+.newmodal_background {
+	position: fixed;
+	z-index: 900;
+	background: #000000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.newmodal {
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal; /* normal */
+	position: absolute;
+	max-width: 900px;	/* our page width */
+	min-width: 500px;
+	background: radial-gradient(circle at top left, rgba(74, 81, 92, 0.4) 0%, rgba(75, 81, 92, 0) 60%), #25282e;
+}
+
+.newmodal_header {
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	font-size: 22px;
+	font-weight: 700;
+	color: #ffffff;
+	letter-spacing: unset;
+	text-transform: unset;
+	flex-shrink: 0;
+}
+
+.newmodal_header .title_text {
+	padding: 32px 32px 0px 32px;
+	display: block;
+}
+
+.newmodal_content_border {
+	padding: 0 1px 1px 1px;
+    display: flex;
+}
+
+.newmodal_content {
+
+    width: 100%;
+	overflow: auto;
+	word-wrap: break-word;
+
+	padding: 32px;
+
+	font-size: 14px;
+	color: #acb2b8;
+
+	position: relative;
+}
+
+.app_tag_modal {
+	width: 546px;
+}
+
+.app_tag_modal_content {
+	position: relative;
+	margin-bottom: 64px;
+}
+
+.app_tag_modal_seperator {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 272px;
+	width: 1px;
+	background-color: #3c3d3e;
+}
+
+.app_tag_modal_left {
+	padding-right: 16px;
+	float: left;
+}
+
+.app_tag_modal_left, .app_tag_modal_right {
+	width: 256px;
+}
+
+body.v6 .app_tag_modal h2 {
+	color: #969696;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	margin-bottom: 6px;
+	text-transform: none;
+	letter-spacing: 0px;
+	padding: 0;
+	margin: 0;
+}
+
+.app_tag_modal_tooltip {
+	font-size: 11px;
+	color: #626366;
+	cursor: default;
+	margin-left: 8px;
+}
+
 /* Luke's custom classes start */
 .real_tags {
 	flex-flow: row wrap;
@@ -7397,6 +7495,11 @@ img.game_header_image_full {
 	height: 500px;
 	background-color: black;
 }
+
+.app_tag_modal_tooltip:hover .nonresponsive_hidden {
+	display:flex;
+}
+
 /* Luke's custom classes end */
 
 .eventrow_EventSummaryContainer_3PdWg {
@@ -7461,4 +7564,3 @@ img.game_header_image_full {
     border-radius: 4px;
 
 }
-
