@@ -30,11 +30,11 @@ div.page_content {
 	background-color: #2a475e;
 }
 
-#review_histograms_container {
+/* #review_histograms_container {
 	background-color: #2a475e;
 	box-shadow: 0 0 5px #000;
 	position:relative;
-}
+} */
 
 #review_graph_canvas {
 	position: absolute;
