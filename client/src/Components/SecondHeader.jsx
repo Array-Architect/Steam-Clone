@@ -1,10 +1,11 @@
 function SecondHeader({ }) {
     //
     function SearchSuggestCheckTerm() {
-        //TODO
+        //TODO:
     }
 
     function handleSubmitClick(event) {
+        //TODO:
         event.preventDefault();
     }
 
