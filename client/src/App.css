@@ -7133,6 +7133,123 @@ h2.underline {
     display: block;
 };
 
+.game_page_autocollapse {
+    overflow: hidden;
+}
+
+
+
+.game_page_autocollapse_ctn.expanded {
+    padding-bottom: 0;
+}
+
+.game_page_autocollapse_ctn {
+    position: relative;
+}
+
+.sys_req {
+    margin-top: 30px;
+}
+
+.sysreq_tabs, .discselect_tabs {
+    font-size: 12px;
+    padding-top: 8px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    background: -webkit-linear-gradient( left, rgba(58,110,139,0.2) 0%,rgba(58,110,139,0) 100%);
+    background: linear-gradient( to right, rgba(58,110,139,0.2) 0%,rgba(58,110,139,0) 100%);
+}
+
+.sysreq_tab.active, .discselect_tab.active {
+    background-color: #18222e;
+    color: #67c1f5;
+    cusor: default;
+}
+
+.sysreq_tab, .discselect_tab {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 20px;
+    margin-right: 10px;
+    color: #3b6e8c;
+    float: left;
+    cursor: pointer;
+}
+
+.sysreq_contents {
+    margin-top: 10px;
+}
+
+.sysreq_contents .sysreq_content.active, .music_album_track_list_contents .music_album_track_listing_ctn.active {
+    display: hidden;
+}
+
+.game_area_sys_req_leftCol, .game_area_sys_req_rightCol {
+    float: left;
+    width: 300px;
+}
+
+.sysreq_contents .sysreq_content.active, .music_album_track_list_contents .music_album_track_listing_ctn.active {
+    display: block;
+}
+
+.sysreq_contents .sysreq_content, .music_album_track_list_contents .music_album_track_listing_ctn {
+    display: none;
+}
+
+.game_area_sys_req ul {
+    list-style-type: none;
+    margin-left: 0px;
+    line-height: 18px;
+}
+
+.game_area_sys_req ul li {
+    margin: 2px 0px;
+}
+
+.bb_ul > li {
+    list-style-position: outside;
+}
+
+.game_area_sys_req ul li strong {
+    color: #61686D;
+    font-size: 12px;
+    margin-right: 4px;
+    font-weight: normal;
+    margin-bottom: 2px;
+    text-transform: none;
+}
+
+.game_area_sys_req strong, .album_metadata_chunk_name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    color: #bcc6cd;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.game_area_sys_req_rightCol {
+    margin-left: 8px;
+	float: left;
+    width: 300px;
+}
+
+.game_area_sys_req_note {
+    margin-top: 6px;
+}
+
+.game_area_sys_req_note strong {
+    color: #61686D;
+    font-size: 12px;
+    margin-right: 1px;
+    font-weight: normal;
+    text-transform: none;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 .game_page_autocollapse_fade {
     position: absolute;
     left: 0;
@@ -7530,6 +7647,133 @@ div.early_access_announcements {
     box-shadow: 2px 2px 10px rgba(0,0,0,.4);
     border-radius: 4px;
 
+}
+
+.game_description_column .block {
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+.game_description_column .block .right {
+    margin-right: 3px;
+}
+
+.game_description_column .block .block_header .right a {
+    float: right;
+    background-color: rgba( 103, 193, 245, 0.2 );
+    border-radius: 1px;
+    color: #67c1f5;
+    font-size: 11px;
+    padding: 2px 4px;
+}
+
+.store_horizontal_autoslider_ctn {
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+
+.block_responsive_horizontal_scroll.block_content {
+    white-space: nowrap;
+    width: auto;
+}
+
+.block_responsive_horizontal_scroll.block_content a.small_cap {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.game_description_column .block .block_content a {
+    background-color: rgba( 0, 0, 0, 0.2 );
+    padding: 15px;
+    height: 100px;
+    margin-right: 2px;
+    border: 1px solid rgba( 0, 0, 0, 0 );
+}
+
+.small_cap {
+    position: relative;
+}
+
+.game_description_column .block .block_content .small_cap_img {
+    width: 171px;
+}
+
+.slider_ctn.store_autoslider {
+    background: #122333;
+}
+
+
+.slider_ctn {
+    position: relative;
+    height: 18px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.slider_ctn .slider_left, .slider_ctn .slider_right {
+    position: absolute;
+    width: 38px;
+    top: 0;
+    bottom: 0;
+    background-color: rgba( 0, 0, 0, 0.4 );
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.slider_left {
+    left: 0;
+}
+
+.slider_left span {
+    display: inline-block;
+    background-position: -18px 0px;
+    background-repeat: no-repeat;
+    background-image: url(https://store.akamai.steamstatic.com/public/images//v6/icon_cluster_controls.png);
+    width: 9px;
+    height: 7px;
+    margin-left: 13px;
+    margin-top: 5px;
+}
+
+.slider_right span {
+    display: inline-block;
+    background-position: -9px 0px;
+    background-repeat: no-repeat;
+    background-image: url(https://store.akamai.steamstatic.com/public/images//v6/icon_cluster_controls.png);
+    width: 9px;
+    height: 7px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.slider {
+    position: absolute;
+    left: 39px;
+    right: 39px;
+    top: 0;
+    bottom: 0;
+    background-color: rgba( 0, 0, 0, 0.2 );
+    border-radius: 3px;
+}
+
+.slider_ctn.store_autoslider .handle {
+    background-color: rgba( 0, 0, 0, 0.5 );
+}
+
+.slider_ctn .handle {
+    position: absolute;
+    top: 0;
+    background-color: rgba( 0, 0, 0, 0.2 );
+    border-radius: 3px;
+    height: 18px;
+    width: 60px;
+    cursor: pointer;
 }
 
 

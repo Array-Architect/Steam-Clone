@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const AboutGame = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   const showAll = () => {
     setIsExpanded(true);
@@ -13,7 +13,7 @@ const AboutGame = () => {
         data-panel='{"type":"PanelGroup"}'
         id="aboutThisGame"
         className="game_page_autocollapse"
-        style={{ maxHeight: isExpanded ? "850px" : "none" }}
+        style={{ maxHeight: isExpanded ? "none" : "850px" }}
       >
         <div id="game_area_description" className="game_area_description">
           <h2 className="underline">About This Game</h2>
