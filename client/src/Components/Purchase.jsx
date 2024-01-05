@@ -1,5 +1,12 @@
 const Purchase = () => {
   return (
+    <>
+    <a className="franchise_notice" href="https://store.steampowered.com/franchise/coffeestain?snr=1_5_9__2001">
+    <div className="background_image" style={{ backgroundImage: "url('https://clan.akamai.steamstatic.com/images/32965813/9ddcb8b9fbc9e8e06726bc1879fcb4a4a95fad59.png')" }}></div>
+
+      <div className="franchise_name">Check out the entire Coffee Stain franchise on Steam</div>
+      <div className="franchise_highlight"></div>
+    </a>
     <div id="game_area_purchase" className="game_area_purchase">
       <div className="game_area_purchase_game_wrapper">
         <div
@@ -100,9 +107,37 @@ const Purchase = () => {
         </div>
       </div>
       <div id="gameAreaDLCSection" className="game_area_dlc_section">
-        {/* Content here */}
+        <h2 className="gradientbg">
+          Content For This Game
+          <span className="note">
+            <a href="https://store.steampowered.com/dlc/892970/Valheim/?snr=1_5_9__1061">
+              Browse all
+              <em>(1)</em>
+            </a>
+          </span>
+        </h2>
+        <div className="game_area_dlc_list">
+          <div className="tableView">
+            <div className="gameDlcBlocks">
+              <a className="game_area_dlc_row odd ds_collapse_flag ds_collapse_flag_tiny app_impression_tracked" id="dlc_row_1620250" >
+                <div className="game_area_dlc_name"> Valheim Soundtrack </div>
+                <div className="game_area_dlc_price"> $7.99 </div>
+              </a>
+              <div id="dlc_purchase_action" className="game_purchase_action game_purchase_action_bg">
+                <div className="game_purchase_price price"> $7.99 </div>
+                <div className="btn_addtocart">
+                  <a className="btn_green_steamui btn_medium">
+                          <span>Add all DLC to Cart</span>
+                  </a>
+                </div>
+                <div style={{clear: "both"}}></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    </>
   );
 };
 
