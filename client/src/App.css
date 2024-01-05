@@ -6587,7 +6587,7 @@ background: -webkit-linear-gradient( 297deg, rgba( 255, 255, 255, 0.2) 5%,rgba( 
 }
 
 
-/*          Colin css ends on 7028        */
+/*          Colin css ends on 7244        */
 
 .game_area_description {
     line-height: 1.5em;
@@ -6625,7 +6625,227 @@ margin: 8px;
     margin-top: 16px;
 }
 
+.game_area_purchase_game_wrapper {
+    margin-bottom: 28px;
+}
 
+.game_area_purchase_game, .game_area_offsite_purchase {
+    position: relative;
+    background: -webkit-linear-gradient( 150deg, rgba(226,244,255,0.3) 5%,rgba(84, 107, 115, 0.3) 95%);
+    background: linear-gradient( -60deg, rgba(226,244,255,0.3) 5%,rgba(84, 107, 115, 0.3) 95%);
+    border-radius: 4px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: #c6d4df;
+    padding: 16px;
+    padding-bottom: 26px;
+    margin-bottom: 28px;
+    z-index: 1;
+}
+
+.game_area_purchase_game .game_area_purchase_platform {
+    float: right;
+}
+
+.game_area_purchase_game h1, .game_area_offsite_purchase h1 {
+    font-size: 21px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+span.platform_img.win {
+    background-image: url(https://store.akamai.steamstatic.com/public/images/v6/icon_platform_win.png?v=3);
+}
+
+span.platform_img.linux {
+    background-image: url(https://store.akamai.steamstatic.com/public/images/v6/icon_platform_linux.png);
+}
+
+span.platform_img.music {
+    background-image: url(https://store.akamai.steamstatic.com/public/images/v6/icon_platform_music.png);
+}
+
+span.platform_img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+.game_area_purchase_game .game_purchase_action, .game_area_comingsoon .game_purchase_action, .game_area_offsite_purchase .game_purchase_action {
+    position: absolute;
+    right: 16px;
+    bottom: -17px;
+    left: 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.game_purchase_action {
+    height: 40px;
+}
+
+.game_purchase_action_bg {
+    height: 32px;
+    vertical-align: bottom;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.5); 
+    background-color: #000000;
+    padding: 2px 2px 2px 0px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.game_purchase_action .game_purchase_price {
+    background-color: #000000;
+    font-size: 13px;
+    padding-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 24px;
+}
+
+.game_purchase_price {
+    position: relative;
+}
+
+.game_purchase_action_bg > * {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+.game_area_purchase_game_wrapper .game_area_purchase_game p {
+    margin-bottom: 8px;
+}
+
+.game_area_purchase_game p.package_contents, .game_area_offsite_purchase p.package_contents {
+    color: #8f98a0;
+}
+
+.game_area_purchase_game b, .game_area_offsite_purchase b {
+    font-weight: normal;
+    color: #8bc53f;
+}
+
+.game_area_purchase_game p.package_contents a, .game_area_offsite_purchase p.package_contents a {
+    color: #b0aeac;
+}
+
+
+.game_purchase_discount {
+    height: 32px;
+    overflow: hidden;
+}
+
+
+
+.discount_block.no_discount .bundle_base_discount {
+    text-decoration: none;
+    color: #b0aeac;
+    border-right: 1px solid #626366;
+}
+
+.game_purchase_discount .discount_pct, .game_purchase_discount .bundle_base_discount {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    font-size: 25px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 6px;
+}
+
+.discount_block .bundle_base_discount {
+    display: inline-block;
+    text-decoration: line-through;
+    color: #626366;
+}
+
+.discount_block.game_purchase_discount.no_discount .discount_final_price {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 32px;
+}
+
+.discount_block.no_discount .discount_prices {
+    background: none;
+}
+
+.game_purchase_discount .discount_prices {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    height: 32px;
+}
+
+.btn_blue_steamui {
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #c3e1f8;
+    background: transparent;
+    text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.3 );
+}
+
+.btn_blue_steamui > span {
+    border-radius: 2px;
+    display: block;
+    background: #75b022;
+    background: -webkit-linear-gradient( top, #75b022 5%, #588a1b 95%);
+    background: linear-gradient( to bottom, #75b022 5%, #588a1b 95%);
+    background: linear-gradient( to right, #47bfff 5%, #1a44c2 60%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background-position: 25%;
+    background-size: 330% 100%;
+}
+
+.btn_addtocart {
+    position: relative;
+}
+
+.btn_green_steamui {
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #d2efa9;
+    background: transparent;
+    text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.3 );
+}
+
+.btn_medium > span, input.btn_medium {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.btn_green_steamui > span {
+    border-radius: 2px;
+    display: block;
+    background: #6fa720;
+    background: -webkit-linear-gradient( top, #6fa720 5%, #588a1b 95%);
+    background: linear-gradient( to bottom, #6fa720 5%, #588a1b 95%);
+    background: linear-gradient( to right, #75b022 5%, #588a1b 95%);
+}
+
+
+
+.game_area_purchase_game.game_area_purchase_game_dropdown_subscription {
+    position: relative;
+}
 
 ::-webkit-scrollbar-track {
     background-color: #1B2838;
@@ -6699,11 +6919,7 @@ div.early_access_banner > .btn_medium {
     border: 2px solid #000000;
 }
 
-.btn_medium > span, input.btn_medium {
-    padding: 0 15px;
-    font-size: 15px;
-    line-height: 30px;
-}
+
 .btn_border_2px {
     border-radius: 3px;
     border: 2px solid #172030;
