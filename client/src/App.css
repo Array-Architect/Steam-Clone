@@ -5,8 +5,8 @@
 
 img {
 	border: none;
+	-webkit-user-drag: none;
 }
-
 
 a {
 	text-decoration: none;
@@ -417,24 +417,23 @@ body.v6 h2 .header_inline a:hover {
 body.v6 h2.pageheader {
 	color: #ffffff;
 	font-size: 34px;
-			font-family: "Motiva Sans", Sans-serif;
-		font-weight: 300; /* light */
-
-			text-shadow: 1px 1px 0 rgba( 0, 0, 0, 0.4 );
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: 300; /* light */
+	text-shadow: 1px 1px 0 rgba( 0, 0, 0, 0.4 );
 	margin-top: -4px;
 }
 
 body.v6 h3 {
 	color: #ffffff;
 	font-size: 22px;
-			font-family: "Motiva Sans", Sans-serif;
-		font-weight: normal; /* normal */
-
-			font-weight: normal;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal; /* normal */
+	font-weight: normal;
 }
 
 body.v6 .page_content {
 	width: 940px;
+  /* height: 3282px; */
 	margin: 0 auto;
 }
 
@@ -5160,10 +5159,10 @@ a#store_search_link img {
 	position: absolute;
 	top: 1px;
 	right: -1px;
-	background-image: url('/public/images/v6/search_icon_btn.png');
+	background-image: url('https://store.cloudflare.steamstatic.com/public/images/v6/search_icon_btn.png');
 }
 a#store_search_link img:hover {
-	background-image: url('/public/images/v6/search_icon_btn_over.png');
+	background-image: url('https://store.cloudflare.steamstatic.com/public/images/v6/search_icon_btn.png');
 }
 
 .page_header_ctn.tabs.capsules {
@@ -6946,7 +6945,7 @@ span.platform_img {
     height: 32px;
     vertical-align: bottom;
     display: inline-block;
-    background-color: rgba(0,0,0,0.5); 
+    background-color: rgba(0,0,0,0.5);
     background-color: #000000;
     padding: 2px 2px 2px 0px;
     border-radius: 2px;
@@ -7717,6 +7716,20 @@ img.game_header_image_full {
     background: -ms-linear-gradient(-60deg,  #67c1f5 0%,#417a9b 100%); /* IE10+ */
     background: linear-gradient(135deg,  #67c1f5 0%,#417a9b 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c1f5', endColorstr='#417a9b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+<<<<<<< HEAD
+	}
+.eventrow_EventSummaryContainer_3PdWg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(21, 22, 25, 0);
+    pointer-events: none;
+    z-index: 1;
+    transition: background-color .24s ease-in-out;
+=======
+>>>>>>> 508ac87740acce6b36c7099a7158d40f90afec7e
 }
 
 
