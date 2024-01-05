@@ -7,12 +7,12 @@ const Curator = () => {
             View all
           </a>
         </div>
-        <h2>What Curators Say</h2>
+        <h2 className="underline">What Curators Say</h2>
         <div className="no_curators_followed">
-          863 Curators have reviewed this product. Click
+          863 Curators have reviewed this product. Click{" "}
           <a href="https://store.steampowered.com/curators/curatorsreviewing/?appid=892970&snr=1_5_9__top-curators">
             here
-          </a>
+          </a>{" "}
           to see them.
         </div>
       </div>

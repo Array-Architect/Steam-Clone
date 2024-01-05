@@ -7776,6 +7776,23 @@ div.early_access_announcements {
     cursor: pointer;
 }
 
+.game_description_column .block .right {
+    margin-right: 3px;
+}
+
+.game_description_column .block .block_header .right a {
+    float: right;
+    background-color: rgba( 103, 193, 245, 0.2 );
+    border-radius: 1px;
+    color: #67c1f5;
+    font-size: 11px;
+    padding: 2px 4px;
+}
+
+.no_curators_followed {
+    padding: 20px;
+    background: rgba( 0, 0, 0, 0.2 );
+}
 
 .apphub_HomeHeaderContent .apphub_AppName {
 	font-family: "Motiva Sans", Sans-serif;
