@@ -1,0 +1,29 @@
+.review_ctn {
+	margin-bottom: 32px;
+	border-top: 1px solid #000;
+}
+
+div.page_content {
+	width: 940px;
+	margin: 0px auto;
+}
+
+.user_reviews_header.no_bottom_margin
+{
+	margin-bottom: 0px;
+}
+
+.user_reviews_header {
+	padding-bottom: 4px;
+    margin-top: 40px;
+    background-image: url('https://store.cloudflare.steamstatic.com/public/images/v6/maincol_gradient_rule.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+#review_histograms_container {
+	background-color: #2a475e;
+	box-shadow: 0 0 5px #000;
+	position:relative;
+	margin-top: 200px;
+}
