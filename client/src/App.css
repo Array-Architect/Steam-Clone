@@ -508,8 +508,6 @@ div.rightcol.large {
 	width: 466px;
 }
 
-
-
 .store_tooltip {
 	background: #c2c2c2;
 	color: #3d3d3f;
@@ -7942,7 +7940,107 @@ img.game_header_image_full {
 	min-height: 46px;
 }
 
-/* Luke's custom classes */
+.newmodal_background {
+	position: fixed;
+	z-index: 900;
+	background: #000000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.newmodal {
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal; /* normal */
+	position: absolute;
+	max-width: 900px;	/* our page width */
+	min-width: 500px;
+	background: radial-gradient(circle at top left, rgba(74, 81, 92, 0.4) 0%, rgba(75, 81, 92, 0) 60%), #25282e;
+}
+
+.newmodal_header {
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	font-size: 22px;
+	font-weight: 700;
+	color: #ffffff;
+	letter-spacing: unset;
+	text-transform: unset;
+	flex-shrink: 0;
+}
+
+.newmodal_header .title_text {
+	padding: 32px 32px 0px 32px;
+	display: block;
+}
+
+.newmodal_content_border {
+	padding: 0 1px 1px 1px;
+    display: flex;
+}
+
+.newmodal_content {
+
+    width: 100%;
+	overflow: auto;
+	word-wrap: break-word;
+
+	padding: 32px;
+
+	font-size: 14px;
+	color: #acb2b8;
+
+	position: relative;
+}
+
+.app_tag_modal {
+	width: 546px;
+}
+
+.app_tag_modal_content {
+	position: relative;
+	margin-bottom: 64px;
+}
+
+.app_tag_modal_seperator {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 272px;
+	width: 1px;
+	background-color: #3c3d3e;
+}
+
+.app_tag_modal_left {
+	padding-right: 16px;
+	float: left;
+}
+
+.app_tag_modal_left, .app_tag_modal_right {
+	width: 256px;
+}
+
+body.v6 .app_tag_modal h2 {
+	color: #969696;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	margin-bottom: 6px;
+	text-transform: none;
+	letter-spacing: 0px;
+	padding: 0;
+	margin: 0;
+}
+
+.app_tag_modal_tooltip {
+	font-size: 11px;
+	color: #626366;
+	cursor: default;
+	margin-left: 8px;
+}
+
+/* Luke's custom classes start */
 .real_tags {
 	flex-flow: row wrap;
 	overflow: hidden;
@@ -7979,6 +8077,33 @@ img.game_header_image_full {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c1f5', endColorstr='#417a9b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.user_reviews_summary_row:hover .nonresponsive_hidden {
+	display:flex;
+	position: absolute;
+	z-index: 1500;
+	opacity: 1;
+	margin-top: -60px;
+	margin-left: -103px;
+	pointer-events: auto;
+}
+
+.testModal {
+	display:flex;
+	position: fixed;
+	z-index: 1000;
+	opacity: 1;
+	top: 60px;
+	left: 103px;
+	width:500px;
+	height: 500px;
+	background-color: black;
+}
+
+.app_tag_modal_tooltip:hover .nonresponsive_hidden {
+	display:flex;
+}
+
+/* Luke's custom classes end */
 
 .eventrow_EventSummaryContainer_3PdWg {
     position: absolute;
@@ -7991,6 +8116,56 @@ img.game_header_image_full {
     z-index: 1;
     transition: background-color .24s ease-in-out;
 }
+
+.eventrow_EventSummaryText_h5tE8 {
+    margin: 10px 20px;
+    font-size: 15px;
+    color: rgba(255,255,255,0);
+    line-height: 20px;
+    font-weight: 300;
+    overflow: hidden;
+    filter: blur(5px);
+    user-select: none;
+    text-rendering: optimizeSpeed;
+    transform: scale(1);
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: filter .24s ease-in-out,transform .24s ease-in-out,color .24s ease-in-out
+}
+
+.eventrow_EventSummaryType_1Fp_l {
+    margin: 20px 20px 0 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgba(40,156,255,0);
+    overflow: hidden;
+    filter: blur(5px);
+    user-select: none;
+    text-rendering: optimizeSpeed;
+    transform: scale(1);
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: filter .24s ease-in-out,transform .24s ease-in-out,color .24s ease-in-out
+}
+
+.eventrow_OtherEvents_EventCtn_17gGs {
+    display: block;
+    height: auto;
+    margin-bottom: 8px;
+	margin-right: 8px;
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    min-width: 200px;
+    background-image: radial-gradient(ellipse at top left, #42454c, #25282e);
+    box-shadow: 2px 2px 10px rgba(0,0,0,.4);
+    border-radius: 4px;
+
 
 
 .user_reviews_summary_row:hover .nonresponsive_hidden {
