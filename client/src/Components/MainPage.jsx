@@ -1,5 +1,5 @@
 import SecondHeader from "./SecondHeader";
-import LeftSection from "./LeftSection";
+import LeftSection from "./LeftComponents/LeftSection";
 import Review from "./Review";
 import Summary from "./Summary";
 
