@@ -1,15 +1,23 @@
+import { useState } from "react";
+
 const AboutGame = () => {
+  const [isExpanded, setIsExpanded] = useState(true);
+
+  const showAll = () => {
+    setIsExpanded(true);
+  };
+
   return (
     <div className="game_page_autocollapse_ctn expanded">
       <div
         data-panel='{"type":"PanelGroup"}'
         id="aboutThisGame"
         className="game_page_autocollapse"
-        style={{ maxHeight: "none" }}
+        style={{ maxHeight: isExpanded ? "none" : "850px" }}
       >
         <div id="game_area_description" className="game_area_description">
           <h2 className="underline">About This Game</h2>
-          <p>
+          <p className="spacing">
             <strong>Valheim </strong>is a brutal exploration and survival game
             for 1-10 players set in a procedurally-generated world inspired by
             Norse mythology. Craft powerful weapons, construct longhouses, and
@@ -22,7 +30,7 @@ const AboutGame = () => {
           <h3 style={{ fontSize: "14px", color: "#acb2b8" }}>
             EXPLORE THE TENTH WORLD
           </h3>
-          <p>
+          <p className="spacing">
             Explore a world shrouded in mystery. Discover distinct environments
             with unique enemies to battle, resources to gather and secrets to
             uncover! Be a viking, sail the open seas in search of lands unknown,
@@ -35,7 +43,7 @@ const AboutGame = () => {
           <h3 style={{ fontSize: "14px", color: "#acb2b8" }}>
             BUILD MIGHTY HALLS
           </h3>
-          <p>
+          <p className="spacing">
             Raise viking longhouses and build bases that offer reprieve from the
             dangers ahead. Customise buildings, both inside and out, with a
             detailed building system. Progress through building tiers to
@@ -48,7 +56,7 @@ const AboutGame = () => {
           <h3 style={{ fontSize: "14px", color: "#acb2b8" }}>
             GATHER, CRAFT AND SURVIVE
           </h3>
-          <p>
+          <p className="spacing">
             Struggle to survive as you gather materials and craft weapons,
             armor, tools, ships, and defenses. Decorate your hearths and sharpen
             your blades, grow crops and vegetables, prepare food, brew meads and
@@ -110,6 +118,13 @@ const AboutGame = () => {
           </p>
         </div>
       </div>
+      {!isExpanded && (
+        <div className="game_page_autocollapse_fade">
+          <div className="game_page_autocollapse_readmore" onClick={showAll}>
+            READ MORE
+          </div>
+        </div>
+      )}
     </div>
   );
 };

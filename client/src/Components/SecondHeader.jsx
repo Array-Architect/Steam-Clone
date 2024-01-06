@@ -1,10 +1,11 @@
 function SecondHeader({ }) {
     //
     function SearchSuggestCheckTerm() {
-        //TODO
+        //TODO:
     }
 
     function handleSubmitClick(event) {
+        //TODO:
         event.preventDefault();
     }
 
@@ -29,8 +30,8 @@ function SecondHeader({ }) {
                     <div id="store_nav_area">
                         <div className="store_nav_leftcap"></div>
                         <div className="store_nav_bg">
-                            <div className="store_nav" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
-                                <div className="tab  flyout_tab " id="foryou_tab" data-flyout="foryou_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel={{"focusable":true}}>
+                            <div className="store_nav" data-panel={{"flow-children": "row"}}>
+                                <div className="tab  flyout_tab " id="foryou_tab" data-flyout="foryou_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel={{"focusable": true}}>
                                     <span className="pulldown">
                                         <a className="pulldown_desktop" href="https://store.steampowered.com/?snr=1_5_9__12">Your Store</a>
                                         <a className="pulldown_mobile" href="#">Your Store</a>
@@ -45,7 +46,7 @@ function SecondHeader({ }) {
                                         <a className="popup_menu_item" href="https://store.steampowered.com/curators/?snr=1_5_9__12"> Steam Curators </a>
                                     </div>
                                 </div> */}
-                                <div className="tab  flyout_tab" id="noteworthy_tab" data-flyout="noteworthy_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel="{&quot;focusable&quot;:true}">
+                                <div className="tab  flyout_tab" id="noteworthy_tab" data-flyout="noteworthy_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel={{"focusable": true}}>
                                     <span className="pulldown">
                                         <a href="javascript:void(0);" className="pulldown_desktop">New & Noteworthy</a>
                                         <a href="javascript:void(0);" className="pulldown_mobile">New & Noteworthy</a>
@@ -54,7 +55,7 @@ function SecondHeader({ }) {
                                 </div>
                                 <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="noteworthy_flyout" style={{visibility: "visible", top: "42px", left: "96.125px", display: "none", opacity: 1}}>
                                     <div className="popup_body popup_menu_twocol_new">
-                                        <div className="popup_menu popup_menu_browse" data-panel={{maintainY: true, flowChildren: "column"}}>
+                                        <div className="popup_menu popup_menu_browse" data-panel={{"maintainY": true, "flowChildren": "column"}}>
                                             <div className="popup_menu_subheader responsive_hidden">Popular</div>
                                             <a className="popup_menu_item" href="https://store.steampowered.com/charts/topselling/?snr=1_5_9__12"> Top Sellers </a>
                                             <a className="popup_menu_item" href="https://store.steampowered.com/charts/mostplayed/?snr=1_5_9__12"> Most Played </a>
@@ -64,7 +65,7 @@ function SecondHeader({ }) {
                                             <div className="popup_menu_subheader responsive_hidden">News & Updates</div>
                                             <a className="popup_menu_item" href="https://store.steampowered.com/newshub/?snr=1_5_9__12"> Recently Updated </a>
                                         </div>
-                                        <div className="popup_menu popup_menu_browse leftborder" data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+                                        <div className="popup_menu popup_menu_browse leftborder" data-panel={{"maintainY": true, "flow-children": "column"}}>
                                             <div className="popup_menu_subheader responsive_hidden">Promos & Events</div>
                                             <a className="popup_menu_item" href="https://store.steampowered.com/specials/?snr=1_5_9__12"> Special Offers </a>
                                             <a className="popup_menu_item" href="https://store.steampowered.com/news/collection/sales/?snr=1_5_9__12"> Sale Events </a>
@@ -78,7 +79,7 @@ function SecondHeader({ }) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="tab  flyout_tab" id="genre_tab" data-flyout="genre_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-align-to-element="foryou_tab" data-flyout-delay="300" data-panel={{focusable:true}}>
+                                <div className="tab  flyout_tab" id="genre_tab" data-flyout="genre_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-align-to-element="foryou_tab" data-flyout-delay="300" data-panel={{"focusable": true}}>
                                     <span className="pulldown">
                                         <a className="pulldown_desktop" href="javascript:void(0);">Categories</a>
                                         <a className="pulldown_mobile" href="javascript:void(0);">Categories</a>
@@ -87,7 +88,7 @@ function SecondHeader({ }) {
                                 </div>
                                 <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="genre_flyout" style={{visibility: "visible", top: "42px", left: "0px", display: "none", opacity: 1}}>
                                     <div className="popup_body popup_menu_twocol_new">
-                                        <div className="popup_menu popup_menu_browse" data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+                                        <div className="popup_menu popup_menu_browse" data-panel={{"maintainY": true, "flow-children": "column"}}>
                                             <div className="popup_menu_subheader responsive_hidden">Special Sections</div>
                                             <a className="popup_menu_item" href="https://store.steampowered.com/genre/Free%20to%20Play/?snr=1_5_9__12"> Free to Play </a>
                                             <a className="popup_menu_item" href="https://store.steampowered.com/demos/?snr=1_5_9__12">
@@ -125,7 +126,7 @@ function SecondHeader({ }) {
                                                 <span>For PC Cafés</span>
                                             </a>
                                         </div>
-                                        <div className="popup_menu popup_menu_browse leftborder" data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+                                        <div className="popup_menu popup_menu_browse leftborder" data-panel={{"maintainY": true, "flow-children": "column"}}>
                                             <div className="popup_menu_subheader reduced_vspace"> Genres </div>
                                             <div className="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="action"> Action </div>
                                             <div className="popup_menu_subheader popup_genre_expand_header responsive_hidden" data-genre-group="action">
@@ -154,7 +155,7 @@ function SecondHeader({ }) {
                                                 <a className="popup_menu_item" href="https://store.steampowered.com/category/visual_novel/?snr=1_5_9__12">Visual Novel</a>
                                             </div>
                                         </div>
-                                        <div className="popup_menu popup_menu_browse " data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+                                        <div className="popup_menu popup_menu_browse " data-panel={{"maintainY": true, "flow-children": "column"}}>
                                             <div className="popup_menu_subheader reduced_vspace responsive_hidden">
                                                 <br></br>
                                             </div>
@@ -185,7 +186,7 @@ function SecondHeader({ }) {
                                                 <a className="popup_menu_item" href="https://store.steampowered.com/category/sim_space_flight/?snr=1_5_9__12">Space & Flight</a>
                                             </div>
                                         </div>
-                                        <div className="popup_menu popup_menu_browse " data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+                                        <div className="popup_menu popup_menu_browse " data-panel={{"maintainY": true, "flow-children": "column"}}>
                                             <div className="popup_menu_subheader reduced_vspace responsive_hidden">
                                                 <br></br>
                                             </div>
@@ -216,7 +217,7 @@ function SecondHeader({ }) {
                                                 <a className="popup_menu_item" href="https://store.steampowered.com/category/sports_team/?snr=1_5_9__12">Team Sports</a>
                                             </div>
                                         </div>
-                                        <div className="popup_menu popup_menu_browse leftborder" data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+                                        <div className="popup_menu popup_menu_browse leftborder" data-panel={{"maintainY": true, "flow-children": "column"}}>
                                             <div className="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="themes"> Themes </div>
                                             <div className="popup_menu_subheader players popup_genre_expand_header responsive_hidden"> Themes </div>
                                             <div className="popup_genre_expand_content responsive_hidden" data-genre-group="themes">

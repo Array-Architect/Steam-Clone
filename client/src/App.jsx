@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import './Alex.css';
 import Header from "./Components/Header";
 import MainPage from "./Components/MainPage";
 import Footer from "./Components/Footer";
