@@ -433,7 +433,7 @@ body.v6 h3 {
 
 body.v6 .page_content {
 	width: 940px;
-  /* height: 3282px; */
+  /* height: 3283px; */
 	margin: 0 auto;
 }
 
@@ -610,7 +610,7 @@ a.store_header_btn_content:hover {
     border-radius: 1px;
     background: #ffffff; /* Old browsers */
     background: -moz-linear-gradient(-60deg,  #ffffff 0%, #919aa3 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(100%,#919aa3)); /* Chrome,Safari4+ */
+    background: --webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(100%,#919aa3)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(-60deg,  #ffffff 0%,#919aa3 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(-60deg,  #ffffff 0%,#919aa3 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(-60deg,  #ffffff 0%,#919aa3 100%); /* IE10+ */
@@ -7099,23 +7099,41 @@ span.platform_img {
     position: relative;
 }
 
-::-webkit-scrollbar-track {
-    background-color: #1B2838;
-    border-radius: 4px;
-}
+/* ::-webkit-scrollbar-track {
+  background-color: #1B2838;
+  border-radius: 4px;
+} */
 
 ::-webkit-scrollbar-thumb {
-    background-color: #474B54;
-    border-radius: 4px;
+	width: 10px;
+	background-color: #434953;
+	border-radius: 10px;
+	z-index: 12;
+	border: 4px solid rgba(0,0,0,0);
+	background-clip: padding-box;
+	transition: background-color .32s ease-in-out;
+	margin: 4px;
+	min-height: 32px;
+	min-width: 32px
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+	height: 12px;
+  width: 14px;
+	background: rgba( 0, 0, 0, 0 );
+	z-index: 12;
+	overflow: visible;
 }
 
 
 ::-webkit-scrollbar-corner {
-    background-color: black;
+    background-color: #202020;
+}
+
+::selection {
+	background: #54a5d4;
+	text-shadow: 1px 1px 2px rgba(0,0,0,.6666666667);
+	color: #fff;
 }
 
 .game_area_description p strong, .game_area_description strong {
@@ -7716,13 +7734,9 @@ img.game_header_image_full {
     background: -ms-linear-gradient(-60deg,  #67c1f5 0%,#417a9b 100%); /* IE10+ */
     background: linear-gradient(135deg,  #67c1f5 0%,#417a9b 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c1f5', endColorstr='#417a9b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-<<<<<<< HEAD
-	}
-=======
 }
 
 
->>>>>>> ab63efbac69e3967a061a3a31b04cab96e17c63a
 .eventrow_EventSummaryContainer_3PdWg {
     position: absolute;
     top: 0;

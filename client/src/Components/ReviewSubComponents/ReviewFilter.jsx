@@ -1,7 +1,7 @@
 const ReviewFilter = () => {
 
   return (
-    <div id="review_filter_options" className="user_reviews_filter_options flyout">
+    <div id="review_filter_options" className="user_reviews_filter_options flyout graph_collapsed">
 
     {/* The below code needs to be added to each input tag once the function has been defined */}
     {/* checked onchange={ShowFilteredReviews()} */}
