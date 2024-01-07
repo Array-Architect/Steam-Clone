@@ -21,7 +21,7 @@ export default function TagsModal(){
                                         <h2>
                                             {'Popular user-defined tags for this product:'}
                                             <span className='app_tag_modal_tooltip'>(?)</span>
-                                            <span className='nonresponsive_hidden store_tooltip' style={{position:'absolute',zIndex:1500,opacity:1,left:'421.562px',top:'73.6667px',pointerEvents:'auto'}}>{'These are tags applied to the product by the most users.  You can click a tag to find other products with that tag applied.  Or, you can hit the plus symbol for any existing tags to increase that tag\'s popularity on this product.'}</span>
+                                            <span className='nonresponsive_hidden store_tooltip'>{'These are tags applied to the product by the most users.  You can click a tag to find other products with that tag applied.  Or, you can hit the plus symbol for any existing tags to increase that tag\'s popularity on this product.'}</span>
                                         </h2>
                                         <div className='app_tags popular_tags'>
                                             <div className='app_tag_control popular'>
