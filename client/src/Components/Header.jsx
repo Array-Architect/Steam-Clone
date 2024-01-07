@@ -2,6 +2,15 @@ import { useState } from "react";
 
 function Header({}) {
   //
+  const [ hoveredMenu, setHoveredMenu ] = useState(null);
+
+    const handleMouseEnter = (menuId) => {
+        setHoveredMenu(menuId);
+    }
+
+    const handleMouseLeave = () => {
+        setHoveredMenu(null);
+    }
 
   return (
     <div role="banner" id="global_header">
@@ -27,10 +36,12 @@ function Header({}) {
           aria-label="Global Menu"
         >
           <a
-            className="menuitem supernav supernav_active"
+            className="menuitem supernav "
             href="https://store.steampowered.com/?snr=1_5_9__global-header"
             data-tooltip-type="selector"
             data-tooltip-content=".submenu_store"
+            onMouseEnter={() => handleMouseEnter("Store")}
+            onMouseLeave={handleMouseLeave}
           >
             STORE
           </a>
@@ -40,6 +51,8 @@ function Header({}) {
             href="https://steamcommunity.com/"
             data-tooltip-type="selector"
             data-tooltip-content=".submenu_community"
+            onMouseEnter={() => handleMouseEnter("Community")}
+            onMouseLeave={handleMouseLeave}
           >
             COMMUNITY
           </a>
@@ -57,41 +70,47 @@ function Header({}) {
             style={{
               position: "absolute",
               zIndex: 1500,
-              opacity: 0,
+              opacity: hoveredMenu === "Store" ? 1 : 0,
               left: "1px",
               top: "67px",
-              pointerEvents: "none",
+              pointerEvents: hoveredMenu === "Store" ? "auto" : "none",
+              display: hoveredMenu === "Store" ? "block" : "none"
             }}
+            onMouseEnter={() => handleMouseEnter("Store")}
+            onMouseLeave={handleMouseLeave}
           >
-            {/* <div className="submenu_store" style data-submenuid="store">
-                            <a className="submenuitem" href="https://store.steampowered.com/?snr=1_5_9__global-header">Home</a>
-                            <a className="submenuitem" href="https://store.steampowered.com/explore/?snr=1_5_9__global-header">Discovery Queue</a>
-                            <a className="submenuitem" href="https://steamcommunity.com/my/wishlist/">Wishlist</a>
-                            <a className="submenuitem" href="https://store.steampowered.com/points/shop/?snr=1_5_9__global-header">Points Shop</a>
-                            <a className="submenuitem" href="https://store.steampowered.com/news/?snr=1_5_9__global-header">News</a>
-                            <a className="submenuitem" href="https://store.steampowered.com/stats/?snr=1_5_9__global-header">Stats</a>
-                        </div> */}
+            <div className="submenu_store" data-submenuid="store">
+                <a className="submenuitem" href="https://store.steampowered.com/?snr=1_5_9__global-header">Home</a>
+                <a className="submenuitem" href="https://store.steampowered.com/explore/?snr=1_5_9__global-header">Discovery Queue</a>
+                <a className="submenuitem" href="https://steamcommunity.com/my/wishlist/">Wishlist</a>
+                <a className="submenuitem" href="https://store.steampowered.com/points/shop/?snr=1_5_9__global-header">Points Shop</a>
+                <a className="submenuitem" href="https://store.steampowered.com/news/?snr=1_5_9__global-header">News</a>
+                <a className="submenuitem" href="https://store.steampowered.com/stats/?snr=1_5_9__global-header">Stats</a>
+            </div>
           </div>
           <div
             className="supernav_content"
             style={{
               position: "absolute",
               zIndex: 1500,
-              opacity: 0,
+              opacity: hoveredMenu === "Community" ? 1 : 0,
               left: "66.2188px",
               top: "67px",
-              pointerEvents: "none",
+              pointerEvents: hoveredMenu === "Community" ? "auto" : "none",
+              display: hoveredMenu === "Community" ? "block" : "none"
             }}
+            onMouseEnter={() => handleMouseEnter("Community")}
+            onMouseLeave={handleMouseLeave}
           >
-            {/* <div className="submenu_community" style data-submenuid="community">
-                            <a className="submenuitem" href="https://steamcommunity.com/">Home</a>
-                            <a className="submenuitem" href="https://steamcommunity.com/discussions/">Discussions</a>
-                            <a className="submenuitem" href="https://steamcommunity.com/workshop/">Workshop</a>
-                            <a className="submenuitem" href="https://steamcommunity.com/market/">Market</a>
-                            <a className="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">Broadcasts</a>
-                        </div> */}
-                    </div>
-                </div>
+            <div className="submenu_community" data-submenuid="community">
+                <a className="submenuitem" href="https://steamcommunity.com/">Home</a>
+                <a className="submenuitem" href="https://steamcommunity.com/discussions/">Discussions</a>
+                <a className="submenuitem" href="https://steamcommunity.com/workshop/">Workshop</a>
+                <a className="submenuitem" href="https://steamcommunity.com/market/">Market</a>
+                <a className="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">Broadcasts</a>
+            </div>
+          </div>
+          </div>
                 {<></>}
                 <div id="global_actions">
                     <div role="navigation" id="global_action_menu" aria-label="Account Menu">
