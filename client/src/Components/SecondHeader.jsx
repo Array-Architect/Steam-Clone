@@ -51,7 +51,7 @@ function SecondHeader({ }) {
                                             <span></span>
                                         </span>
                                     </div>
-                                    <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="foryou_flyout" style={{visibility: "visible", top: "42px", left: "0px", display: hoveredMenu === "Your Store" ? "block" : "none", opacity: 1}}>
+                                    <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="foryou_flyout" style={{visibility: "visible", top: "42px", left: "0px", display: hoveredMenu === "Your Store" ? "block" : "none", opacity: 1}} onMouseEnter={() => handleMouseEnter("Your Store")} onMouseLeave={handleMouseLeave}>
                                         <div className="popup_body popup_menu popup_menu_browse">
                                             <a className="popup_menu_item" href="https://store.steampowered.com/?snr=1_5_9__12"> Home </a>
                                             <a className="popup_menu_item" href="https://store.steampowered.com/communityrecommendations/?snr=1_5_9__12">Community Recommendations</a>
@@ -66,7 +66,7 @@ function SecondHeader({ }) {
                                             <span></span>
                                         </span>
                                     </div>
-                                    <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="noteworthy_flyout" style={{visibility: "visible", top: "42px", left: "96.125px", display: hoveredMenu === "Noteworthy" ? "block" : "none", opacity: 1}}>
+                                    <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="noteworthy_flyout" style={{visibility: "visible", top: "42px", left: "96.125px", display: hoveredMenu === "Noteworthy" ? "block" : "none", opacity: 1}} onMouseEnter={() => handleMouseEnter("Noteworthy")} onMouseLeave={handleMouseLeave}>
                                         <div className="popup_body popup_menu_twocol_new">
                                             <div className="popup_menu popup_menu_browse" data-panel={{"maintainY": true, "flowChildren": "column"}}>
                                                 <div className="popup_menu_subheader responsive_hidden">Popular</div>
@@ -99,7 +99,7 @@ function SecondHeader({ }) {
                                             <span></span>
                                         </span>
                                     </div>
-                                    <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="genre_flyout" style={{visibility: "visible", top: "42px", left: "0px", display: hoveredMenu === "Categories" ? "block" : "none", opacity: 1}}>
+                                    <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="genre_flyout" style={{visibility: "visible", top: "42px", left: "0px", display: hoveredMenu === "Categories" ? "block" : "none", opacity: 1}} onMouseEnter={() => handleMouseEnter("Categories")} onMouseLeave={handleMouseLeave}>
                                         <div className="popup_body popup_menu_twocol_new">
                                             <div className="popup_menu popup_menu_browse" data-panel={{"maintainY": true, "flow-children": "column"}}>
                                                 <div className="popup_menu_subheader responsive_hidden">Special Sections</div>
