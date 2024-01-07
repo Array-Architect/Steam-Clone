@@ -1,4 +1,3 @@
-import ViewTags from "./TagsModal"
 import { setContexts } from "../Context"
 
 export default function Summary(){
