@@ -578,7 +578,7 @@ b {
 .review_box .vote_info .commentCount a {
 	text-decoration: none;
 	color: #66c0f4;
-	background-image: url(/public/shared/images/comment_quoteicon_blue.png);
+	background-image: url('https://store.cloudflare.steamstatic.com/public/shared/images/comment_quoteicon_blue.png');
 	background-position: right;
 	background-repeat: no-repeat;
 	padding-right: 20px;
@@ -588,7 +588,7 @@ b {
 }
 .review_box .vote_info .commentCount a:hover {
 	color: #ffffff;
-	background-image: url(/public/shared/images/comment_quoteicon_bright.png);
+	background-image: url('https://store.cloudflare.steamstatic.com/public/shared/images/comment_quoteicon_bright.png');
 }
 
 .review_box .vote_info.valve_only {
