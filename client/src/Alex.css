@@ -161,8 +161,8 @@ div.page_content {
 }
 
 #review_histograms_container {
-	/* background-color: #2a475e;
-	box-shadow: 0 0 5px #000; */
+	background-color: #2a475e;
+	box-shadow: 0 0 5px #000;
 	position:relative;
 }
 

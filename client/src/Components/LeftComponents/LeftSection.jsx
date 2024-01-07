@@ -11,7 +11,7 @@ import Curator from "./Curator";
 
 const LeftSection = () => {
   return (
-    <div className="page_content" data-panel="[]">
+    <div className="page_content" data-panel="[]" style={{height: "4045px"}}>
       <div
         className="leftcol game_description_column"
         data-panel='{"flow-children":"column"}'
