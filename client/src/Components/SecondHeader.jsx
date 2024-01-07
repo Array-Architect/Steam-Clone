@@ -61,8 +61,8 @@ function SecondHeader({ }) {
                                     </div>
                                     <div className="tab  flyout_tab" id="noteworthy_tab" data-flyout="noteworthy_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel={{"focusable": true}} onMouseEnter={() => handleMouseEnter("Noteworthy")} onMouseLeave={handleMouseLeave}>
                                         <span className="pulldown">
-                                            <a href="javascript:void(0);" className="pulldown_desktop">New & Noteworthy</a>
-                                            <a href="javascript:void(0);" className="pulldown_mobile">New & Noteworthy</a>
+                                            <a href="#" className="pulldown_desktop">New & Noteworthy</a>
+                                            <a href="#" className="pulldown_mobile">New & Noteworthy</a>
                                             <span></span>
                                         </span>
                                     </div>
@@ -94,8 +94,8 @@ function SecondHeader({ }) {
                                     </div>
                                     <div className="tab  flyout_tab" id="genre_tab" data-flyout="genre_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-align-to-element="foryou_tab" data-flyout-delay="300" data-panel={{"focusable": true}} onMouseEnter={() => handleMouseEnter("Categories")} onMouseLeave={handleMouseLeave}>
                                         <span className="pulldown">
-                                            <a className="pulldown_desktop" href="javascript:void(0);">Categories</a>
-                                            <a className="pulldown_mobile" href="javascript:void(0);">Categories</a>
+                                            <a className="pulldown_desktop" href="#">Categories</a>
+                                            <a className="pulldown_mobile" href="#">Categories</a>
                                             <span></span>
                                         </span>
                                     </div>
