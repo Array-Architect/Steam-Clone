@@ -1,0 +1,398 @@
+.review_ctn {
+	margin-bottom: 32px;
+	border-top: 1px solid #000;
+}
+
+div.page_content {
+	width: 940px;
+	margin: 0px auto;
+}
+
+.user_reviews_header.no_bottom_margin
+{
+	margin-bottom: 0px;
+}
+
+.user_reviews_header {
+	padding-bottom: 4px;
+    margin-top: 40px;
+    background-image: url('https://store.cloudflare.steamstatic.com/public/images/v6/maincol_gradient_rule.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.review_recent_events {
+	box-shadow: 0 0 5px #000;
+	display: none;
+	position: relative;
+	padding: 10px 15px;
+	margin-bottom: 3px;
+	background-color: #2a475e;
+}
+
+/* #review_histograms_container {
+	background-color: #2a475e;
+	box-shadow: 0 0 5px #000;
+	position:relative;
+} */
+
+#review_graph_canvas {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events:none;
+}
+
+#review_histogram_rollup_section {
+	width: 605px;
+}
+
+.review_histogram_section {
+	display: inline-block;
+}
+
+.review_histogram_section .user_reviews_summary_bar {
+	border-bottom: 1px solid #000000;
+	padding: 10px;
+	margin-bottom: 10px;
+	background: none;
+	min-height: 38px;
+}
+
+.user_reviews_summary_bar {
+	padding: 10px 15px;
+	margin-bottom: 20px;
+	background: -webkit-linear-gradient( top, rgba( 255, 255, 255, 0.67) 5%, rgba( 255, 255, 255, 0.75) 95%);
+	background: linear-gradient( to bottom, rgba( 255, 255, 255, 0.67) 5%, rgba( 255, 255, 255, 0.75) 95%);
+	/*
+	background: -webkit-linear-gradient( top, #23384b 5%, #374655 95%);
+	background: linear-gradient( to bottom, #23384b 5%, #374655 95%);
+	*/
+}
+
+.user_reviews_summary_bar .summary_section {
+	display: inline-block;
+	margin-right: 15px;
+	color: #8ba6b6;
+	min-width: 320px;
+}
+
+.user_reviews_summary_bar .title {
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal; /* normal */
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #e5e5e5;
+}
+
+.user_reviews_summary_bar .game_review_summary {
+	cursor: help;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: bold; /* bold */
+	font-size: 17px;
+	line-height: 9px;
+	text-shadow: 1px 1px rgba( 0, 0, 0, 0.2 );
+	color: #c35c2c;
+}
+
+.user_reviews_summary_bar .game_review_summary.positive {
+	color: #66C0F4;
+}
+
+.review_histogram {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+#review_histogram_rollup {
+	width: 100%;
+	height: 250px;
+}
+
+.review_histogram .flot-x-axis {
+	color: #66c0f4;
+}
+
+.review_histogram .flot-y-axis {
+	color: #ffffff;
+}
+
+.review_histogram_section.recent {
+	box-shadow: 0 0 5px #000;
+}
+
+#review_histogram_recent_section {
+	width: 335px;
+	background: rgba( 148, 217, 255, 0.2 );
+	min-height: 350px;
+}
+
+#review_histogram_recent {
+	width: 100%;
+	height: 250px;
+}
+
+.user_reviews_filter_options
+{
+	font-size: 12px;
+	padding: 10px;
+	margin-bottom: 30px;
+	background-color: #1f2f42;
+}
+
+.user_reviews_filter_options.flyout {
+	padding: 0px;
+}
+
+.user_reviews_filter_menu {
+	border-left: 1px solid #2a475e;
+	position: relative;
+	float: left;
+	padding-right: 10px;
+}
+
+.user_reviews_filter_menu .title {
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #4582a5;
+	padding: 10px;
+	padding-right: 20px;
+	cursor: pointer;
+	background-image: url(/public/images/v6/btn_arrow_down_padded.png);
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-position-x: right;
+}
+
+.user_reviews_filter_menu_flyout {
+	position: absolute;
+	display: none;
+	padding: 10px;
+	color: #556772;
+	line-height: 20px;
+	z-index: 10;
+}
+
+.user_reviews_filter_menu_flyout_content {
+	position: relative;
+	white-space: nowrap;
+}
+
+.user_reviews_filter_options.flyout input {
+	vertical-align: text-top;
+}
+
+.user_reviews_count {
+	color: #7193a6;
+}
+
+.user_reviews_customize_language a {
+	text-transform: uppercase;
+	color: #67c1f5;
+	font-size: 10px;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 3px 5px;
+	border-radius: 2px;
+}
+
+.user_reviews_date_range_explanation,
+.user_reviews_offtopic_activity_explanation,
+.user_reviews_playtime_filter_explanation {
+	white-space: normal;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #4582a5;
+}
+
+.btn_darkblue_white_innerfade {
+	border-radius: 2px;
+	border: none;
+	padding: 1px;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none !important;
+	color: #A4D7F5 !important;
+  background: rgba(47,137,188,1);
+	background: -webkit-linear-gradient( top, rgba(47,137,188,1) 5%, rgba(23,67,92,1) 95%);
+	background: linear-gradient( to bottom, rgba(47,137,188,1) 5%, rgba(23,67,92,1) 95%);
+}
+
+.btn_darkblue_white_innerfade > span {
+	border-radius: 2px;
+	display: block;
+  background: rgba(33,101,138,1);
+	background: -webkit-linear-gradient( top, rgba(33,101,138,1) 5%, rgba(23,67,92,1) 95%);
+	background: linear-gradient( to bottom, rgba(33,101,138,1) 5%, rgba(23,67,92,1) 95%);
+}
+
+.btn_small_thin > span, input.btn_small_thin {
+	padding: 0 5px;
+	font-size: 12px;
+	line-height: 20px;
+}
+ /* note for review */
+
+/* input[type="radio" i] {
+  appearance: auto;
+  box-sizing: border-box;
+} */
+
+input:disabled {
+  cursor: default;
+  background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(59, 59, 59, 0.3));
+  color: -internal-light-dark(rgb(84, 84, 84), rgb(170, 170, 170));
+  border-color: rgba(118, 118, 118, 0.3);
+}
+
+.user_reviews_playtime_filter_explanation {
+	min-width: 300px;
+}
+
+#app_reviews_playtime_range_text_min, #app_reviews_playtime_range_text_max {
+	font-weight: bold;
+}
+
+/* Taken from JQuery CSS files */
+.ui-widget { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em; }
+.ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(https://store.cloudflare.steamstatic.com/public/shared/css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x; color: #333333; }
+.ui-corner-all { -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+.ui-slider { position: relative; text-align: left; }
+.ui-slider-horizontal { height: .8em; }
+/* End of JQuery CSS files */
+
+#app_reviews_playtime_slider {
+	margin: 10px;
+	height: auto;
+	border: 2px solid #fff;
+	border-radius: 0px;
+	cursor: pointer;
+}
+
+.user_reviews_filter_display_as {
+	float: left;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #4582a5;
+	padding: 5px 10px;
+	border-left: 1px solid #2a475e;
+}
+
+select {
+	width: 100%;
+}
+
+.user_reviews_filter_display_as select {
+	width: 100px;
+	background: #4582a5;
+	font-size: 12px;
+	border: none;
+	border-radius: 2px;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+
+.user_reviews_offtopic_activity_explanation a {
+	color: #556772;
+	text-decoration: underline;
+}
+
+#review_show_graph_button {
+	display: none;
+}
+
+.review_graph_toggle>span {
+	display: inline;
+}
+
+div.graph_toggle_icon {
+	width: 14px;
+	height: 16px;
+	margin-right: 7px;
+	margin-top: 4px;
+	background: url('/public/images/v6/app/review_graph_expander.png');
+	background-repeat: no-repeat;
+	background-size: 14px 26px;
+	display: inline-block;
+}
+
+div.graph_toggle_icon.up {
+	background-position: 0px 2px;
+}
+div.graph_toggle_icon.down {
+	background-position: 0px -12px;
+}
+
+#review_hide_graph_button {
+}
+
+.reviews_info_ctn {
+	border-bottom: 1px solid #000;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+/* filters */
+.user_reviews_active_filters {
+}
+
+.user_reviews_active_filters .title {
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal; /* normal */
+  text-transform: none;
+  font-size: 15px;
+  color: #c6d4df;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.user_reviews_active_filters .active_filter {
+	background-color: rgba( 255, 255, 255, 0.2 );
+	padding: 5px;
+	padding-right: 25px;
+	margin-right: 5px;
+	border-radius: 2px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-image: url(/public/images/v6/deleteSearchTerm.png);
+	background-position: right 5px center;
+	display: inline-block;
+}
+
+.user_reviews_filter_score {
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal; /* normal */
+  display: none;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.user_reviews_filter_score.visible {
+	display: block;
+}
+
+.user_reviews_filter_score .game_review_summary {
+	cursor: help;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: bold; /* bold */
+}
+/* end filters */
+
+b {
+  font-family: "Motiva Sans",Arial,Helvetica,sans-serif
+}
+
+.responsive_release_date_text,
+.responsive_reviewdesc_short,
+.responsive_add_to_wishlist,
+.responsive_purchase_options_ctn,
+.newux_optin_banner,
+.responsive_review_menu_ctn,
+.responsive_purchase_source,
+.responsive_voting_image,
+.responsive_review_settings_img,
+.responsive_block_header  {
+	display: none;
+}
