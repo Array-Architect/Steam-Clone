@@ -2,6 +2,17 @@ import { useState } from "react";
 
 function SecondHeader({ }) {
     //
+    const [ hoveredMenu, setHoveredMenu ] = useState(null);
+
+    const handleMouseEnter = (menuId) => {
+        setHoveredMenu(menuId);
+    }
+
+    const handleMouseLeave = () => {
+        setHoveredMenu(null);
+    }
+
+
     function SearchSuggestCheckTerm() {
         //TODO:
     }
@@ -33,14 +44,14 @@ function SecondHeader({ }) {
                             <div className="store_nav_leftcap"></div>
                             <div className="store_nav_bg">
                                 <div className="store_nav" data-panel={{"flow-children": "row"}}>
-                                    <div className="tab  flyout_tab " id="foryou_tab" data-flyout="foryou_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel={{"focusable": true}}>
+                                    <div className="tab  flyout_tab " id="foryou_tab" data-flyout="foryou_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel={{"focusable": true}} onMouseEnter={() => handleMouseEnter("Your Store")} onMouseLeave={handleMouseLeave}>
                                         <span className="pulldown">
                                             <a className="pulldown_desktop" href="https://store.steampowered.com/?snr=1_5_9__12">Your Store</a>
                                             {/* <a className="pulldown_mobile" href="#">Your Store</a> */}
                                             <span></span>
                                         </span>
                                     </div>
-                                    <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="foryou_flyout" style={{visibility: "visible", top: "42px", left: "0px", display: "none", opacity: 1}}>
+                                    <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="foryou_flyout" style={{visibility: "visible", top: "42px", left: "0px", display: hoveredMenu === "Your Store" ? "block" : "none", opacity: 1}}>
                                         <div className="popup_body popup_menu popup_menu_browse">
                                             <a className="popup_menu_item" href="https://store.steampowered.com/?snr=1_5_9__12"> Home </a>
                                             <a className="popup_menu_item" href="https://store.steampowered.com/communityrecommendations/?snr=1_5_9__12">Community Recommendations</a>
@@ -48,14 +59,14 @@ function SecondHeader({ }) {
                                             <a className="popup_menu_item" href="https://store.steampowered.com/curators/?snr=1_5_9__12"> Steam Curators </a>
                                         </div>
                                     </div>
-                                    <div className="tab  flyout_tab" id="noteworthy_tab" data-flyout="noteworthy_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel={{"focusable": true}}>
+                                    <div className="tab  flyout_tab" id="noteworthy_tab" data-flyout="noteworthy_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel={{"focusable": true}} onMouseEnter={() => handleMouseEnter("Noteworthy")} onMouseLeave={handleMouseLeave}>
                                         <span className="pulldown">
                                             <a href="javascript:void(0);" className="pulldown_desktop">New & Noteworthy</a>
                                             <a href="javascript:void(0);" className="pulldown_mobile">New & Noteworthy</a>
                                             <span></span>
                                         </span>
                                     </div>
-                                    <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="noteworthy_flyout" style={{visibility: "visible", top: "42px", left: "96.125px", display: "none", opacity: 1}}>
+                                    <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="noteworthy_flyout" style={{visibility: "visible", top: "42px", left: "96.125px", display: hoveredMenu === "Noteworthy" ? "block" : "none", opacity: 1}}>
                                         <div className="popup_body popup_menu_twocol_new">
                                             <div className="popup_menu popup_menu_browse" data-panel={{"maintainY": true, "flowChildren": "column"}}>
                                                 <div className="popup_menu_subheader responsive_hidden">Popular</div>
@@ -81,14 +92,14 @@ function SecondHeader({ }) {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="tab  flyout_tab" id="genre_tab" data-flyout="genre_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-align-to-element="foryou_tab" data-flyout-delay="300" data-panel={{"focusable": true}}>
+                                    <div className="tab  flyout_tab" id="genre_tab" data-flyout="genre_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-align-to-element="foryou_tab" data-flyout-delay="300" data-panel={{"focusable": true}} onMouseEnter={() => handleMouseEnter("Categories")} onMouseLeave={handleMouseLeave}>
                                         <span className="pulldown">
                                             <a className="pulldown_desktop" href="javascript:void(0);">Categories</a>
                                             <a className="pulldown_mobile" href="javascript:void(0);">Categories</a>
                                             <span></span>
                                         </span>
                                     </div>
-                                    <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="genre_flyout" style={{visibility: "visible", top: "42px", left: "0px", display: "none", opacity: 1}}>
+                                    <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="genre_flyout" style={{visibility: "visible", top: "42px", left: "0px", display: hoveredMenu === "Categories" ? "block" : "none", opacity: 1}}>
                                         <div className="popup_body popup_menu_twocol_new">
                                             <div className="popup_menu popup_menu_browse" data-panel={{"maintainY": true, "flow-children": "column"}}>
                                                 <div className="popup_menu_subheader responsive_hidden">Special Sections</div>
