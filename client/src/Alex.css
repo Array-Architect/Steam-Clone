@@ -1020,3 +1020,372 @@ color: red;
 	border: none;
 	cursor: pointer;
 }
+
+#Reviews_summary.user_reviews_container {
+	margin-top: 0px;
+}
+
+.user_reviews_container {
+	min-height: 1000px;
+	margin-top: 20px;
+}
+
+.user_reviews_sub_header {
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: 300; /* light */
+	font-weight: normal;
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	letter-spacing: 2px;
+}
+
+.user_reviews_most_helpful_days {
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #56707f;
+}
+
+.review_box {
+	background-color: rgba( 0, 0, 0, 0.2 );
+	margin-bottom: 26px;
+	background-image: url('https://store.cloudflare.steamstatic.com/public/images/v6/maincol_gradient_rule.png' );
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.playerAvatar.offline,
+.friend_block_holder.friend_status_offline .friend_block_avatar,
+.friend_activity.friend_status_offline .friend_block_avatar,
+.appHubIconHolder.offline,
+.avatar_block_status_offline,
+.appHubIconHolder.ignored {
+	background: -webkit-linear-gradient( top, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
+	background: linear-gradient( to bottom, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
+	/* IE <= 9 doesn't support rounded corners and gradient.  The gradient isn't too noticable so just disable the filter in IE9 */
+	filter: none;
+}
+
+.playerAvatar,
+.friend_block_holder .friend_block_avatar,
+.friend_activity .friend_block_avatar {
+	width: 34px;
+	height: 34px;
+	position: relative;
+	border-radius: 0;
+	padding: 1px;
+}
+
+.playerAvatar img,
+.friend_block_holder .friend_block_avatar img,
+.friend_activity .friend_block_avatar img {
+	width: 32px;
+	height: 32px;
+	padding: 1px;
+	border-radius: 0;
+	border: none;
+}
+
+.playerAvatar.offline img,
+.friend_status_offline .friend_block_avatar img,
+.appHubIconHolder.offline img,
+.avatar_block_status_offline img {
+	background: -webkit-linear-gradient( top, #515151 5%, #474747 95%);
+	background: linear-gradient( to bottom, #515151 5%, #474747 95%);
+}
+
+.early_access_review {
+	background-color: #4d6c8b;
+	border: 1px solid #779abc;
+	text-transform: uppercase;
+	font-family: arial;
+	font-size: 11px;
+	color: #9ac7f3;
+	padding: 1px 4px 0px 4px;
+	margin-bottom: 10px;
+	margin-right: 4px;
+	display: inline-block;
+	cursor: default;
+	line-height: 13px;
+}
+/* Buttons and Icons Review Container */
+.vote_button_ctn {
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.btnv6_grey_black {
+	border-radius: 2px;
+	border: none;
+	padding: 1px;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none !important;
+	color: #66c0f4 !important;
+	background: #212c3d;
+}
+
+.btnv6_grey_black > span {
+	border-radius: 2px;
+	display: block;
+	background: transparent;
+}
+
+.reward_btn_icon {
+	vertical-align: middle;
+	height: 16px;
+}
+
+.review_award_ctn {
+	padding-top:5px;
+}
+
+.review_award {
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	padding: 5px;
+	margin: 0 2px;
+	cursor: pointer;
+}
+
+.review_award_icon {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.review_award_count {
+	color: #66c0f4;
+	font-size: 13px;
+	vertical-align: middle;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.review_award_count.hidden {
+	display: none;
+}
+
+.review_award_ctn > .review_award:nth-child(n+4) {
+	display: none;
+}
+
+.review_award_ctn > .review_award.more_btn {
+	display: inline-block;
+}
+
+/* Icons */
+
+/* ico18s */
+.ico18{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin: 0 0px;
+	background: url('https://store.cloudflare.steamstatic.com/public/shared/images/buttons/icons_18.png?v=3');
+	vertical-align: text-top;
+}
+
+
+.ico18.thumb_down {
+	background-position: -18px 0px;
+}
+
+.ico_hover:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover .ico18.thumb_down {
+	background-position: -90px 0px;
+}
+
+.btn_active .ico18.thumb_down, .active .ico18.thumb_down {
+	background-position: -54px 0px;
+}
+
+.ico18.thumb_up {
+	background-position: 0px 0px;
+}
+
+.ico_hover:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover .ico18.thumb_up {
+	background-position: -72px 0px;
+}
+
+.btn_active .ico18.thumb_up, .active .ico18.thumb_up {
+	background-position: -36px 0px;
+}
+
+.ico18.accepted_and_voted {
+	background-position: 0px -18px;
+}
+
+
+
+/* ico16s */
+
+.ico16 {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('https://store.cloudflare.steamstatic.com/public/shared/images/buttons/icons_16.png?v=5');
+	vertical-align: text-top;
+}
+
+
+.ico16.comment {
+	background-position: 0px 0px;
+}
+
+.ico_hover:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover .ico16.comment {
+	background-position: -16px 0px;
+}
+
+
+.ico16.thumb_down {
+	background-position: -32px 0px;
+}
+
+.ico_hover:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover .ico16.thumb_down {
+	background-position: -48px 0px;
+}
+
+.btn_active .ico16.thumb_down, .active .ico16.thumb_down {
+	background-position: -64px 0px;
+}
+
+.ico16.thumb_up {
+	background-position: -80px 0px;
+}
+
+.ico_hover:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover .ico16.thumb_up {
+	background-position: -112px 0px;
+}
+
+.btn_active .ico16.thumb_up, .active .ico16.thumb_up {
+	background-position: -96px 0px;
+}
+
+.ico16.thumb_downv6 {
+	background-position: -64px -16px;
+}
+
+.ico_hover:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover .ico16.thumb_downv6 {
+	background-position: -80px -16px;
+}
+
+.btn_active .ico16.thumb_downv6, .active .ico16.thumb_downv6 {
+	background-position: -96px -16px;
+}
+
+.ico16.thumb_upv6 {
+	background-position: -112px -16px;
+}
+
+.ico_hover:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover .ico16.thumb_upv6 {
+	background-position: -144px -16px;
+}
+
+.btn_active .ico16.thumb_upv6, .active .ico16.thumb_upv6 {
+	background-position: -128px -16px;
+}
+
+.ico16.arrow_up {
+	background-position: 0px -16px;
+}
+
+.ico_hover:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover .ico16.arrow_up {
+	background-position: -16px -16px;
+}
+
+.ico16.arrow_down {
+	background-position: -48px -16px;
+}
+
+.ico_hover:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover .ico16.arrow_down {
+	background-position: -32px -16px;
+}
+
+
+.ico16.report {
+	background-position: -128px 0px;
+}
+
+.ico_hover:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover .ico16.report {
+	background-position: -144px 0px;
+}
+
+.btn_active .ico16.report, .active .ico16.report {
+	background-position: -160px 0px;
+}
+
+.ico16.reportv6 {
+	background-position: -256px 0px;
+}
+
+.ico_hover:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover .ico16.reportv6 {
+	background-position: -272px 0px;
+}
+
+.btn_active .ico16.reportv6, .active .ico16.reportv6 {
+	background-position: -288px 0px;
+}
+
+.ico16.arrow_next {
+	background-position: -176px 0px;
+}
+
+.ico16.checkbox {
+	background-position: -192px 0px;
+}
+
+.ico16.bucketnew {
+	background-position: -208px 0px;
+}
+
+.ico16.bucketqueue {
+	background-position: -224px 0px;
+}
+
+.ico16.bucketrefresh {
+	background-position: -240px 0px;
+}
+
+.ico16.bucketfollow {
+	background-position: -176px -16px;
+}
+
+.ico16.bucketfavorite {
+	background-position: -192px -16px;
+}
+
+.ico16.funny {
+	background-position: -208px -16px;
+}
+
+.ico_hover:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover .ico16.funny {
+	background-position: -224px -16px;
+}
+
+.btn_active .ico16.funny, .active .ico16.funny {
+	background-position: -224px -16px;
+}
+
+.ico16.bluearrow_down {
+	background-position: -304px 0px;
+}
+
+.ico_hover:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover .ico16.bluearrow_down {
+	background-position: -304px -16px;
+}
+
+.btn_active .ico16.bluearrow_down, .active .ico16.bluearrow_down {
+	background-position: -304px -16px;
+}
+
+.btnv6_grey_black:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover > span {
+	background: transparent;
+}
+
+.btnv6_grey_black:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover {
+	text-decoration: none !important;
+	color: #fff !important;
+	background: #66c0f4;
+}
