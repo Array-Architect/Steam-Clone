@@ -272,7 +272,7 @@ export default function Summary(){
                                             </div>
                                         </div>
                                     </div>
-                                    <div class='slider_ctn'>
+                                    <div className='slider_ctn'>
                                         <div id='highlight_slider_left' className='slider_left' onClick={()=>switchPreview(selectedPreview-1)}>
                                             <span></span>
                                         </div>

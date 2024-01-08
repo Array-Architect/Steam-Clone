@@ -20,7 +20,7 @@ export function ContextProvider({children}) {
         displayTags,
         setDisplayTags,
         graphVisible,
-        setGraphVisible
+        setGraphVisible,
         displayPreviewModal,
         setDisplayPreviewModal,
         selectedPreview,
@@ -35,7 +35,7 @@ export function ContextProvider({children}) {
         setMuted,
         volume,
         setVolume,
-        autoPlay,
+        autoplay,
         setAutoplay,
         videoHover,
         setVideoHover,
