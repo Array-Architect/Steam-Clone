@@ -1,3 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+@font-face { font-family: 'simple-line-icons'; src: url('chrome-extension://mihdfbecejheednfigjpdacgeilhlmnf/assets/fonts/Simple-Line-Icons.ttf') format('truetype'); }
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Regular.ttf?v=4.015') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Light.ttf?v=4.015') format('truetype');
+	font-weight: 300; /* Light */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Thin.ttf?v=4.015') format('truetype');
+	font-weight: 200; /* Ultra-Light / Thin */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Medium.ttf?v=4.015') format('truetype');
+	font-weight: 500; /* Medium */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Bold.ttf?v=4.015') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-RegularItalic.ttf?v=4.015') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-LightItalic.ttf?v=4.015') format('truetype');
+	font-weight: 300; /* Light */
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-BoldItalic.ttf?v=4.015') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Black.ttf?v=4.015') format('truetype');
+	font-weight: 900; /* Black */
+	font-style: normal;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -85,12 +152,32 @@ div#global_header .content {
 	z-index: 402;
 }
 
+div#global_header .submenuitem {
+	text-decoration: none;
+	text-transform: none;
+	font-size: 12px;
+	color: #dcdedf;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+div#global_header .submenuitem:hover {
+	text-decoration: none;
+	background: #dcdedf;
+	color: #171a21;
+}
+
 div#global_header div.logo {
 	float: left;
 	padding-top: 30px;
 	margin-right: 40px;
 	width: 176px;
 	height: 44px;
+}
+
+.supernav_content a.submenuitem {
+	display: block;
+	padding: 6px 0;
 }
 
 #global_header .supernav_container {
@@ -100,6 +187,7 @@ div#global_header div.logo {
 
 div#global_header .menuitem.supernav_active {
 	color: #1a9fff;
+	text-decoration: underline;
 }
 
 div#global_header .menuitem {
@@ -112,9 +200,15 @@ div#global_header .menuitem {
 	line-height: 16px;
 	float: left;
 	font-size: 16px;
-	font-family: "Motiva Sans", "Twemoji", "Noto Sans", Arial, Helvetica, sans-serif;
+	color: #dcdedf;
+	font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
+}
+
+div#global_header .menuitem:hover {
+	color: #ffffff;
+	text-decoration: none;
 }
 
 div#global_actions {
@@ -126,6 +220,11 @@ div#global_actions {
 	color: #b8b6b4;
 	font-size: 11px;
 	z-index: 401;
+}
+
+div#global_actions .global_action_link:hover {
+	text-decoration: none;
+	color: #ffffff;
 }
 
 div#global_actions #global_action_menu {
@@ -185,7 +284,7 @@ div#global_actions a.global_action_link {
 }
 
 .popup_menu .popup_menu_item {
-	padding: 5px 12 px;
+	padding: 5px 12px;
 	color: #dcdedf;
 	text-transform: none;
 	font-family: Motiva Sans, Arial, Helvectica, Verdana, sans-serif;
