@@ -1,3 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+@font-face { font-family: 'simple-line-icons'; src: url('chrome-extension://mihdfbecejheednfigjpdacgeilhlmnf/assets/fonts/Simple-Line-Icons.ttf') format('truetype'); }
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Regular.ttf?v=4.015') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Light.ttf?v=4.015') format('truetype');
+	font-weight: 300; /* Light */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Thin.ttf?v=4.015') format('truetype');
+	font-weight: 200; /* Ultra-Light / Thin */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Medium.ttf?v=4.015') format('truetype');
+	font-weight: 500; /* Medium */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Bold.ttf?v=4.015') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-RegularItalic.ttf?v=4.015') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-LightItalic.ttf?v=4.015') format('truetype');
+	font-weight: 300; /* Light */
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-BoldItalic.ttf?v=4.015') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Black.ttf?v=4.015') format('truetype');
+	font-weight: 900; /* Black */
+	font-style: normal;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -95,12 +162,32 @@ div#global_header .content {
 	z-index: 402;
 }
 
+div#global_header .submenuitem {
+	text-decoration: none;
+	text-transform: none;
+	font-size: 12px;
+	color: #dcdedf;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+div#global_header .submenuitem:hover {
+	text-decoration: none;
+	background: #dcdedf;
+	color: #171a21;
+}
+
 div#global_header div.logo {
 	float: left;
 	padding-top: 30px;
 	margin-right: 40px;
 	width: 176px;
 	height: 44px;
+}
+
+.supernav_content a.submenuitem {
+	display: block;
+	padding: 6px 0;
 }
 
 #global_header .supernav_container {
@@ -110,6 +197,7 @@ div#global_header div.logo {
 
 div#global_header .menuitem.supernav_active {
 	color: #1a9fff;
+	text-decoration: underline;
 }
 
 div#global_header .menuitem {
@@ -122,9 +210,15 @@ div#global_header .menuitem {
 	line-height: 16px;
 	float: left;
 	font-size: 16px;
-	font-family: "Motiva Sans", "Twemoji", "Noto Sans", Arial, Helvetica, sans-serif;
+	color: #dcdedf;
+	font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
+}
+
+div#global_header .menuitem:hover {
+	color: #ffffff;
+	text-decoration: none;
 }
 
 div#global_actions {
@@ -136,6 +230,11 @@ div#global_actions {
 	color: #b8b6b4;
 	font-size: 11px;
 	z-index: 401;
+}
+
+div#global_actions .global_action_link:hover {
+	text-decoration: none;
+	color: #ffffff;
 }
 
 div#global_actions #global_action_menu {
@@ -195,7 +294,7 @@ div#global_actions a.global_action_link {
 }
 
 .popup_menu .popup_menu_item {
-	padding: 5px 12 px;
+	padding: 5px 12px;
 	color: #dcdedf;
 	text-transform: none;
 	font-family: Motiva Sans, Arial, Helvectica, Verdana, sans-serif;
@@ -6595,6 +6694,325 @@ background: -webkit-linear-gradient( 297deg, rgba( 255, 255, 255, 0.2) 5%,rgba( 
 
 /*          Colin css ends on 7244        */
 
+.rightcol.game_meta_data {
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.rightcol.game_meta_data .block.heading {
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 18px;
+}
+
+.rightcol.game_meta_data .block {
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.2)), color-stop(100%,rgba(0,0,0,0.5)));
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 100%);
+    background: -o-linear-gradient(left, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 100%);
+    background: -ms-linear-gradient(left, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#80000000',GradientType=1 );
+    padding: 16px;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.rightcol.game_meta_data .block.recommendation_noinfo {
+    color: #acb2b8;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.rightcol.game_meta_data .block.recommendation_noinfo a {
+    margin-bottom: 4px;
+}
+
+.rightcol.game_meta_data .block.recommendation_noinfo p {
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.game_area_details_specs_ctn {
+    margin-bottom: 2px;
+    background-color: rgba( 0, 0, 0, 0.2 );
+    display: flex;
+    align-items: center;
+}
+
+.game_area_details_specs_ctn .icon {
+    padding: 0px 6px;
+    display: flex;
+}
+
+.game_area_details_specs_ctn .label {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 8px;
+    height: 100%;
+    background: rgba( 103, 193, 245, 0.1 );
+    width: 100%;
+    border-radius: 1px;
+    color: #66c0f4;
+}
+
+.game_area_details_specs_ctn .icon img {
+    vertical-align: unset;
+}
+
+img.category_icon {
+    width: 26px;
+    height: 16px;
+    vertical-align: top;
+}
+
+
+
+.controllersupportinfo_StoreSidebarContainer_2Z38- {
+    margin-top: 12px;
+}
+
+.controllersupportinfo_ControllerSupportLevelString_x6aCt {
+    color: #8f98a0;
+    margin-bottom: 6px;
+}
+
+.controllersupportinfo_InfoRow_1NUmC {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: rgba(0,0,0,.2);
+    text-decoration: none;
+}
+
+.controllersupportinfo_ImgSection_28V2e {
+    padding: 0px 6px;
+    display: flex;
+    background: #101822;
+}
+
+.controllersupportinfo_LocSection_38m8D {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(103,193,245,.1);
+    color: #66c0f4;
+}
+
+.controllersupportinfo_ImgSection_28V2e>svg.controllersupportinfo_SmallerSVG_BOCK_ {
+    height: 20px;
+}
+
+.controllersupportinfo_ImgSection_28V2e>svg {
+    width: 26px;
+    height: 16px;
+    align-self: center;
+}
+
+.controllersupportinfo_LocString_5bHD6 {
+    font-weight: 400;
+    font-size: 12px;
+    padding: 6px 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.controllersupportinfo_NoticeContainer_3nByi {
+    margin-top: 14px;
+    margin-bottom: 2px;
+}
+
+.block .block_title {
+    font-size: 12px;
+    color: #8f98a0;
+    margin-bottom: 2px;
+}
+
+table.game_language_options {
+    border-collapse: collapse;
+}
+
+.game_language_options tr {
+    border-bottom: 1px solid #626366;
+}
+
+.game_language_options td {
+    color: #8f98a0;
+    padding: 3px 0px 3px 0px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.game_language_options td.checkcol, .game_language_options th.checkcol {
+    width: 62px;
+	color: #8f98a0;
+}
+
+.game_language_options td span {
+    font-weight: bold;
+    color: #67c1f5;
+}
+
+.all_languages {
+    text-decoration: none;
+    color: #67c1f5;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.all_languages:hover {
+	color: white;
+}
+
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.game_language_options th {
+    font-size: 12px;
+    color: #b0aeac;
+    font-weight: normal;
+}
+
+.deckverified_BannerContainer_2b4eh {
+    padding: 12px 0px;
+}
+
+.deckverified_BannerHeader_1IgJ0 {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-bottom: 5px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .5;
+}
+
+
+.deckverified_BannerContentDesktop_2qr1f,.deckverified_BannerContent_1B2KF {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: rgba(59,90,114,.5019607843);
+    align-items: center;
+    transition: background-color .2s ease;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+@media screen and (min-width: 1280px) {
+    .deckverified_BannerContentDesktop_2qr1f,.deckverified_BannerContent_1B2KF {
+        padding:16px 24px;
+    }
+}
+
+.shared_svg_library_SteamDeckCompatIcon_2hEWY {
+    width: 20px;
+    height: 20px;
+}
+
+.deckverified_CategoryIcon_2yDLe {
+    padding-right: 8px;
+    vertical-align: middle;
+}
+
+.deckverified_CompatibilityDetailRatingDescription__2HWJ {
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.deckverified_LearnMorePC_3OSxY, .deckverified_LearnMore_1Vhpn {
+    padding: 6px 12px;
+    color: #fff;
+    background-color: #1a9fff;
+    border-radius: 2px;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,.32);
+    transition-property: color,background-color,border-radius;
+    transition-duration: .1s;
+    transition-timing-function: ease;
+    display: flex;
+}
+
+.deckverified_LearnMore_1Vhpn {
+    font-size: 16px;
+	cursor: pointer;
+}
+
+.shared_svg_library_SteamDeckCompatVerified_3mvZq {
+    color: #59bf40 !important;
+}
+
+.game_details {
+    color: #8f98a0;
+    line-height: 20px;
+}
+
+.game_details b {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #556772;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.details_block a {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    color: #67c1f5;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.block a.linkbar {
+    min-height: 17px;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-bottom: 4px;
+    line-height: 17px;
+    background: rgba( 103, 193, 245, 0.1 );
+    color: #67c1f5;
+    border-radius: 1px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+a.linkbar > img {
+    max-width: 12px;
+    max-height: 12px;
+    padding-right: 4px;
+    vertical-align: middle;
+}
+
+a.linkbar .social_account {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 224px;
+    vertical-align: text-top;
+}
+
 div.early_access_header {
     border: 1px solid #4e81ae;
     margin: 0 0 20px 0;
@@ -7162,8 +7580,6 @@ h2.underline {
     overflow: hidden;
 }
 
-
-
 .game_page_autocollapse_ctn.expanded {
     padding-bottom: 0;
 }
@@ -7360,6 +7776,18 @@ div.early_access_banner > .btn_medium {
     text-decoration: none !important;
     color: #67c1f5 !important;
     background: rgba( 103, 193, 245, 0.2 );
+}
+
+.game_page_autocollapse_ctn.collapsed {
+    padding-bottom: 20px;
+}
+
+.block .block_content_inner #AwardsDefault {
+    padding: 5px 0px;
+}
+
+.block .block_content_inner #AwardsDefault img {
+    max-width: 276px;
 }
 
 .btnv6_blue_hoverfade:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover {
@@ -7975,10 +8403,17 @@ img.game_header_image_full {
 	right: 0;
 	bottom: 0;
 	left: 0;
+	animation-name: curtains;
+	animation-duration: 1s;
+}
+
+@keyframes curtains {
+	0% {opacity:0}
+	100% {opacity:0.8}
 }
 
 .newmodal {
-	font-family: "Motiva Sans", Sans-serif;
+	font-family: 'Motiva Sans', Sans-serif;
 	font-weight: normal; /* normal */
 	position: absolute;
 	max-width: 900px;	/* our page width */
@@ -8067,6 +8502,510 @@ body.v6 .app_tag_modal h2 {
 	margin-left: 8px;
 }
 
+.app_tag_control {
+	height: 19px;
+	line-height: 19px;
+	color: #626366;
+	padding: 2px;
+	background-color: #222225;
+	margin-bottom: 2px;
+}
+
+.app_tag_modal_left {
+	padding-right: 16px;
+	float: left;
+}
+
+.app_tag_modal_right {
+	float: right;
+	width: 256px;
+	padding-left: 16px;
+}
+
+.app_tag_modal p {
+	line-height: 17px;
+	margin-bottom: 8px;
+}
+
+.newmodal_buttons {
+	text-align: right;
+}
+
+.btn_grey_steamui > span {
+	border-radius: 2px;
+	display: block;
+	background: #75b022;
+	background: -webkit-linear-gradient( top, #75b022 5%, #588a1b 95%);
+	background: linear-gradient( to bottom, #75b022 5%, #588a1b 95%);
+	background: linear-gradient( to right, #32363f 5%, #32363f 95%);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	transition: all 0.2s ease-out;
+}
+
+.btn_grey_steamui {
+	border-radius: 2px;
+	border: none;
+	padding: 1px;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none !important;
+	color: #dfe3e6;
+	background: transparent;
+}
+
+.newmodal_close {
+	background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVBREZBRDlBNzdCNzExRTI5ODAzRUE3MDU0Mzk5MjM5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVBREZBRDlCNzdCNzExRTI5ODAzRUE3MDU0Mzk5MjM5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NUFERkFEOTg3N0I3MTFFMjk4MDNFQTcwNTQzOTkyMzkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NUFERkFEOTk3N0I3MTFFMjk4MDNFQTcwNTQzOTkyMzkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4iulRzAAABPElEQVR42mI8cuQIAyWABUqbAXEylH0fiDtwqI8FYhsoewEQH4cZcBaI64DYG8p/AVWADDyAeD4QMwPxJiA+BRJkgkr+BeJoIL4D5U8DYi0kzepAvAKq+TJU7V9kA0DgIxD7Q2lOIF4NpfmBeAuUfg3EPkD8BaaJCc2Z14A4EcoGuWAC1NkqQPwLqvkRsgYmLAG1HoiboOw0IA6EshNh/iZkAAjUA/FBJP5KIF6GTSEuAwygUQsDflAxogwQAuJ10AAExcpNKHsjEIsSMoAZGl2K0EALBeIIKFsOKSpxGtACxK5Qdi4QX4DiAqiYExB34TIgBIgrkAJtFpLcdKgYCBQBcRRMghGamUBxfhKIeaB+NkFOLFAAkjsDTZXfgdgK5DpYXvBGiqYpWDQzQMVAYZKDlDcuMFKanQECDAAqw0LA+GRiqAAAAABJRU5ErkJggg== );
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	float: right;
+	margin-top: 9px;
+	margin-right: 9px;
+	height: 16px;
+	width: 16px;
+	opacity: 0.7;
+}
+
+.newmodal_close:hover {
+	opacity: 1;
+}
+
+.newmodal_buttons .btn_medium {
+	margin-left: 12px;
+	margin-top: 12px;
+}
+.btn_grey_steamui:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover {
+	text-decoration: none !important;
+	color: #fff;
+	background: transparent;
+	}
+
+.btn_grey_steamui:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover > span {
+	background: #8ed629;
+	background: -webkit-linear-gradient( top, #8ed629 5%, #6aa621 95%);
+	background: linear-gradient( to bottom, #8ed629 5%, #6aa621 95%);
+	background: linear-gradient( to right, #464d58 5%, #464d58 95%); box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);	
+}
+
+.modal_top_bar {
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to right, #00ccff, #3366ff);
+}
+
+#highlight_strip {
+	margin-top: 4px;
+	position:relative;
+	height: 69px;
+	margin-bottom: 4px;
+	z-index: 30;
+}
+
+#highlight_strip_scroll {
+	position: absolute;
+}
+
+.highlight_selector {
+	position:absolute;
+	background-image: url( https://store.akamai.steamstatic.com/public/images/v5/game_highlight_activethumb.png );
+	width: 116px;
+	height: 77px;
+	z-index: 50;
+	top: -10px;
+	pointer-events: none;
+}
+
+.highlight_strip_item {
+	float: left;
+	height: 65px;
+	width: 116px;
+	cursor: pointer;
+	text-align: center;
+
+	margin: 2px;
+
+	background-color: #000000;
+
+	position: relative;
+}
+
+.highlight_strip_item img.movie_thumb {
+	width: 116px;
+	height: 65px;
+}
+
+.highlight_movie_marker {
+	position: absolute;
+	top: 16px;
+	left: 42px;
+
+	width: 32px;
+	height: 32px;
+
+	background-image: url( https://store.akamai.steamstatic.com/public/images/v5/ico_game_highlight_video.png);
+
+}
+
+.highlight_overflow {
+	overflow: hidden;
+	margin-right: 16px;
+	position: relative;
+}
+
+.highlight_movie {
+	width: 600px;
+	height: 337.5px;
+	background-color: #000;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.screenshot_holder {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.highlight_player_item img {
+	width: 100%;
+	display: block;
+	animation-name: transition;
+	animation-duration: 0.5s;
+	cursor: pointer;
+}
+
+@keyframes transition {
+	0% {opacity:0}
+	100% {opacity:1}
+}
+
+.html5_video_overlay {
+	position: absolute;
+	bottom: 0;
+	height: 35px;
+	background-color: rgba(0,0,0,0.8);
+	width: 100%;
+	text-align: left;
+	animation-name: control-down;
+	animation-duration: 1s;
+	bottom:-35px
+}
+
+@keyframes control-down{
+	0%{bottom:0px}
+	100%{bottom:-35px}
+}
+
+.html5_video_overlay .play_button.play {
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FAQExNPQD1HQAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAHhJREFUOMtjjIyMZCALsPz7928k6GT6hw3I+ZX/IwSw62RgYFAIqCSg8y82AHGPUlD1X9yA6T82APeMamjdfxwAn50QoBZWj1UNC7INWMG1ZbXYYwXNBjRweXEVzvjEY+elRZX4UgIuO8/PL8PvC0YbG5vRvIIPAADvxSAevqB/CQAAAABJRU5ErkJggg==);
+}
+
+.html5_video_overlay_hover .play_button.play {
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FAQExNPQD1HQAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAHhJREFUOMtjjIyMZCALsPz7928k6GT6hw3I+ZX/IwSw62RgYFAIqCSg8y82AHGPUlD1X9yA6T82APeMamjdfxwAn50QoBZWj1UNC7INWMG1ZbXYYwXNBjRweXEVzvjEY+elRZX4UgIuO8/PL8PvC0YbG5vRvIIPAADvxSAevqB/CQAAAABJRU5ErkJggg==);
+}
+
+.html5_video_overlay .play_button.pause {
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARUVHVx2phIAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAElJREFUOMtjjIyMZCALsPz7928k6lQIqIQwHmxox+QSZSeaOKYylr9//2LViSaOqYzl////WHWiiWMqG7WTkJ2MNjY2o3kFHwAABHVqN1R2w8sAAAAASUVORK5CYII=);
+}
+
+.html5_video_overlay_hover .play_button.pause {
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARUVHVx2phIAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAElJREFUOMtjjIyMZCALsPz7928k6lQIqIQwHmxox+QSZSeaOKYylr9//2LViSaOqYzl////WHWiiWMqG7WTkJ2MNjY2o3kFHwAABHVqN1R2w8sAAAAASUVORK5CYII=);
+}
+
+.html5_video_overlay .play_button {
+	width: 19px;
+	height: 19px;
+	margin: 1px;
+	float: left;
+}
+
+.html5_video_overlay_hover .play_button {
+	width: 19px;
+	height: 19px;
+	margin: 1px;
+	float: left;
+}
+
+.screenshot_popup_modal_content {
+	position: relative;
+	padding: 10px;
+	border-radius: 3px;
+	background: -webkit-linear-gradient( 315deg, #356480 5%,#1a303d 95%);
+	background: linear-gradient( 135deg, #356480 5%,#1a303d 95%);
+}
+
+.screenshot_popup_modal_footer {
+	position: relative;
+	height: 28px;
+	line-height: 28px;
+	margin-top: 10px;
+	text-align: center;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.screenshot_popup_modal_footer .previous {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.screenshot_popup_modal_footer .next {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.game_background_glow {
+	background: url( 'https://store.akamai.steamstatic.com/public/images/v6/app/game_page_background_shadow.png?v=2' );
+	background-position: bottom;
+	padding-bottom: 1px;
+	background-repeat: no-repeat;
+	margin: 0px auto;
+}
+
+.queue_ctn {
+    width: 940px;
+    background: rgba( 0, 0, 0, 0.2 );
+
+	margin: 0px auto;
+	margin-bottom: 16px;
+}
+
+.queue_ctn .queue_actions_ctn {
+	padding: 16px;
+}
+
+.html5_video_overlay .control_container {
+	background-color: #2c2b28;
+	margin: 1px;
+	height: 19px;
+	margin-left: 21px;
+}
+
+.html5_video_overlay_hover .control_container {
+	background-color: #2c2b28;
+	margin: 1px;
+	height: 19px;
+	margin-left: 21px;
+}
+
+.html5_video_overlay .fullscreen_button {
+	height: 19px;
+	width: 19px;
+	margin-right: 3px;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARYVIXFfZMwAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAGBJREFUOMtj1NHWYCALMDGQC1jk5GThnEePHuNXjayYhRgNmEbLyclS4FqsLiHGWhZkp27bvhu/Ni9PV7h+8l07qpOY1AePGHigEwRycrIsxCda6rkWOd2RlFcYByBnAwBu7B+wiL65mQAAAABJRU5ErkJggg==);
+	float: right;
+}
+
+.html5_video_overlay_hover .fullscreen_button {
+	height: 19px;
+	width: 19px;
+	margin-right: 3px;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARYVIXFfZMwAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAGBJREFUOMtj1NHWYCALMDGQC1jk5GThnEePHuNXjayYhRgNmEbLyclS4FqsLiHGWhZkp27bvhu/Ni9PV7h+8l07qpOY1AePGHigEwRycrIsxCda6rkWOd2RlFcYByBnAwBu7B+wiL65mQAAAABJRU5ErkJggg==);
+	float: right;
+}
+
+.html5_video_overlay .time {
+	color: #9d9d9d;
+	font-size: 10px;
+	line-height: 19px;
+	margin-right: 5px;
+	float: right;
+}
+
+.html5_video_overlay_hover .time {
+	color: #9d9d9d;
+	font-size: 10px;
+	line-height: 19px;
+	margin-right: 5px;
+	float: right;
+}
+
+.html5_video_overlay .volume_icon.muted {
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARYTD/vTzoUAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAQpJREFUOMtj1NHWYCALMDGQC2ig09HJWV1dg2SdmZnZkyZN4eXjxaOTBY3Pw8PT0tru7OxC0LUscA0aGpq8vLxZ2TkaGprE+BOqU0NDc/6CRVhVcHFxMTAwfPv2jYuLy83NY8OGdcSGrYiISF5eoYaGZlNTq4iICAmx8ujRoyNHDlVUVh85cnjOnFkk6OTi4goICNq1c4eGhibE5cTqjIqKuXHj+rJlS5YtW2xjY4seQp8+fzp96pSUtLS0tDSaTrgLHz169OjRI3Q7b928mZQUHxIcsGHDenJS35cvX2prqjo62shMt0uXLE5MiPv06RN+nYy48qeUlBQDA8OzZ8+ITbdwgEcPpfkTADH3UjunQa9YAAAAAElFTkSuQmCC);
+}
+
+.html5_video_overlay_hover .volume_icon.muted {
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARYTD/vTzoUAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAQpJREFUOMtj1NHWYCALMDGQC2ig09HJWV1dg2SdmZnZkyZN4eXjxaOTBY3Pw8PT0tru7OxC0LUscA0aGpq8vLxZ2TkaGprE+BOqU0NDc/6CRVhVcHFxMTAwfPv2jYuLy83NY8OGdcSGrYiISF5eoYaGZlNTq4iICAmx8ujRoyNHDlVUVh85cnjOnFkk6OTi4goICNq1c4eGhibE5cTqjIqKuXHj+rJlS5YtW2xjY4seQp8+fzp96pSUtLS0tDSaTrgLHz169OjRI3Q7b928mZQUHxIcsGHDenJS35cvX2prqjo62shMt0uXLE5MiPv06RN+nYy48qeUlBQDA8OzZ8+ITbdwgEcPpfkTADH3UjunQa9YAAAAAElFTkSuQmCC);
+}
+
+.html5_video_overlay .volume_icon {
+	width: 19px;
+	height: 19px;
+	margin-left: 3px;
+	display: inline-block;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FAQEyM0FKEhQAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAaBJREFUOMtj1NHWYCALMDGQC4jV6ezixsbGRpROR0cnNXV1CJuXl09UVDQ+IZmXl4+AzszM7EmTp/LB1Onp669bu/rz508uLm44dfLw8EyYODkrOwcuwsnJGRAQFBuXcPjQQRlZWWERERSdPDw8Jiamjo5O8xcscnZ2QTaLmZl57pxZtrZ2TMxMr1+/0tLUhoizQCgNDc35CxZhOpuHh2fN2g0hwQE3rl+3sba9eu2qlpY2UWH75cuXz58/+QcE7ty5XV5e4e2bN6KiYsTGyr69e01Nzb5//05yfKpraHz+/JmTk5M0nTw8PM7OLhs3rDcyNnn48IG0tMzr169QdH76/On0qVNPnz7F9GdiQtyXL19sbe3Onz8nLS3z+vVrFJ23bt5MSooPCQ7YsGE9muarV6/k5hWcPXvm9ZvXMrKy9+7eweLaL1++1NZUdXS0IQt+//793Lmzc2bPdHV1f/L48f3793D6c+mSxYkJcZ8+fYKLzJ0zy8ralpeXb8+eXXBBFqwBc+bM6ZDgQDiXjY1NWlpm3brVnz8jjGMcgJwNAO7wmMDjuhRMAAAAAElFTkSuQmCC);
+}
+
+.html5_video_overlay_hover .volume_icon {
+	width: 19px;
+	height: 19px;
+	margin-left: 3px;
+	display: inline-block;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FAQEyM0FKEhQAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAaBJREFUOMtj1NHWYCALMDGQC4jV6ezixsbGRpROR0cnNXV1CJuXl09UVDQ+IZmXl4+AzszM7EmTp/LB1Onp669bu/rz508uLm44dfLw8EyYODkrOwcuwsnJGRAQFBuXcPjQQRlZWWERERSdPDw8Jiamjo5O8xcscnZ2QTaLmZl57pxZtrZ2TMxMr1+/0tLUhoizQCgNDc35CxZhOpuHh2fN2g0hwQE3rl+3sba9eu2qlpY2UWH75cuXz58/+QcE7ty5XV5e4e2bN6KiYsTGyr69e01Nzb5//05yfKpraHz+/JmTk5M0nTw8PM7OLhs3rDcyNnn48IG0tMzr169QdH76/On0qVNPnz7F9GdiQtyXL19sbe3Onz8nLS3z+vVrFJ23bt5MSooPCQ7YsGE9muarV6/k5hWcPXvm9ZvXMrKy9+7eweLaL1++1NZUdXS0IQt+//793Lmzc2bPdHV1f/L48f3793D6c+mSxYkJcZ8+fYKLzJ0zy8ralpeXb8+eXXBBFqwBc+bM6ZDgQDiXjY1NWlpm3brVnz8jjGMcgJwNAO7wmMDjuhRMAAAAAElFTkSuQmCC);
+}
+
+.html5_video_overlay .volume_slider {
+	width: 80px;
+	height: 19px;
+	display: inline-block;
+	margin-left: 5px;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAATCAYAAAAH3YpvAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARUcHhS9TOEAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAFBJREFUWMPt18EJwCAQRcEYUowQb/+WQPrvyvSgBxHmlTDsLmxpd+2HhjsRAAQIEKAAAtyz63k/CiZwTUkATq9wEgoTFb+wGwgQIEABBLhnPwULBQqEx95FAAAAAElFTkSuQmCC);
+	position: relative;
+}
+
+.html5_video_overlay_hover .volume_slider {
+	width: 80px;
+	height: 19px;
+	display: inline-block;
+	margin-left: 5px;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAATCAYAAAAH3YpvAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARUcHhS9TOEAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAFBJREFUWMPt18EJwCAQRcEYUowQb/+WQPrvyvSgBxHmlTDsLmxpd+2HhjsRAAQIEKAAAtyz63k/CiZwTUkATq9wEgoTFb+wGwgQIEABBLhnPwULBQqEx95FAAAAAElFTkSuQmCC);
+	position: relative;
+}
+
+.html5_video_overlay .volume_slider .volume_handle {
+	position: absolute;
+	width: 4px;
+	height: 19px;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAATCAIAAAA4QDsKAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARUcO1+5mKYAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAACBJREFUCNdj1NHWYIABJgYkgMJhPHPmDBHKBhmHEafnAIRzA4YgO29NAAAAAElFTkSuQmCC);
+}
+
+.html5_video_overlay_hover .volume_slider .volume_handle {
+	position: absolute;
+	width: 4px;
+	height: 19px;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAATCAIAAAA4QDsKAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARUcO1+5mKYAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAACBJREFUCNdj1NHWYIABJgYkgMJhPHPmDBHKBhmHEafnAIRzA4YgO29NAAAAAElFTkSuQmCC);
+}
+
+.html5_video_overlay .autoplay_checkbox {
+	width: 11px;
+	height: 11px;
+	margin: 4px;
+	display: inline-block;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAIAAAAmzuBxAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARYUBCNAgcoAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAB1JREFUGNNjjIyMZMALWP78+UNAxd+/f0fNIMUMAAaZHswb2V9sAAAAAElFTkSuQmCC);
+	margin-left: 15px;
+}
+
+.html5_video_overlay_hover .autoplay_checkbox {
+	width: 11px;
+	height: 11px;
+	margin: 4px;
+	display: inline-block;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAIAAAAmzuBxAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARYUBCNAgcoAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAB1JREFUGNNjjIyMZMALWP78+UNAxd+/f0fNIMUMAAaZHswb2V9sAAAAAElFTkSuQmCC);
+	margin-left: 15px;
+}
+
+.html5_video_overlay .autoplay_checkbox:hover {
+	border: 1px solid #cccccc;
+	margin: 3px;
+	margin-left: 14px;
+}
+
+.html5_video_overlay_hover .autoplay_checkbox:hover {
+	border: 1px solid #cccccc;
+	margin: 3px;
+	margin-left: 14px;
+}
+
+.html5_video_overlay .autoplay_checkbox.checked {
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAIAAAAmzuBxAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARYUIB9DZRsAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAARNJREFUGNN9UDFrwlAYTF6iGJQmRIM1UhDJIl10ibo7+AdEXf1Vzl0cuhb3gpN/wCKUQmtAioLBJs+8fvfSwVY6eePdcXecOh6PlatgRARFYze3UDT6w3+GAci5jVJnWGwPpKoDkKpebA9KnWHObQBgRPQVvECcsmbZ6Y6UbN7pjrJmGeIUf74RkeZ5HgSPt6+Fu/tM3jI9X88VIE7B80Ny2KZpys7F8T4IFrPLumAxi/fBWWIAAKQs4zT7F4fT7Kcsc5YYEUlVr/Umhl2B4O+LRwhu2JVabyJV/TfDqrcM26WEr+fT3Xq5nk8p4YbtWvUWAK1arYoohOCb5VO020gpRRSGm9U3Px4+VkkUqr7vX//0B11/rvgloxulAAAAAElFTkSuQmCC);
+}
+
+.html5_video_overlay_hover .autoplay_checkbox.checked {
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAIAAAAmzuBxAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90FARYUIB9DZRsAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAARNJREFUGNN9UDFrwlAYTF6iGJQmRIM1UhDJIl10ibo7+AdEXf1Vzl0cuhb3gpN/wCKUQmtAioLBJs+8fvfSwVY6eePdcXecOh6PlatgRARFYze3UDT6w3+GAci5jVJnWGwPpKoDkKpebA9KnWHObQBgRPQVvECcsmbZ6Y6UbN7pjrJmGeIUf74RkeZ5HgSPt6+Fu/tM3jI9X88VIE7B80Ny2KZpys7F8T4IFrPLumAxi/fBWWIAAKQs4zT7F4fT7Kcsc5YYEUlVr/Umhl2B4O+LRwhu2JVabyJV/TfDqrcM26WEr+fT3Xq5nk8p4YbtWvUWAK1arYoohOCb5VO020gpRRSGm9U3Px4+VkkUqr7vX//0B11/rvgloxulAAAAAElFTkSuQmCC);
+}
+
+.html5_video_overlay .autoplay_label {
+	font-size: 10px;
+	line-height: 19px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.html5_video_overlay_hover .autoplay_label {
+	font-size: 10px;
+	line-height: 19px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.html5_video_overlay .progress_bar_wrapper {
+	position: absolute;
+	bottom: 0px;
+	top: 21px;
+	left: 0px;
+	right: 0px;
+	background-color: #2c2b28;
+}
+
+.html5_video_overlay_hover .progress_bar_wrapper {
+	position: absolute;
+	bottom: 0px;
+	top: 21px;
+	left: 0px;
+	right: 0px;
+	background-color: #2c2b28;
+}
+
+.html5_video_overlay .progress_bar_container {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 1px;
+}
+
+.html5_video_overlay_hover .progress_bar_container {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 1px;
+}
+
+.html5_video_overlay .progress_bar_background {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	bottom: 0px;
+	background-color: #595959;
+}
+
+.html5_video_overlay_hover .progress_bar_background {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	bottom: 0px;
+	background-color: #595959;
+}
+
+.html5_video_overlay .progress_bar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	bottom: 0px;
+	background-color: #6f9fc8;
+}
+
+.html5_video_overlay_hover .progress_bar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	bottom: 0px;
+	background-color: #6f9fc8;
+}
 /* Luke's custom classes start */
 .real_tags {
 	flex-flow: row wrap;
@@ -8126,8 +9065,39 @@ body.v6 .app_tag_modal h2 {
 	background-color: black;
 }
 
-.app_tag_modal_tooltip:hover .nonresponsive_hidden {
+.app_tag_modal_tooltip:hover + .nonresponsive_hidden {
 	display:flex;
+	position: fixed;
+	z-index: 1500;
+	opacity: 1;
+	margin-left: 60px;
+	margin-top: -95px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 13px;
+}
+
+
+.highlight_player_area {
+	background-color: #000000;
+	overflow: hidden;
+	position: relative;
+}
+
+.html5_video_overlay_hover{
+	position: absolute;
+	bottom: 0;
+	height: 35px;
+	background-color: rgba(0,0,0,0.8);
+	width: 100%;
+	text-align: left;
+	animation-name: control-up;
+	animation-duration: 0.5s;
+	bottom:0px
+}
+
+@keyframes control-up {
+	0% {bottom:-35px}
+	100% {bottom:0px}
 }
 
 /* Luke's custom classes end */
@@ -8192,15 +9162,4 @@ body.v6 .app_tag_modal h2 {
     background-image: radial-gradient(ellipse at top left, #42454c, #25282e);
     box-shadow: 2px 2px 10px rgba(0,0,0,.4);
     border-radius: 4px;
-}
 
-
-.user_reviews_summary_row:hover .nonresponsive_hidden {
-	display:flex;
-	position: absolute;
-	z-index: 1500;
-	opacity: 1;
-	margin-top: -60px;
-	margin-left: -103px;
-	pointer-events: auto;
-}

@@ -1,5 +1,5 @@
 import SecondHeader from "./SecondHeader";
-import LeftSection from "./LeftComponents/LeftSection";
+import Columns from "./Columns";
 import Review from "./Review";
 import Summary from "./Summary";
 
@@ -27,7 +27,7 @@ const MainPage = () => {
             itemType="http://schema.org/Product"
           >
             <Summary />
-            <LeftSection />
+            <Columns />
             <Review />
           </div>
         </div>

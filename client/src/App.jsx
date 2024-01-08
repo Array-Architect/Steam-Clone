@@ -6,9 +6,10 @@ import MainPage from "./Components/MainPage";
 import Footer from "./Components/Footer";
 import TagsModal from "./Components/TagsModal.jsx";
 import { setContexts } from "./Context.jsx";
+import PreviewModal from "./Components/PreviewModal.jsx";
 
 function App() {
-  const {displayTags} = setContexts()
+  const {displayTags,displayPreviewModal} = setContexts()
   return (
     <>
         <div className="responsive_page_frame with_header">
@@ -31,6 +32,7 @@ function App() {
         <div className="FullModalOverlay" style={{ display: "none" }}></div>
         <div id="review_histogram_tooltip"></div>
         {displayTags&&<TagsModal/>}
+        {displayPreviewModal&&<PreviewModal/>}
     </>
   );
 }
