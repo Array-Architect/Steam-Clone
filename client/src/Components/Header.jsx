@@ -74,7 +74,10 @@ function Header({}) {
               left: "1px",
               top: "67px",
               pointerEvents: hoveredMenu === "Store" ? "auto" : "none",
-              display: hoveredMenu === "Store" ? "block" : "none"
+              display: hoveredMenu === "Store" ? "block" : "none",
+              background: "#3D4450",
+              boxShadow: "3px 3px 5px -3px #000",
+              textAlign: "left"
             }}
             onMouseEnter={() => handleMouseEnter("Store")}
             onMouseLeave={handleMouseLeave}
@@ -97,7 +100,10 @@ function Header({}) {
               left: "66.2188px",
               top: "67px",
               pointerEvents: hoveredMenu === "Community" ? "auto" : "none",
-              display: hoveredMenu === "Community" ? "block" : "none"
+              display: hoveredMenu === "Community" ? "block" : "none",
+              background: "#3D4450",
+              boxShadow: "3px 3px 5px -3px #000",
+              textAlign: "left"
             }}
             onMouseEnter={() => handleMouseEnter("Community")}
             onMouseLeave={handleMouseLeave}

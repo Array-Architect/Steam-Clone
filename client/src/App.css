@@ -85,12 +85,32 @@ div#global_header .content {
 	z-index: 402;
 }
 
+div#global_header .submenuitem {
+	text-decoration: none;
+	text-transform: none;
+	font-size: 12px;
+	color: #dcdedf;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+div#global_header .submenuitem:hover {
+	text-decoration: none;
+	background: #dcdedf;
+	color: #171a21;
+}
+
 div#global_header div.logo {
 	float: left;
 	padding-top: 30px;
 	margin-right: 40px;
 	width: 176px;
 	height: 44px;
+}
+
+.supernav_content a.submenuitem {
+	display: block;
+	padding: 6px 0;
 }
 
 #global_header .supernav_container {
