@@ -1,3 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+@font-face { font-family: 'simple-line-icons'; src: url('chrome-extension://mihdfbecejheednfigjpdacgeilhlmnf/assets/fonts/Simple-Line-Icons.ttf') format('truetype'); }
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Regular.ttf?v=4.015') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Light.ttf?v=4.015') format('truetype');
+	font-weight: 300; /* Light */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Thin.ttf?v=4.015') format('truetype');
+	font-weight: 200; /* Ultra-Light / Thin */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Medium.ttf?v=4.015') format('truetype');
+	font-weight: 500; /* Medium */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Bold.ttf?v=4.015') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-RegularItalic.ttf?v=4.015') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-LightItalic.ttf?v=4.015') format('truetype');
+	font-weight: 300; /* Light */
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-BoldItalic.ttf?v=4.015') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://store.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Black.ttf?v=4.015') format('truetype');
+	font-weight: 900; /* Black */
+	font-style: normal;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -142,7 +209,7 @@ div#global_header .menuitem {
 	line-height: 16px;
 	float: left;
 	font-size: 16px;
-	font-family: "Motiva Sans", "Twemoji", "Noto Sans", Arial, Helvetica, sans-serif;
+	font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
 }
