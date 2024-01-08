@@ -22,15 +22,15 @@ function Footer({}) {
                             © 2024 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
                         </div>
                         <div>
-                            VAT included in all prices where applicable.&nbsp;&nbsp;
+                            VAT included in all prices where applicable.&nbsp;&nbsp;&nbsp;
                             <a href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_" target="_blank">Privacy Policy</a>
-                            &nbsp; | &nbsp;
+                            &nbsp;&nbsp; | &nbsp;&nbsp;
                             <a href="https://store.steampowered.com/legal/?snr=1_44_44_" target="_blank">Legal</a>
-                            &nbsp; | &nbsp;
+                            &nbsp;&nbsp; | &nbsp;&nbsp;
                             <a href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_" target="_blank">Steam Subscriber Agreement</a>
-                            &nbsp; | &nbsp; 
+                            &nbsp;&nbsp; | &nbsp;&nbsp; 
                             <a href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_" target="_blank">Refunds</a>
-                            &nbsp; | &nbsp;
+                            &nbsp;&nbsp; | &nbsp;&nbsp;
                             <a href="https://store.steampowered.com/account/cookiepreferences/?snr=1_44_44_" target="_blank">Cookies</a>
                         </div>
                         <div className="responsive_optin_link">
