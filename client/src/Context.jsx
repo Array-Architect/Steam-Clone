@@ -14,9 +14,39 @@ export function ContextProvider({children}) {
     const [autoplay,setAutoplay] = useState(true)
     const [videoHover,setVideoHover] = useState(false)
     const [previewNavSlider,setpreviewNavSlider] = useState(0)
+    const [readmore, setreadmore] = useState(false)
 
-    return(
-        <contexts.Provider value={{displayTags,setDisplayTags}}>{children}</contexts.Provider>
+    const contextValues = {
+        displayTags,
+        setDisplayTags,
+        graphVisible,
+        setGraphVisible,
+        displayPreviewModal,
+        setDisplayPreviewModal,
+        selectedPreview,
+        setSelectedPreview,
+        showPreview,
+        setShowPreview,
+        play,
+        setPlay,
+        time,
+        setTime,
+        muted,
+        setMuted,
+        volume,
+        setVolume,
+        autoplay,
+        setAutoplay,
+        videoHover,
+        setVideoHover,
+        previewNavSlider,
+        setpreviewNavSlider
+    }
+
+    return (
+        <contexts.Provider value={contextValues}>
+            {children}
+        </contexts.Provider>
     )
 }
 

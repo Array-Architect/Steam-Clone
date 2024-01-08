@@ -115,8 +115,7 @@ const Block1 = () => {
               </div>
             </div>
           </a>
-          {/* Additional small cap elements would continue here */}
-          <div style={{ clear: "left" }}></div>
+            <div style={{ clear: "left" }}></div>
         </div>
       </div>
       <div className="slider_ctn store_autoslider">
