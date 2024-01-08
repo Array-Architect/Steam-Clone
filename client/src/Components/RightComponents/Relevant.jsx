@@ -12,6 +12,7 @@ const Relevant = () => {
         <a
           className="btnv6_blue_hoverfade btn_medium"
           href="https://store.steampowered.com/login/?redir=app/892970"
+          style={{ marginRight: "5px" }}
         >
           <span>Sign In</span>
         </a>
@@ -19,6 +20,7 @@ const Relevant = () => {
         <a
           className="btnv6_blue_hoverfade btn_medium"
           href="steam://store/892970"
+          style={{ marginLeft: "5px" }}
         >
           <span>Open in Steam</span>
         </a>

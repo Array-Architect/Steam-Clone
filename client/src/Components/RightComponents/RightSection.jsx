@@ -3,6 +3,8 @@ import Details from "./Details";
 import Languages from "./Languages";
 import SteamDeck from "./SteamDeck";
 import AppDetails from "./AppDetails";
+import ShareEmbed from "./ShareEmbed";
+import Awards from "./Awards";
 
 const RightSection = () => {
   return (
@@ -15,6 +17,8 @@ const RightSection = () => {
       <Languages />
       <SteamDeck />
       <AppDetails />
+      <ShareEmbed />
+      <Awards />
     </div>
   );
 };
