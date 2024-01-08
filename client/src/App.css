@@ -32,6 +32,16 @@ html {
 	height: 100%;
 }
 
+body,body.shared_common_v6_3r3Le {
+	color: #969696;
+	font-family: "Motiva Sans",Arial,Helvetica,sans-serif
+}
+
+body {
+  background: #1b2838;
+  color: #acb2b8;
+}
+
 body.v6 {
 	position: relative;
 	min-height: 100%;

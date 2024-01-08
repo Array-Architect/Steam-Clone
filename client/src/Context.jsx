@@ -2,7 +2,7 @@ import { createContext,useState,useContext } from "react"
 
 const contexts = createContext()
 
-export function ContextProvider({children}){
+export function ContextProvider({children}) {
     const [displayTags,setDisplayTags] = useState(false)
     const [displayPreviewModal,setDisplayPreviewModal] = useState(0)
     const [selectedPreview, setSelectedPreview] = useState(0)
@@ -16,19 +16,7 @@ export function ContextProvider({children}){
     const [previewNavSlider,setpreviewNavSlider] = useState(0)
 
     return(
-        <contexts.Provider value={{
-            displayTags,setDisplayTags,
-            selectedPreview,setSelectedPreview,
-            showPreview,setShowPreview,
-            displayPreviewModal,setDisplayPreviewModal,
-            play,setPlay,
-            time,setTime,
-            muted,setMuted,
-            volume,setVolume,
-            autoplay,setAutoplay,
-            videoHover,setVideoHover,
-            previewNavSlider,setpreviewNavSlider
-        }}>{children}</contexts.Provider>
+        <contexts.Provider value={{displayTags,setDisplayTags}}>{children}</contexts.Provider>
     )
 }
 
