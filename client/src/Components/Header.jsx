@@ -4,6 +4,8 @@ function Header({}) {
   //
   const [ selectedLink, setSelectedLink ] = useState("Store");
   const [ hoveredMenu, setHoveredMenu ] = useState(null);
+  const [ changeLanguage, setChangeLanguage ] = useState("english");
+  const [ showMenu, setShowMenu ] = useState(false);
 
     const changeSelectedItem = (itemId) => {
         setSelectedLink(itemId);
@@ -133,26 +135,42 @@ function Header({}) {
                 <div id="global_actions">
                     <div role="navigation" id="global_action_menu" aria-label="Account Menu">
                         <a className="header_installsteam_btn header_installsteam_btn_green" href="https://store.steampowered.com/about/?snr=1_5_9__global-header">
-                            <div className="header_installsteam_btn_content">{` Install Steam `}</div>
+                            <div className="header_installsteam_btn_content">Install Steam</div>
                         </a>
                         <a className="global_action_link" href="https://store.steampowered.com/login/?redir=app%2F892970%2FValheim%2F&redir_ssl=1&snr=1_5_9__global-header">&nbsp;login</a>
                         &nbsp; | &nbsp;
-                        <span className="pulldown global_action_link" id="language_pulldown" onClick={() => ShowMenu( this, 'language_dropdown', 'right')}>language</span>
-                        <div className="popup_block_new" id="language_dropdown" style={{visibility: "visible", top: "19px", left: "-71.2969px", display: "block", opacity: 1}}>
+                        <span className="pulldown global_action_link" id="language_pulldown" onClick={() => setShowMenu(showMenu === false ? true : false)}>language</span>
+                        <div className="popup_block_new" id="language_dropdown" style={{visibility: "visible", top: "19px", left: "-71.2969px", display: showMenu === true ? "block" : "none", opacity: 1}}>
                             <div className="popup_body popup_menu">
-                               {/*  <a className="popup_menu_item tight" href="?l=schinese" onClick={(e) => {ChangeLanguage( 'schinese' ); e.preventDefault}}>简体中文 (Simplified Chinese)</a>
-                                <a className="popup_menu_item tight" href="?l=tchinese" onClick={(e) => {ChangeLanguage( 'tchinese' ); e.preventDefault}}>繁體中文 (Traditional Chinese)</a>
-                                <a class="popup_menu_item tight" href="?l=japanese" onClick={(e) => {ChangeLanguage( 'japanese' ); e.preventDefault}}>日本語 (Japanese)</a>
-                                <a class="popup_menu_item tight" href="?l=koreana" onClick={(e) => {ChangeLanguage( 'koreana' ); e.preventDefault}}>한국어 (Korean)</a>
-                                <a class="popup_menu_item tight" href="?l=thai" onClick={(e) => {ChangeLanguage( 'thai' ); e.preventDefault}}>ไทย (Thai)</a>
-                                <a class="popup_menu_item tight" href="?l=bulgarian" onClick={(e) => {ChangeLanguage( 'bulgarian' ); e.preventDefault}}>Български (Bulgarian)</a>
-                                <a class="popup_menu_item tight" href="?l=czech" onClick={(e) => {ChangeLanguage( 'czech' ); e.preventDefault}}>Čeština (Czech)</a>
-                                <a class="popup_menu_item tight" href="?l=danish" onClick={(e) => {ChangeLanguage( 'danish' ); e.preventDefault}}>Dansk (Danish)</a>
-                                <a class="popup_menu_item tight" href="?l=german" onClick={(e) => {ChangeLanguage( 'german' ); e.preventDefault}}>Deutsch (German)</a>
-                                <a class="popup_menu_item tight" href="?l=spanish" onClick={(e) => {ChangeLanguage( 'spanish' ); e.preventDefault}}>Español - España (Spanish - Spain)</a>
-                                <a class="popup_menu_item tight" href="?l=latam" onClick={(e) => {ChangeLanguage( 'latam' ); e.preventDefault}}>Español - Latinoamérica (Spanish - Latin America)</a>
-                                TODO: insert the remaining languages here
-                                <a className="popup_menu_item tight" href="https://www.valvesoftware.com/en/contact?contact-person=Translation%20Team%20Feedback" target="_blank">Report a translation problem</a> */}
+                                <a className="popup_menu_item tight" href="?l=schinese" onClick={() => setChangeLanguage( 'schinese' )}>简体中文 (Simplified Chinese)</a>
+                                <a className="popup_menu_item tight" href="?l=tchinese" onClick={() => setChangeLanguage( 'tchinese' )}>繁體中文 (Traditional Chinese)</a>
+                                <a className="popup_menu_item tight" href="?l=japanese" onClick={() => setChangeLanguage( 'japanese' )}>日本語 (Japanese)</a>
+                                <a className="popup_menu_item tight" href="?l=koreana" onClick={() => setChangeLanguage( 'koreana' )}>한국어 (Korean)</a>
+                                <a className="popup_menu_item tight" href="?l=thai" onClick={() => setChangeLanguage( 'thai' )}>ไทย (Thai)</a>
+                                <a className="popup_menu_item tight" href="?l=bulgarian" onClick={() => setChangeLanguage( 'bulgarian' )}>Български (Bulgarian)</a>
+                                <a className="popup_menu_item tight" href="?l=czech" onClick={() => setChangeLanguage( 'czech' )}>Čeština (Czech)</a>
+                                <a className="popup_menu_item tight" href="?l=danish" onClick={() => setChangeLanguage( 'danish' )}>Dansk (Danish)</a>
+                                <a className="popup_menu_item tight" href="?l=german" onClick={() => setChangeLanguage( 'german' )}>Deutsch (German)</a>
+                                <a className="popup_menu_item tight" href="?l=spanish" onClick={() => setChangeLanguage( 'spanish' )}>Español - España (Spanish - Spain)</a>
+                                <a className="popup_menu_item tight" href="?l=latam" onClick={() => setChangeLanguage( 'latam' )}>Español - Latinoamérica (Spanish - Latin America)</a>
+                                <a className="popup_menu_item tight" href="?l=greek" onClick={() => setChangeLanguage( 'greek' )}>Ελληνικά (Greek)</a>
+                                <a className="popup_menu_item tight" href="?l=french" onClick={() => setChangeLanguage( 'french' )}>Français (French)</a>
+                                <a className="popup_menu_item tight" href="?l=italian" onClick={() => setChangeLanguage( 'italian' )}>Italiano (Italian)</a>
+                                <a className="popup_menu_item tight" href="?l=indonesian" onClick={() => setChangeLanguage( 'indonesian' )}>Bahasa Indonesia (Indonesian)</a>
+                                <a className="popup_menu_item tight" href="?l=hungarian" onClick={() => setChangeLanguage( 'hungarian' )}>Magyar (Hungarian)</a>
+                                <a className="popup_menu_item tight" href="?l=dutch" onClick={() => setChangeLanguage( 'dutch' )}>Nederlands (Dutch)</a>
+                                <a className="popup_menu_item tight" href="?l=norwegian" onClick={() => setChangeLanguage( 'norwegian' )}>Norsk (Norwegian)</a>
+                                <a className="popup_menu_item tight" href="?l=polish" onClick={() => setChangeLanguage( 'polish' )}>Polski (Polish)</a>
+                                <a className="popup_menu_item tight" href="?l=portuguese" onClick={() => setChangeLanguage( 'portuguese' )}>Português (Portuguese - Portugal)</a>
+                                <a className="popup_menu_item tight" href="?l=brazilian" onClick={() => setChangeLanguage( 'brazilian' )}>Português - Brasil (Portuguese - Brazil)</a>
+                                <a className="popup_menu_item tight" href="?l=romanian" onClick={() => setChangeLanguage( 'romanian' )}>Română (Romanian)</a>
+                                <a className="popup_menu_item tight" href="?l=russian" onClick={() => setChangeLanguage( 'russian' )}>Русский (Russian)</a>
+                                <a className="popup_menu_item tight" href="?l=finnish" onClick={() => setChangeLanguage( 'finnish' )}>Suomi (Finnish)</a>
+                                <a className="popup_menu_item tight" href="?l=swedish" onClick={() => setChangeLanguage( 'swedish' )}>Svenska (Swedish)</a>
+                                <a className="popup_menu_item tight" href="?l=turkish" onClick={() => setChangeLanguage( 'turkish' )}>Türkçe (Turkish)</a>
+                                <a className="popup_menu_item tight" href="?l=vietnamese" onClick={() => setChangeLanguage( 'vietnamese' )}>Tiếng Việt (Vietnamese)</a>
+                                <a className="popup_menu_item tight" href="?l=ukrainian" onClick={() => setChangeLanguage( 'ukrainian' )}>Українська (Ukrainian)</a>
+                                <a className="popup_menu_item tight" href="https://www.valvesoftware.com/en/contact?contact-person=Translation%20Team%20Feedback" target="_blank">Report a translation problem</a>
                             </div>
                         </div>
                     </div>
