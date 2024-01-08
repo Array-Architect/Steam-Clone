@@ -40,7 +40,9 @@ export function ContextProvider({children}) {
         videoHover,
         setVideoHover,
         previewNavSlider,
-        setpreviewNavSlider
+        setpreviewNavSlider,
+        readmore,
+        setreadmore
     }
 
     return (
