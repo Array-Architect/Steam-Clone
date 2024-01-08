@@ -8584,7 +8584,7 @@ body.v6 .app_tag_modal h2 {
 	background: #8ed629;
 	background: -webkit-linear-gradient( top, #8ed629 5%, #6aa621 95%);
 	background: linear-gradient( to bottom, #8ed629 5%, #6aa621 95%);
-	background: linear-gradient( to right, #464d58 5%, #464d58 95%); box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);	
+	background: linear-gradient( to right, #464d58 5%, #464d58 95%); box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
 }
 
 .modal_top_bar {
