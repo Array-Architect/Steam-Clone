@@ -433,7 +433,6 @@ body.v6 h3 {
 
 body.v6 .page_content {
 	width: 940px;
-  /* height: 3282px; */
 	margin: 0 auto;
 }
 
@@ -608,7 +607,7 @@ a.store_header_btn_content:hover {
     border-radius: 1px;
     background: #ffffff; /* Old browsers */
     background: -moz-linear-gradient(-60deg,  #ffffff 0%, #919aa3 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(100%,#919aa3)); /* Chrome,Safari4+ */
+    background: --webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(100%,#919aa3)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(-60deg,  #ffffff 0%,#919aa3 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(-60deg,  #ffffff 0%,#919aa3 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(-60deg,  #ffffff 0%,#919aa3 100%); /* IE10+ */
@@ -6586,6 +6585,325 @@ background: -webkit-linear-gradient( 297deg, rgba( 255, 255, 255, 0.2) 5%,rgba( 
 
 /*          Colin css ends on 7244        */
 
+.rightcol.game_meta_data {
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.rightcol.game_meta_data .block.heading {
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 18px;
+}
+
+.rightcol.game_meta_data .block {
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.2)), color-stop(100%,rgba(0,0,0,0.5)));
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 100%);
+    background: -o-linear-gradient(left, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 100%);
+    background: -ms-linear-gradient(left, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#80000000',GradientType=1 );
+    padding: 16px;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.rightcol.game_meta_data .block.recommendation_noinfo {
+    color: #acb2b8;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.rightcol.game_meta_data .block.recommendation_noinfo a {
+    margin-bottom: 4px;
+}
+
+.rightcol.game_meta_data .block.recommendation_noinfo p {
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.game_area_details_specs_ctn {
+    margin-bottom: 2px;
+    background-color: rgba( 0, 0, 0, 0.2 );
+    display: flex;
+    align-items: center;
+}
+
+.game_area_details_specs_ctn .icon {
+    padding: 0px 6px;
+    display: flex;
+}
+
+.game_area_details_specs_ctn .label {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 8px;
+    height: 100%;
+    background: rgba( 103, 193, 245, 0.1 );
+    width: 100%;
+    border-radius: 1px;
+    color: #66c0f4;
+}
+
+.game_area_details_specs_ctn .icon img {
+    vertical-align: unset;
+}
+
+img.category_icon {
+    width: 26px;
+    height: 16px;
+    vertical-align: top;
+}
+
+
+
+.controllersupportinfo_StoreSidebarContainer_2Z38- {
+    margin-top: 12px;
+}
+
+.controllersupportinfo_ControllerSupportLevelString_x6aCt {
+    color: #8f98a0;
+    margin-bottom: 6px;
+}
+
+.controllersupportinfo_InfoRow_1NUmC {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: rgba(0,0,0,.2);
+    text-decoration: none;
+}
+
+.controllersupportinfo_ImgSection_28V2e {
+    padding: 0px 6px;
+    display: flex;
+    background: #101822;
+}
+
+.controllersupportinfo_LocSection_38m8D {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(103,193,245,.1);
+    color: #66c0f4;
+}
+
+.controllersupportinfo_ImgSection_28V2e>svg.controllersupportinfo_SmallerSVG_BOCK_ {
+    height: 20px;
+}
+
+.controllersupportinfo_ImgSection_28V2e>svg {
+    width: 26px;
+    height: 16px;
+    align-self: center;
+}
+
+.controllersupportinfo_LocString_5bHD6 {
+    font-weight: 400;
+    font-size: 12px;
+    padding: 6px 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.controllersupportinfo_NoticeContainer_3nByi {
+    margin-top: 14px;
+    margin-bottom: 2px;
+}
+
+.block .block_title {
+    font-size: 12px;
+    color: #8f98a0;
+    margin-bottom: 2px;
+}
+
+table.game_language_options {
+    border-collapse: collapse;
+}
+
+.game_language_options tr {
+    border-bottom: 1px solid #626366;
+}
+
+.game_language_options td {
+    color: #8f98a0;
+    padding: 3px 0px 3px 0px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.game_language_options td.checkcol, .game_language_options th.checkcol {
+    width: 62px;
+	color: #8f98a0;
+}
+
+.game_language_options td span {
+    font-weight: bold;
+    color: #67c1f5;
+}
+
+.all_languages {
+    text-decoration: none;
+    color: #67c1f5;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.all_languages:hover {
+	color: white;
+}
+
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.game_language_options th {
+    font-size: 12px;
+    color: #b0aeac;
+    font-weight: normal;
+}
+
+.deckverified_BannerContainer_2b4eh {
+    padding: 12px 0px;
+}
+
+.deckverified_BannerHeader_1IgJ0 {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-bottom: 5px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .5;
+}
+
+
+.deckverified_BannerContentDesktop_2qr1f,.deckverified_BannerContent_1B2KF {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: rgba(59,90,114,.5019607843);
+    align-items: center;
+    transition: background-color .2s ease;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+@media screen and (min-width: 1280px) {
+    .deckverified_BannerContentDesktop_2qr1f,.deckverified_BannerContent_1B2KF {
+        padding:16px 24px;
+    }
+}
+
+.shared_svg_library_SteamDeckCompatIcon_2hEWY {
+    width: 20px;
+    height: 20px;
+}
+
+.deckverified_CategoryIcon_2yDLe {
+    padding-right: 8px;
+    vertical-align: middle;
+}
+
+.deckverified_CompatibilityDetailRatingDescription__2HWJ {
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.deckverified_LearnMorePC_3OSxY, .deckverified_LearnMore_1Vhpn {
+    padding: 6px 12px;
+    color: #fff;
+    background-color: #1a9fff;
+    border-radius: 2px;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,.32);
+    transition-property: color,background-color,border-radius;
+    transition-duration: .1s;
+    transition-timing-function: ease;
+    display: flex;
+}
+
+.deckverified_LearnMore_1Vhpn {
+    font-size: 16px;
+	cursor: pointer;
+}
+
+.shared_svg_library_SteamDeckCompatVerified_3mvZq {
+    color: #59bf40 !important;
+}
+
+.game_details {
+    color: #8f98a0;
+    line-height: 20px;
+}
+
+.game_details b {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #556772;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.details_block a {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    color: #67c1f5;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.block a.linkbar {
+    min-height: 17px;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-bottom: 4px;
+    line-height: 17px;
+    background: rgba( 103, 193, 245, 0.1 );
+    color: #67c1f5;
+    border-radius: 1px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+a.linkbar > img {
+    max-width: 12px;
+    max-height: 12px;
+    padding-right: 4px;
+    vertical-align: middle;
+}
+
+a.linkbar .social_account {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 224px;
+    vertical-align: text-top;
+}
+
 div.early_access_header {
     border: 1px solid #4e81ae;
     margin: 0 0 20px 0;
@@ -7097,23 +7415,41 @@ span.platform_img {
     position: relative;
 }
 
-::-webkit-scrollbar-track {
-    background-color: #1B2838;
-    border-radius: 4px;
-}
+/* ::-webkit-scrollbar-track {
+  background-color: #1B2838;
+  border-radius: 4px;
+} */
 
 ::-webkit-scrollbar-thumb {
-    background-color: #474B54;
-    border-radius: 4px;
+	width: 10px;
+	background-color: #434953;
+	border-radius: 10px;
+	z-index: 12;
+	border: 4px solid rgba(0,0,0,0);
+	background-clip: padding-box;
+	transition: background-color .32s ease-in-out;
+	margin: 4px;
+	min-height: 32px;
+	min-width: 32px
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+	height: 12px;
+  width: 14px;
+	background: rgba( 0, 0, 0, 0 );
+	z-index: 12;
+	overflow: visible;
 }
 
 
 ::-webkit-scrollbar-corner {
-    background-color: black;
+    background-color: #202020;
+}
+
+::selection {
+	background: #54a5d4;
+	text-shadow: 1px 1px 2px rgba(0,0,0,.6666666667);
+	color: #fff;
 }
 
 .game_area_description p strong, .game_area_description strong {
@@ -7134,8 +7470,6 @@ h2.underline {
 .game_page_autocollapse {
     overflow: hidden;
 }
-
-
 
 .game_page_autocollapse_ctn.expanded {
     padding-bottom: 0;
@@ -7333,6 +7667,18 @@ div.early_access_banner > .btn_medium {
     text-decoration: none !important;
     color: #67c1f5 !important;
     background: rgba( 103, 193, 245, 0.2 );
+}
+
+.game_page_autocollapse_ctn.collapsed {
+    padding-bottom: 20px;
+}
+
+.block .block_content_inner #AwardsDefault {
+    padding: 5px 0px;
+}
+
+.block .block_content_inner #AwardsDefault img {
+    max-width: 276px;
 }
 
 .btnv6_blue_hoverfade:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover {
@@ -8707,4 +9053,4 @@ video {
     background-image: radial-gradient(ellipse at top left, #42454c, #25282e);
     box-shadow: 2px 2px 10px rgba(0,0,0,.4);
     border-radius: 4px;
-}
+

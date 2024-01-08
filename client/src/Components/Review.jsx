@@ -1,6 +1,7 @@
 import Histogram from "./ReviewSubComponents/Histogram"
 import ReviewFilter from "./ReviewSubComponents/ReviewFilter"
 import InfoContainer from "./ReviewSubComponents/InfoContainer"
+import ReviewSummary from "./ReviewSubcomponents/ReviewSummary"
 const Review = () => {
 
   return (
@@ -59,6 +60,7 @@ const Review = () => {
               <div
                 id="review_selected_filters"
               ></div>
+              <ReviewSummary/>
             </div>
           </div>
         </div>
