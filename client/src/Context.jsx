@@ -15,6 +15,7 @@ export function ContextProvider({children}) {
     const [autoplay,setAutoplay] = useState(true)
     const [videoHover,setVideoHover] = useState(false)
     const [previewNavSlider,setpreviewNavSlider] = useState(0)
+    const [readmore, setreadmore] = useState(false)
 
     const contextValues = {
         displayTags,
@@ -40,7 +41,9 @@ export function ContextProvider({children}) {
         videoHover,
         setVideoHover,
         previewNavSlider,
-        setpreviewNavSlider
+        setpreviewNavSlider,
+        readmore,
+        setreadmore
     }
 
     return (
