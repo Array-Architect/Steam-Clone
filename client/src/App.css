@@ -232,6 +232,11 @@ div#global_actions {
 	z-index: 401;
 }
 
+div#global_actions .global_action_link:hover {
+	text-decoration: none;
+	color: #ffffff;
+}
+
 div#global_actions #global_action_menu {
 	line-height: 24px;
 	vertical-align: top;
@@ -289,7 +294,7 @@ div#global_actions a.global_action_link {
 }
 
 .popup_menu .popup_menu_item {
-	padding: 5px 12 px;
+	padding: 5px 12px;
 	color: #dcdedf;
 	text-transform: none;
 	font-family: Motiva Sans, Arial, Helvectica, Verdana, sans-serif;
