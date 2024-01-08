@@ -197,6 +197,7 @@ div#global_header div.logo {
 
 div#global_header .menuitem.supernav_active {
 	color: #1a9fff;
+	text-decoration: underline;
 }
 
 div#global_header .menuitem {
@@ -209,9 +210,15 @@ div#global_header .menuitem {
 	line-height: 16px;
 	float: left;
 	font-size: 16px;
+	color: #dcdedf;
 	font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
+}
+
+div#global_header .menuitem:hover {
+	color: #ffffff;
+	text-decoration: none;
 }
 
 div#global_actions {
