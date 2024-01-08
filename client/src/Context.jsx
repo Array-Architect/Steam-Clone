@@ -2,11 +2,21 @@ import { createContext,useState,useContext } from "react"
 
 const contexts = createContext()
 
-export function ContextProvider({children}){
+export function ContextProvider({children}) {
     const [displayTags,setDisplayTags] = useState(false)
+    const [graphVisible, setGraphVisible] = useState(false)
 
-    return(
-        <contexts.Provider value={{displayTags,setDisplayTags}}>{children}</contexts.Provider>
+    const contextValues = {
+        displayTags,
+        setDisplayTags,
+        graphVisible,
+        setGraphVisible
+    }
+
+    return (
+        <contexts.Provider value={contextValues}>
+            {children}
+        </contexts.Provider>
     )
 }
 

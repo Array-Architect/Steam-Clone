@@ -166,6 +166,10 @@ div.page_content {
 	position:relative;
 }
 
+#review_histograms_container.collapsed .review_histogram_section .user_reviews_summary_bar {
+	margin-bottom: 0px;
+}
+
 #review_graph_canvas {
 	position: absolute;
 	top: 0;
@@ -180,6 +184,16 @@ div.page_content {
 
 .review_histogram_section {
 	display: inline-block;
+}
+
+#review_histograms_container.collapsed #review_graph_canvas,
+#review_histograms_container.collapsed .histogram_title,
+#review_histograms_container.collapsed .review_histogram {
+	display: none;
+}
+
+#review_histograms_container.collapsed #review_histogram_recent_section {
+	min-height: 0px;
 }
 
 .review_histogram_section .user_reviews_summary_bar {
@@ -436,7 +450,7 @@ select {
 }
 
 #review_show_graph_button {
-	display: none;
+	display: inherit;
 }
 
 .review_graph_toggle>span {

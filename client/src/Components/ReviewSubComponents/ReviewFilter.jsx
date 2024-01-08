@@ -1,4 +1,13 @@
+import {useState} from 'react'
+import { setContexts } from '../../Context'
+
 const ReviewFilter = () => {
+
+  const { graphVisible, setGraphVisible } = setContexts()
+
+  const showGraph = () => {
+    setGraphVisible(!graphVisible)
+  }
 
   return (
     <div id="review_filter_options" className="user_reviews_filter_options flyout graph_collapsed">
@@ -220,14 +229,17 @@ const ReviewFilter = () => {
     {/* onclick={SetReviewsGraphVisibility( true )}     Be sure to adjust the boolean value accordingly*/}
 
     <div style={{float: "right"}}>
-      <span id="review_show_graph_button" className="btnv6_blue_hoverfade btn_small_thin review_graph_toggle">
+      { !graphVisible ?
+      <span id="review_show_graph_button" className="btnv6_blue_hoverfade btn_small_thin review_graph_toggle" onClick={showGraph}>
         <span>Show graph</span>
-        <div className="graph_toggle_icon down">&nbsp;</div>
+        <div className="graph_toggle_icon down"></div>
       </span>
-      <span id="review_hide_graph_button" className="btnv6_blue_hoverfade btn_small_thin review_graph_toggle">
+      :
+      <span id="review_hide_graph_button" className="btnv6_blue_hoverfade btn_small_thin review_graph_toggle" onClick={showGraph}>
         <span>Hide graph</span>
-        <div className="graph_toggle_icon up">&nbsp;</div>
+        <div className="graph_toggle_icon up"></div>
       </span>
+      }
     </div>
 
     <div style={{clear: "both"}}></div>
