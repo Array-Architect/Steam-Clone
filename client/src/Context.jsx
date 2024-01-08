@@ -4,6 +4,7 @@ const contexts = createContext()
 
 export function ContextProvider({children}) {
     const [displayTags,setDisplayTags] = useState(false)
+    const [graphVisible, setGraphVisible] = useState(false)
     const [displayPreviewModal,setDisplayPreviewModal] = useState(0)
     const [selectedPreview, setSelectedPreview] = useState(0)
     const [showPreview, setShowPreview] = useState(true)
