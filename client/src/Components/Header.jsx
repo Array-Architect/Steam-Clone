@@ -2,7 +2,12 @@ import { useState } from "react";
 
 function Header({}) {
   //
+  const [ selectedLink, setSelectedLink ] = useState("Store");
   const [ hoveredMenu, setHoveredMenu ] = useState(null);
+
+    const changeSelectedItem = (itemId) => {
+        setSelectedLink(itemId);
+    }
 
     const handleMouseEnter = (menuId) => {
         setHoveredMenu(menuId);
@@ -36,23 +41,30 @@ function Header({}) {
           aria-label="Global Menu"
         >
           <a
-            className="menuitem supernav "
+            className={selectedLink === "Store" ? "menuitem supernav_active" : "menuitem supernav"}
             href="https://store.steampowered.com/?snr=1_5_9__global-header"
             data-tooltip-type="selector"
             data-tooltip-content=".submenu_store"
+            onClick={() => changeSelectedItem("Store")}
             onMouseEnter={() => handleMouseEnter("Store")}
             onMouseLeave={handleMouseLeave}
+            style={{
+              color: selectedLink === "Store" ? "#1a9fff" : "#dcdedf",
+            }}
           >
             STORE
           </a>
           <a
-            className="menuitem supernav "
-            style={{ display: "block" }}
+            className={selectedLink === "Community" ? "menuitem supernav_active" : "menuitem supernav"}
             href="https://steamcommunity.com/"
             data-tooltip-type="selector"
             data-tooltip-content=".submenu_community"
+            onClick={() => changeSelectedItem("Community")}
             onMouseEnter={() => handleMouseEnter("Community")}
             onMouseLeave={handleMouseLeave}
+            style={{
+              color: selectedLink === "Community" ? "#1a9fff" : "#dcdedf",
+            }}
           >
             COMMUNITY
           </a>
@@ -121,10 +133,10 @@ function Header({}) {
                 <div id="global_actions">
                     <div role="navigation" id="global_action_menu" aria-label="Account Menu">
                         <a className="header_installsteam_btn header_installsteam_btn_green" href="https://store.steampowered.com/about/?snr=1_5_9__global-header">
-                            <div className="header_installsteam_btn_content"> Install Steam </div>
+                            <div className="header_installsteam_btn_content">{` Install Steam `}</div>
                         </a>
                         <a className="global_action_link" href="https://store.steampowered.com/login/?redir=app%2F892970%2FValheim%2F&redir_ssl=1&snr=1_5_9__global-header">login</a>
-                        &nbsp;|&nbsp;
+                        {`  |  `}
                         <span className="pulldown global_action_link" id="language_pulldown" onClick={() => ShowMenu( this, 'language_dropdown', 'right')}>language</span>
                         <div className="popup_block_new" id="language_dropdown" style={{visibility: "visible", top: "19px", left: "-71.2969px", display: "block", opacity: 1}}>
                             <div className="popup_body popup_menu">
