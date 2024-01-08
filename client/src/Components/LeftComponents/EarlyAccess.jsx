@@ -1,9 +1,12 @@
 import { useState } from "react";
+import { setContexts } from "../../Context.jsx"
 
 const EarlyAccess = () => {
+  const {readmore, setreadmore} = setContexts()
   const [isExpanded, setIsExpanded] = useState(false);
   const showAll = () => {
     setIsExpanded(true);
+    setreadmore(!readmore)
   };
   return (
     <div id="earlyAccessHeader" className="early_access_header">
