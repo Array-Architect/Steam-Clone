@@ -34,24 +34,24 @@ const ReviewSummaryRightCol = () => {
   <div className="control_block">
     <span className="text review_was_helpful">Helpful?</span>
     <div className="vote_button_ctn" id="reviewButtonContainer155534039">
-      <a href="javascript:void(0)"  className="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short155534039">
+      <a className="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short155534039">
         <span>
           <i className="ico16 thumb_upv6"></i>
           " Yes"
         </span>
       </a>
-      <a href="javascript:void(0)" className="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short155534039">
+      <a className="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short155534039">
         <span>
           <i className="ico16 thumb_downv6"></i>
           " No"
         </span>
       </a>
-      <a href="javascript:void(0)" className="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short155534039_1">
+      <a className="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short155534039_1">
         <span><i className="ico16 funny"></i>
         Funny
         </span>
       </a>
-      <a href="javascript:void(0)" className="btnv6_grey_black btn_small_thin review_award_button">
+      <a className="btnv6_grey_black btn_small_thin review_award_button">
         <span><img src="https://store.cloudflare.steamstatic.com/public/shared/images//award_icon.svg" className="reward_btn_icon"/>
         Award
         </span>

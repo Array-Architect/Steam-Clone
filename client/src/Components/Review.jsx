@@ -1,7 +1,7 @@
 import Histogram from "./ReviewSubComponents/Histogram"
 import ReviewFilter from "./ReviewSubComponents/ReviewFilter"
 import InfoContainer from "./ReviewSubComponents/InfoContainer"
-import ReviewSummary from "./ReviewSubcomponents/ReviewSummary"
+import ReviewSummary from "./ReviewSubComponents/ReviewSummary"
 const Review = () => {
 
   return (

@@ -82,7 +82,7 @@ const AppDetails = () => {
               className="linkbar"
               href="https://twitter.com/Valheimgame"
               target="_blank"
-              rel
+              // rel
               data-tooltip-text="https://twitter.com/Valheimgame"
             >
               <img src="https://store.akamai.steamstatic.com/public/images//v6/social/twitter_32_white.png"></img>
@@ -97,7 +97,7 @@ const AppDetails = () => {
               className="linkbar"
               href="https://www.youtube.com/channel/UCr3Yfz4Ts_K4bAyMCoVXeyA/"
               target="_blank"
-              rel
+              // rel
               data-tooltip-text="https://www.youtube.com/channel/UCr3Yfz4Ts_K4bAyMCoVXeyA/"
             >
               <img src="https://store.akamai.steamstatic.com/public/images//v6/social/youtube_32_white.png"></img>

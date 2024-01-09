@@ -23,7 +23,7 @@ const ShareEmbed = () => {
         <a
           id="ReportAppBtn"
           className="btnv6_blue_hoverfade btn_medium"
-          href="javascript:void(0)"
+          // href="javascript:void(0)"
           style={{ marginRight: "3px" }}
         >
           <span data-tooltip-text="Report this Product">

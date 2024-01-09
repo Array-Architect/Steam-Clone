@@ -81,13 +81,13 @@ a {
 }
 
 
-.a:focus {
+a:focus {
 	outline: 0px none;
 }
 
 a:hover {
 	text-decoration: none;
-    color: #66c0f4;
+  color: #66c0f4;
 }
 
 a.nohover:hover {
@@ -1289,7 +1289,6 @@ body.v6 .store_nav .popup_block_new .popup_body.search_v2 {
 .slider_ctn {
 	position: relative;
 	height: 18px;
-
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -6976,13 +6975,13 @@ tr {
 }
 
 .details_block a {
-    font-family: "Motiva Sans", Sans-serif;
-    font-weight: 300;
-    color: #67c1f5;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: 300;
+  color: #67c1f5;
 }
 
 a:-webkit-any-link {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .block a.linkbar {
@@ -7184,7 +7183,7 @@ body.v6 .game_description_column h2.gradientbg {
     font-weight: bold;
     font-size: 14px;
     color: #FFFFFF;
-    background-image: url(/publihttps://store.akamai.steamstatic.com/public/images/v6/maincol_gradient_rule.pngc/images/v6/maincol_gradient_rule.png);
+    background-image: url('/https://store.akamai.steamstatic.com/public/images/v6/maincol_gradient_rule.pngc/images/v6/maincol_gradient_rule.png');
     background-repeat: no-repeat;
     background-position: bottom left;
     margin-bottom: 1px;
@@ -8153,22 +8152,6 @@ div.early_access_announcements {
     width: 171px;
 }
 
-.slider_ctn.store_autoslider {
-    background: #122333;
-}
-
-
-.slider_ctn {
-    position: relative;
-    height: 18px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 .slider_ctn .slider_left, .slider_ctn .slider_right {
     position: absolute;
     width: 38px;
@@ -8213,33 +8196,6 @@ div.early_access_announcements {
     bottom: 0;
     background-color: rgba( 0, 0, 0, 0.2 );
     border-radius: 3px;
-}
-
-.slider_ctn.store_autoslider .handle {
-    background-color: rgba( 0, 0, 0, 0.5 );
-}
-
-.slider_ctn .handle {
-    position: absolute;
-    top: 0;
-    background-color: rgba( 0, 0, 0, 0.2 );
-    border-radius: 3px;
-    height: 18px;
-    width: 60px;
-    cursor: pointer;
-}
-
-.game_description_column .block .right {
-    margin-right: 3px;
-}
-
-.game_description_column .block .block_header .right a {
-    float: right;
-    background-color: rgba( 103, 193, 245, 0.2 );
-    border-radius: 1px;
-    color: #67c1f5;
-    font-size: 11px;
-    padding: 2px 4px;
 }
 
 .no_curators_followed {
@@ -8443,16 +8399,12 @@ img.game_header_image_full {
 }
 
 .newmodal_content {
-
-    width: 100%;
+  width: 100%;
 	overflow: auto;
 	word-wrap: break-word;
-
 	padding: 32px;
-
 	font-size: 14px;
 	color: #acb2b8;
-
 	position: relative;
 }
 
@@ -8607,7 +8559,7 @@ body.v6 .app_tag_modal h2 {
 
 .highlight_selector {
 	position:absolute;
-	background-image: url( https://store.akamai.steamstatic.com/public/images/v5/game_highlight_activethumb.png );
+	background-image: url( 'https://store.akamai.steamstatic.com/public/images/v5/game_highlight_activethumb.png');
 	width: 116px;
 	height: 77px;
 	z-index: 50;
@@ -9162,4 +9114,23 @@ video {
     background-image: radial-gradient(ellipse at top left, #42454c, #25282e);
     box-shadow: 2px 2px 10px rgba(0,0,0,.4);
     border-radius: 4px;
+}
+
+.game_description_column .block .block_header .right a:hover {
+	text-decoration: none;
+	color: #ffffff;
+	background: #67c1f5; /* Old browsers */
+	background: -moz-linear-gradient(-60deg,  #67c1f5 0%, #417a9b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#67c1f5), color-stop(100%,#417a9b));
+	background: -webkit-linear-gradient(-60deg,  #67c1f5 0%,#417a9b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-60deg,  #67c1f5 0%,#417a9b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-60deg,  #67c1f5 0%,#417a9b 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #67c1f5 0%,#417a9b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c1f5', endColorstr='#417a9b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+div.early_access_header .devnotes .morebutton:hover {
+	color: #ffffff;
+	text-decoration: none;
+	cursor: pointer;
 }

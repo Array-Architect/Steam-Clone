@@ -80,28 +80,28 @@ const ReviewSummaryLeftCol = () => {
               {/* The vote buttons need to be reviewed on steam to determine onClick functionality */}
               <div className="vote_button_ctn" id="reviewButtonContainer153546726">
 
-                <a href="javascript:void(0)" className="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary153546726">
+                <a className="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary153546726">
                   <span>
                     <i className="ico16 thumb_upv6"></i>
                     " Yes"
                   </span>
                 </a>
 
-                <a href="javascript:void(0)" className="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary153546726">
+                <a className="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary153546726">
                   <span>
                     <i className="ico16 thumb_downv6"></i>
                     " No"
                   </span>
                 </a>
 
-                <a href="javascript:void(0)" className="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary153546726_1">
+                <a className="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary153546726_1">
                   <span>
                     <i className="ico16 funny"></i>
                     " Funny"
                   </span>
                 </a>
 
-                <a href="javascript:void(0)" className="btnv6_grey_black btn_small_thin review_award_button">
+                <a className="btnv6_grey_black btn_small_thin review_award_button">
                   <span>
                     <img src="https://store.cloudflare.steamstatic.com/public/shared/images//award_icon.svg" className="reward_btn_icon"></img>
                     " Award"
