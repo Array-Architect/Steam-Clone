@@ -15,6 +15,7 @@ export function ContextProvider({children}) {
     const [autoplay,setAutoplay] = useState(true)
     const [videoHover,setVideoHover] = useState(false)
     const [previewNavSlider,setpreviewNavSlider] = useState(0)
+    const [readmore, setreadmore] = useState(false)
     const [reviewBoxPartial, setReviewBoxPartial] = useState(true)
     const [reviewTipVisible, setReviewTipVisible ] = useState(false)
     const [customerTipVisible, setCustomerTipVisible] = useState(false)
@@ -85,6 +86,8 @@ export function ContextProvider({children}) {
         setVideoHover,
         previewNavSlider,
         setpreviewNavSlider,
+        readmore,
+        setreadmore,
         reviewBoxPartial,
         setReviewBoxPartial,
         toolTipAxis,
