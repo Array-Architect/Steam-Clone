@@ -47,13 +47,13 @@ const InfoContainer = () => {
     <div className="user_reviews_filter_score visible" id="user_reviews_filter_score">
       <div>
         <span>
-          "Showing "
+          {'Showing '}
           <b>256,586</b>
-          " reviews that match the filters above"
+          {' reviews that match the filters above '}
         </span>
-        " ( "
+         {'( '}
         <span className="game_review_summary positive" data-tooltip-html="95% of the 256,586 user reviews for this game are positive.">Overwhelmingly Positive</span>
-        " ) "
+         {' )'}
       </div>
     </div>
 

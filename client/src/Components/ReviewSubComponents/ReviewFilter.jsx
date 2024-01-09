@@ -21,22 +21,22 @@ const ReviewFilter = () => {
         <div className="user_reviews_filter_menu_flyout_content">
           <input type="radio" name="review_type" value="all" id="review_type_all" ></input>
           <label htmlFor="review_type_all">
-            "All&nbsp;"
-            <span className="user_reviews_count">(433,306)</span>
+             {' All'}
+            <span className="user_reviews_count">&nbsp;(433,306)&nbsp;</span>
           </label>
           <br></br>
 
           <input type="radio" name="review_type" value="positive" id="review_type_positive"></input>
           <label htmlFor="review_type_positive">
-            "Positive&nbsp;"
-            <span className="user_reviews_count">(410,974)</span>
+            {' Positive'}
+            <span className="user_reviews_count">&nbsp;(410,974)&nbsp;</span>
           </label>
           <br></br>
 
           <input type="radio" name="review_type" value="negative" id="review_type_negative"></input>
           <label htmlFor="review_type_negative">
-            "Negative&nbsp;"
-            <span className="user_reviews_count">(22,332)</span>
+            {' Negative'}
+            <span className="user_reviews_count">&nbsp;(22,332)&nbsp;</span>
           </label>
 
         </div>
@@ -49,15 +49,15 @@ const ReviewFilter = () => {
         <div className="user_reviews_filter_menu_flyout_content">
           <input type="radio" name="purchase_type" value="all" id="purchase_type_all"></input>
           <label htmlFor="purchase_type_all">
-            "All&nbsp;"
-            <span className="user_reviews_count">(433,314)</span>
+            {' All'}
+            <span className="user_reviews_count">&nbsp;(433,314)&nbsp;</span>
           </label>
           <br></br>
 
           <input type="radio" name="purchase_type" value="steam" id="purchase_type_steam"></input>
           <label htmlFor="purchase_type_steam">
-            "Steam Purchasers&nbsp;"
-            <span className="user_reviews_count">(371,092)</span>
+            {' Steam Purchasers'}
+            <span className="user_reviews_count">&nbsp;(371,092)&nbsp;</span>
             <a className="tooltip" data-tooltip-text="These are reviews written by customers that purchased the game directly from Steam.">
               <img src="https://store.cloudflare.steamstatic.com/public/shared/images/ico/icon_questionmark_dark.png"></img>
             </a>
@@ -66,8 +66,8 @@ const ReviewFilter = () => {
 
           <input type="radio" name="purchase_type" value="non_steam_purchase" id="purchase_type_non_steam"></input>
           <label htmlFor="purchase_type_non_steam">
-            "Other&nbsp;"
-            <span className="user_reviews_count">(62,222)</span>
+            {' Other'}
+            <span className="user_reviews_count">&nbsp;(62,222)&nbsp;</span>
             <a className="tooltip" data-tooltip-text="These are reviews written by customers that did not purchase the game on Steam. (This may include legitimate sources such as other digital stores, retail stores, testing purposes, or press review purposes. Or, from inappropriate sources such as copies given in exchange for reviews.)">
               <img src="https://store.cloudflare.steamstatic.com/public/shared/images/ico/icon_questionmark_dark.png"></img>
             </a>
@@ -84,15 +84,15 @@ const ReviewFilter = () => {
 
           <input type="radio" name="review_language" id="review_language_all" value="all"></input>
           <label htmlFor="review_language_all">
-            "All Languages&nbsp;"
-            <span className="user_reviews_count">(433,314)</span>
+            {' All Languages'}
+            <span className="user_reviews_count">&nbsp;(433,314)&nbsp;</span>
           </label>
           <br></br>
 
           <input type="radio" name="review_language" id="review_language_mine" value="english"/>
           <label htmlFor="review_language_mine">
-            "Your Languages&nbsp;"
-            <span className="user_reviews_count">(256,582)</span>
+            {' Your Languages'}
+            <span className="user_reviews_count">&nbsp;(256,582)&nbsp;</span>
             <a className="tooltip" data-tooltip-html="Your preferences are currently set to show content authored in these languages: English.<br><br> Click 'customize' below to modify your preferences.">
               <img src="https://store.cloudflare.steamstatic.com/public/shared/images/ico/icon_questionmark_dark.png"></img>
             </a>
@@ -114,25 +114,25 @@ const ReviewFilter = () => {
         <div className="user_reviews_filter_menu_flyout_content">
 
           <div className="user_reviews_date_range_explanation">
-            " To view reviews within a date range, please click and drag a selection on a graph above or click on a specific bar. "
+            To view reviews within a date range, please click and drag a selection on a graph above or click on a specific bar.
             <br></br>
             <br></br>
             {/* onClick={SetReviewsGraphVisibility( true )}   This needs to be added to the span below once the function has been declared */}
-            <span className="btn_darkblue_white_innerfade btn_small_thin">
+            <span className="btn_darkblue_white_innerfade btn_small_thin" onClick={showGraph}>
               <span>Show graph</span>
             </span>
           </div>
 
           <input type="radio" name="review_date_range" id="review_date_range_all" value="all" disabled/>
-          <label htmlFor="review_date_range_all">Lifetime</label>
+          <label htmlFor="review_date_range_all">{' Lifetime'}</label>
           <br></br>
 
           <input type="radio" name="review_date_range" id="review_date_range_histogram" value="include"></input>
-          <label htmlFor="review_date_range_histogram">Only Specific Range (Select on graph above)&nbsp;</label>
+          <label htmlFor="review_date_range_histogram">{' Only Specific Range (Select on graph above)'}</label>
           <br></br>
 
           <input type="radio" name="review_date_range" id="review_date_range_exclude_histogram" value="exclude"></input>
-          <label htmlFor="review_date_range_exclude_histogram">Exclude Specific Range (Select on graph above)&nbsp;</label>
+          <label htmlFor="review_date_range_exclude_histogram">{' Exclude Specific Range (Select on graph above)'}</label>
           <br></br>
 
         </div>
@@ -155,29 +155,29 @@ const ReviewFilter = () => {
           </div>
 
           <div className="user_reviews_playtime_filter_explanation">
-            " Filter reviews by the user's playtime when the review was written: "
+            Filter reviews by the user's playtime when the review was written:
           </div>
 
           <input type="radio" name="review_playtime_preset" id="review_playtime_preset_0" value="0"></input>
-          <label htmlFor="review_playtime_preset_0">No Minimum</label>
+          <label htmlFor="review_playtime_preset_0">{' No Minimum'}</label>
           <br></br>
 
           <input type="radio" name="review_playtime_preset" id="review_playtime_preset_1" value="1"></input>
-          <label htmlFor="review_playtime_preset_1">Over 1 hour</label>
+          <label htmlFor="review_playtime_preset_1">{' Over 1 hour'}</label>
           <br></br>
 
           <input type="radio" name="review_playtime_preset" id="review_playtime_preset_10" value="10"></input>
-          <label htmlFor="review_playtime_preset_10">Over 10 hours</label>
+          <label htmlFor="review_playtime_preset_10">{' Over 10 hours'}</label>
           <br></br>
 
           <input type="radio" name="review_playtime_preset" id="review_playtime_preset_100" value="100"></input>
-          <label htmlFor="review_playtime_preset_100">Over 100 hours</label>
+          <label htmlFor="review_playtime_preset_100">{' Over 100 hours'}</label>
           <br></br>
 
           <div id="app_reviews_playtime_range_text">
-            <span id="app_reviews_playtime_range_text_min">No minimum</span>
-            " to "
-            <span id="app_reviews_playtime_range_text_max">No maximum</span>
+            <span id="app_reviews_playtime_range_text_min">{'No minimum '}</span>
+            {' to '}
+            <span id="app_reviews_playtime_range_text_max">{' No maximum'}</span>
           </div>
 
           <input type="hidden" id="app_reviews_playtime_range_min" value="0"></input>
@@ -215,9 +215,9 @@ const ReviewFilter = () => {
       <div className="user_reviews_filter_menu_flyout">
         <div className="user_reviews_filter_menu_flyout_content">
           <div className="user_reviews_offtopic_activity_explanation">
-            " When enabled, off-topic review activity will be filtered out. This defaults to your Review Score Setting. Read more about it in the "
+            When enabled, off-topic review activity will be filtered out. This defaults to your Review Score Setting. Read more about it in the
             <a href="https://steamcommunity.com/games/593110/announcements/detail/1808664240333155775?snr=1_5_9_">blog post</a>
-            ". "
+            .
           </div>
           <input type="checkbox" id="reviews_offtopic_activity_checkbox"></input>
           <label htmlFor="reviews_offtopic_activity_checkbox">Enabled</label>
@@ -225,8 +225,6 @@ const ReviewFilter = () => {
       </div>
     </div>
 
-    {/* The following line of code needs to be added to the show/hide graph buttons below once it has been declared */}
-    {/* onclick={SetReviewsGraphVisibility( true )}     Be sure to adjust the boolean value accordingly*/}
 
     <div style={{float: "right"}}>
       { !graphVisible ?
