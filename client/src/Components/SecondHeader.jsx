@@ -59,7 +59,7 @@ function SecondHeader({ }) {
                                             <a className="popup_menu_item" href="https://store.steampowered.com/curators/?snr=1_5_9__12"> Steam Curators </a>
                                         </div>
                                     </div>
-                                    <div class="store_labs_new"></div>
+                                    <div className="store_labs_new"></div>
                                     <div className="tab  flyout_tab" id="noteworthy_tab" data-flyout="noteworthy_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel={{"focusable": true}} onMouseEnter={() => handleMouseEnter("Noteworthy")} onMouseLeave={handleMouseLeave}>
                                         <span className="pulldown">
                                             <a href="#" className="pulldown_desktop">{`New & Noteworthy `}</a>
