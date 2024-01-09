@@ -20,7 +20,7 @@ const Block1 = () => {
           className="block_responsive_horizontal_scroll store_horizontal_autoslider block_content nopad"
           id="franchise_app_block_content"
           data-panel='{"maintainX":true,"bFocusRingRoot":true,"flow-children":"row"}'
-          style={{ overflowX: "scroll" }}
+          style={{ overflow: "scroll" }}
         >
           <a
             className="small_cap app_impression_tracked"

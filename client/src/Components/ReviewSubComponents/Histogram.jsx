@@ -1,8 +1,36 @@
 import { useState } from 'react'
 import { setContexts } from '../../Context'
+
 const Histogram = () => {
 
-  const { graphVisible, setGraphvisible } = setContexts()
+  const {
+    graphVisible,
+    setGraphVisible,
+    toolTipAxis,
+    setToolTipAxis,
+    customerTipVisible,
+    setCustomerTipVisible,
+    recentTipVisible,
+    setRecentTipVisible
+   } = setContexts()
+
+  const custTipLoc = () => {
+    setToolTipAxis({x:event.pageX,y:event.pageY})
+    setCustomerTipVisible(!customerTipVisible)
+  }
+
+  const custTipStop = () => {
+    setCustomerTipVisible(false)
+  }
+
+  const recentTipLoc = () => {
+    setToolTipAxis({x:event.pageX,y:event.pageY})
+    setRecentTipVisible(!recentTipVisible)
+  }
+
+  const recentTipStop = () => {
+    setRecentTipVisible(false)
+  }
 
   return (
     <div id="review_histograms_container" className={graphVisible ? "has_data" : "has_data collapsed"}>
@@ -11,8 +39,8 @@ const Histogram = () => {
        <div className="user_reviews_summary_bar">
          <div className="summary_section">
            <div className="title">Overall Reviews:</div>
-           <span className="game_review_summary positive" data-tooltip-html="95% of the 370,872 user reviews for this game are positive.">Overwhelmingly Positive</span>
-           <span>(370,872 reviews)</span>
+           <span className="game_review_summary positive" onMouseOver={custTipLoc} onMouseOut={custTipStop}>Overwhelmingly Positive </span>
+           <span>(370,872 reviews)&nbsp;</span>
            <a className="tooltip" data-tooltip-text="This summary uses only reviews written by customers that purchased the game directly from Steam.">
              <img src="https://store.cloudflare.steamstatic.com/public/shared/images/ico/icon_questionmark.png"></img>
            </a>
@@ -20,6 +48,7 @@ const Histogram = () => {
        </div>
        <div id="review_histogram_rollup_container" className="review_histogram">
          <div id="review_histogram_rollup" style={{padding: "0px", position: "relative"}}>
+          {/* Flot is an extension of jQuery - We need to find another React Library that we can use for the graph. */}
            <canvas className="flot-base" width="877" height="375" style={{direction: "ltr", position: "absolute", left: "0px", top: "0px", width: "585px", height: "250px"}}></canvas>
            <div className="flot-text" style={{position: "absolute", inset: "0px", fontSize: "smaller", color: "rgb(84, 84, 84)"}}>
              <div className="flot-x-axis flot-x1-axis xAxis x1Axis" style={{position: "absolute", inset: "0px", display: "block"}}>
@@ -47,8 +76,8 @@ const Histogram = () => {
        <div className="user_reviews_summary_bar">
          <div className="summary_section">
            <div className="title">Recent Reviews:</div>
-           <span className="game_review_summary positive" data-tooltip-html="91% of the 4,448 user reviews in the last 30 days are positive.">Very Positive</span>
-           <span>(4,448 reviews)</span>
+           <span className="game_review_summary positive" onMouseOver={recentTipLoc} onMouseOut={recentTipStop} >Very Positive </span>
+           <span>(4,448 reviews)&nbsp;</span>
            <a className="tooltip" data-tooltip-text="This summary uses only reviews written by customers that purchased the game directly from Steam.">
              <img src="https://store.cloudflare.steamstatic.com/public/shared/images/ico/icon_questionmark.png"></img>
            </a>

@@ -97,7 +97,7 @@ const Purchase = () => {
                 <a
                   data-panel='{"focusable":true,"clickOnActivate":true}'
                   className="btn_green_steamui btn_medium"
-                  href="javascript:addBundleToCart( 24016);"
+                  // href="javascript:addBundleToCart( 24016);"
                 >
                   <span>Add to Cart</span>
                 </a>

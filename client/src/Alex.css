@@ -772,6 +772,10 @@ text-transform: uppercase;
 font-style: normal;
 }
 
+.review_box.partial .view_more:hover {
+	cursor: pointer;
+}
+
 
 .review_box.partial .content .gradient {
 display: block;
@@ -1133,6 +1137,7 @@ color: red;
 	border-radius: 2px;
 	border: none;
 	padding: 1px;
+	margin-right: 3px;
 	display: inline-block;
 	cursor: pointer;
 	text-decoration: none !important;
@@ -1188,6 +1193,10 @@ color: red;
 
 .review_award_ctn > .review_award.more_btn {
 	display: inline-block;
+}
+
+.review_award:hover {
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Icons */
@@ -1481,4 +1490,32 @@ color: red;
 	padding-top: 8px;
 	font-size: 12px;
     text-align: center;
+}
+
+#review_event_tooltip {
+	position: absolute;
+	display: none;
+	padding: 5px;
+	box-shadow: 0 0 5px #000;
+	background: -webkit-linear-gradient( top, #e3eaef 5%, #c7d5e0 95%);
+	background: linear-gradient( to bottom, #e3eaef 5%, #c7d5e0 95%);
+	color: #4191bf;
+	font-weight: bold;
+	z-index: 1;
+	pointer-events:none;
+}
+
+#review_histogram_tooltip {
+	position: absolute;
+	display: none;
+	padding: 5px;
+	box-shadow: 0 0 5px #000;
+	background: -webkit-linear-gradient( top, #e3eaef 5%, #c7d5e0 95%);
+	background: linear-gradient( to bottom, #e3eaef 5%, #c7d5e0 95%);
+	color: #4191bf;
+	font-weight: bold;
+}
+
+#review_histogram_tooltip.negative {
+	color: #A34C25;
 }

@@ -16,6 +16,50 @@ export function ContextProvider({children}) {
     const [videoHover,setVideoHover] = useState(false)
     const [previewNavSlider,setpreviewNavSlider] = useState(0)
     const [readmore, setreadmore] = useState(false)
+    const [reviewBoxPartial, setReviewBoxPartial] = useState(true)
+    const [reviewTipVisible, setReviewTipVisible ] = useState(false)
+    const [customerTipVisible, setCustomerTipVisible] = useState(false)
+    const [recentTipVisible, setRecentTipVisible] = useState(false)
+    const [toolTipAxis, setToolTipAxis ] = useState({x: null, y: null})
+    const [reviewToolTips, setReviewToolTips ] = useState({
+        fullReview: {
+                className: "store_tooltip",
+                style: {
+                    position: "absolute",
+                    zIndex: 1500,
+                    opacity: 1,
+                    pointerEvents: "auto"
+                },
+                text: 'See Full Review'
+            },
+        customerReview: {
+            className: "store_tooltip",
+            style: {
+                position: "absolute",
+                zIndex: 1500,
+                opacity: 1,
+                pointerEvents: "auto"
+            },
+            text: '95% of the 371,979 user reviews for this game are positive.'
+        },
+        recentReview: {
+            className: "store_tooltip",
+            style: {
+                position: "absolute",
+                zIndex: 1500,
+                opacity: 1,
+                pointerEvents: "auto"
+            },
+            text: '91% of the 4,886 user reviews in the last 30 days are positive.'
+        },
+        4: null,
+        5: null,
+        6: null,
+        7: null,
+        8: null,
+        9: null,
+        10: null,
+    })
 
     const contextValues = {
         displayTags,
@@ -43,7 +87,19 @@ export function ContextProvider({children}) {
         previewNavSlider,
         setpreviewNavSlider,
         readmore,
-        setreadmore
+        setreadmore,
+        reviewBoxPartial,
+        setReviewBoxPartial,
+        toolTipAxis,
+        setToolTipAxis,
+        reviewToolTips,
+        setReviewToolTips,
+        reviewTipVisible,
+        setReviewTipVisible,
+        customerTipVisible,
+        setCustomerTipVisible,
+        recentTipVisible,
+        setRecentTipVisible
     }
 
     return (
